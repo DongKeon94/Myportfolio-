@@ -1,6 +1,6 @@
-@import "_style.scss";
-@import "_common.scss";
-@import "_mixin.scss"; 
+@import "style.scss";
+@import "common.scss";
+@import "mixin.scss"; 
 
 
 // h1 {
@@ -11,17 +11,23 @@
 // }
 body {
     color: #f2f2f2;
-    background-color: #000;
+    background-color: $main-backgroundcolor;
 
     header {
         h1 {
-            color: #f2f2f2;
+            a {
+                color: #f2f2f2;
+            }
         }
     }
     main {
         
-        img {
+        .banner-img {
+            display: block;
             width: 100%;
+            position: absolute;
+            z-index: -1;
         }
+        
     }
 }
