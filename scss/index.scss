@@ -1,3 +1,27 @@
 @import "_style.scss";
 @import "_common.scss";
-@import "_mixin.scss";
+@import "_mixin.scss"; 
+
+
+// h1 {
+//     span {
+//         background: $port-text;
+//         @include gradienttitle();
+//     }
+// }
+body {
+    color: #f2f2f2;
+    background-color: #000;
+
+    header {
+        h1 {
+            color: #f2f2f2;
+        }
+    }
+    main {
+        
+        img {
+            width: 100%;
+        }
+    }
+}
