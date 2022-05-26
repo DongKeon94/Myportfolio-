@@ -12,21 +12,49 @@
 body {
     color: #f2f2f2;
     background-color: $main-backgroundcolor;
-
     header {
         h1 {
-            a {
-                color: #f2f2f2;
-            }
+            text-align: center;
+            padding: 3%;
         }
     }
+    
     main {
-        
-        .banner-img {
-            display: block;
-            width: 100%;
-            position: absolute;
-            z-index: -1;
+
+        section.des-1 {
+            margin-top: 2%;
+
+            .banner-img {
+                display: block;
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+            }
+            
+            .confix {
+                .main-top {
+                    background-color: #aaa;
+                    @include confix();
+                    padding-left: 1.25em;
+                    padding-right: 1.25em;
+    
+                    .num-motion {
+                        
+                        ul {
+                            float: left;
+
+                            li {
+                                font-size: 1.1em;
+
+                            }
+                        }
+                    }
+
+                    .bot {
+                        clear: both;
+                    }
+                }
+            }
         }
         
     }

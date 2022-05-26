@@ -1,8 +1,14 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard;
 }
 
 p {
@@ -41,14 +47,41 @@ body {
   background-color: #000;
 }
 
-body header h1 a {
-  color: #f2f2f2;
+body header h1 {
+  text-align: center;
+  padding: 3%;
 }
 
-body main .banner-img {
+body main section.des-1 {
+  margin-top: 2%;
+}
+
+body main section.des-1 .banner-img {
   display: block;
   width: 100%;
   position: absolute;
   z-index: -1;
+}
+
+body main section.des-1 .confix .main-top {
+  background-color: #aaa;
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+
+body main section.des-1 .confix .main-top .num-motion ul {
+  float: left;
+}
+
+body main section.des-1 .confix .main-top .num-motion ul li {
+  font-size: 1.1em;
+}
+
+body main section.des-1 .confix .main-top .bot {
+  clear: both;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,4 +1,6 @@
-$break-moblie: 320px;
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+$break-moblie: 375px;
 $break-tablet: 768px;
 $break-pc: 1024px;
 
@@ -8,3 +10,5 @@ $int-text : linear-gradient(to right, #19fff4, #aeffae);
 $dire-text : linear-gradient(to right, #7530e3, #e1afcc);
 $port-text : linear-gradient(to right, #f83600, #facc22);
 $cont-text : linear-gradient(to right, #0dccff, #4760ff);
+
+$font-sans: Pretendard;
