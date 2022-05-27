@@ -1,0 +1,39 @@
+// .num-motion {
+//     ul {
+//         float: left;
+//         @include responsive(pc-size) {
+//             padding-left: 5.625em;
+//         }
+//         li {
+//             font-size: 1.1em;
+//             text-align: center;
+//             @include responsive(tablet-size) {
+//                 font-size: 1.3em;
+//             }
+//         }
+//     }
+// }
+
+// .docty {
+//     ul {
+//         float: left;
+//         padding-left: 10px;
+//         @include responsive(tablet-size) {
+//             padding-left: 30px;
+//         }
+//         @include responsive(pc-size) {
+//             padding-left: 130px;
+//         }
+//         li{
+//             font-size: 1.2em;
+//             @include responsive(tablet-size) {
+//                 font-size: 1.3em;
+//             }
+//         }
+//     }
+// }
+// .hi {
+//     float:left;
+//     padding-top: 50px;
+//     margin-left: -10px;
+// }

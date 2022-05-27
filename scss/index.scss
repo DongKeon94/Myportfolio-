@@ -23,7 +23,6 @@ body {
 
         section.des-1 {
             margin-top: 2%;
-
             .banner-img {
                 display: block;
                 width: 100%;
@@ -37,21 +36,40 @@ body {
                     @include confix();
                     padding-left: 1.25em;
                     padding-right: 1.25em;
-    
+                    height: 980px;
+                    
+
                     .num-motion {
-                        
-                        ul {
-                            float: left;
-
-                            li {
-                                font-size: 1.1em;
-
-                            }
-                        }
+                        position: absolute;
                     }
 
-                    .bot {
-                        clear: both;
+                    .docty {
+                        position: absolute;
+                        left: 10%;
+                    }
+
+                    .hello {
+                        position: absolute;
+                        left: 50%;
+                        top: 7%;
+                        transform: translateX(-50%);
+
+                        @include responsive(tablet-size) {
+                            top: 14%;
+                        }
+                    }
+                    .its-me {
+                        position: absolute;
+                        left: 50%;
+                        top: 30%;
+                        transform: translateX(-50%);
+                    }
+
+                    .main-title {
+                        position: absolute;
+                        left: 50%;
+                        top: 52%;
+                        transform: translateX(-50%);
                     }
                 }
             }

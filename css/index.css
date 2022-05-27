@@ -71,17 +71,45 @@ body main section.des-1 .confix .main-top {
   margin: 0 auto;
   padding-left: 1.25em;
   padding-right: 1.25em;
+  height: 980px;
 }
 
-body main section.des-1 .confix .main-top .num-motion ul {
-  float: left;
+body main section.des-1 .confix .main-top .num-motion {
+  position: absolute;
 }
 
-body main section.des-1 .confix .main-top .num-motion ul li {
-  font-size: 1.1em;
+body main section.des-1 .confix .main-top .docty {
+  position: absolute;
+  left: 10%;
 }
 
-body main section.des-1 .confix .main-top .bot {
-  clear: both;
+body main section.des-1 .confix .main-top .hello {
+  position: absolute;
+  left: 50%;
+  top: 7%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.des-1 .confix .main-top .hello {
+    top: 14%;
+  }
+}
+
+body main section.des-1 .confix .main-top .its-me {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body main section.des-1 .confix .main-top .main-title {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=index.css.map */
