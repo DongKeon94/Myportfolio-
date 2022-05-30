@@ -1,5 +1,7 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@
 }
 
 body {
-  font-family: Pretendard;
+  font-family: Inconsolata;
 }
 
 p {
@@ -47,69 +49,290 @@ body {
   background-color: #000;
 }
 
-body header h1 {
-  text-align: center;
-  padding: 3%;
+body main section.descrition-1 {
+  overflow: hidden;
 }
 
-body main section.des-1 {
-  margin-top: 2%;
-}
-
-body main section.des-1 .banner-img {
+body main section.descrition-1 .banner-img {
   display: block;
   width: 100%;
   position: absolute;
+  padding-top: 20%;
   z-index: -1;
 }
 
-body main section.des-1 .confix .main-top {
-  background-color: #aaa;
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .banner-img {
+    padding-top: 0;
+  }
+}
+
+body main section.descrition-1 .confix .main-top {
+  padding-top: 2%;
+  background-color: green;
   position: relative;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
   padding-left: 1.25em;
   padding-right: 1.25em;
-  height: 980px;
-}
-
-body main section.des-1 .confix .main-top .num-motion {
-  position: absolute;
-}
-
-body main section.des-1 .confix .main-top .docty {
-  position: absolute;
-  left: 10%;
-}
-
-body main section.des-1 .confix .main-top .hello {
-  position: absolute;
-  left: 50%;
-  top: 7%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  height: 580px;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.des-1 .confix .main-top .hello {
-    top: 14%;
+  body main section.descrition-1 .confix .main-top {
+    height: 780px;
   }
 }
 
-body main section.des-1 .confix .main-top .its-me {
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top {
+    height: 980px;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .num-motion {
   position: absolute;
+  left: 3%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .num-motion {
+    font-size: 3vmin;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .num-motion {
+    height: 900px;
+    line-height: 36px;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .docty {
+  position: absolute;
+  left: 10%;
+  color: #003c8f;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .docty {
+    font-size: 3vmin;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .docty {
+    height: 900px;
+    line-height: 36px;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .hello {
+  position: absolute;
+  top: 20%;
   left: 50%;
-  top: 30%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-body main section.des-1 .confix .main-top .main-title {
+body main section.descrition-1 .confix .main-top .hello .hello-left {
+  font-size: 0.9em;
+  color: #b6c017;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .hello .hello-left {
+    font-size: 2vmin;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .hello .hello-text {
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .hello .hello-text {
+    width: 40vmax;
+    height: 10vmin;
+    line-height: 10vmin;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .hello .hello-text {
+    width: 27vmax;
+    height: 11vmin;
+    line-height: 11vmin;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .hello .hello-text p {
+  font-size: 1.4em;
+  text-align: center;
+  color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .hello .hello-text p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .hello .hello-text p {
+    font-size: 2.5vw;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
   position: absolute;
+  bottom: 0%;
   left: 50%;
-  top: 52%;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: solid 30px #fff;
+  border-left: solid 15px transparent;
+  border-right: solid 15px transparent;
+  -webkit-transform: translate(-50%, 42%);
+          transform: translate(-50%, 42%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
+    border-top: solid 50px #fff;
+    border-left: solid 25px transparent;
+    border-right: solid 25px transparent;
+    -webkit-transform: translate(-50%, 58%);
+            transform: translate(-50%, 58%);
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
+    border-top: solid 70px #fff;
+    border-left: solid 35px transparent;
+    border-right: solid 35px transparent;
+    -webkit-transform: translate(-50%, 68%);
+            transform: translate(-50%, 68%);
+  }
+}
+
+body main section.descrition-1 .confix .main-top .hello .hello-right {
+  float: right;
+  font-size: 0.9em;
+  color: #b6c017;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .hello .hello-right {
+    font-size: 2vmin;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .its-me {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  font-size: 0.9em;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+body main section.descrition-1 .confix .main-top .its-me .its-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #d38e44;
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
+}
+
+body main section.descrition-1 .confix .main-top .its-me .its-images {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #656565;
+}
+
+body main section.descrition-1 .confix .main-top .its-me .its-images .image {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-color: #fff;
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+body main section.descrition-1 .confix .main-top .its-me .its-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #d38e44;
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
+}
+
+body main section.descrition-1 .confix .main-top .title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body main section.descrition-1 .confix .main-top .title .title-left {
+  color: #ab47bc;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+body main section.descrition-1 .confix .main-top .title p {
+  font-size: 1em;
+  text-align: center;
+}
+
+body main section.descrition-1 .confix .main-top .title p .title-text {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+body main section.descrition-1 .confix .main-top .title .title-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #ab47bc;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+body main section.descrition-1 .confix .main-top .main-image1 {
+  float: right;
+  width: 35%;
+  -webkit-transform: translate(67%, -60%);
+          transform: translate(67%, -60%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .main-image1 {
+    -webkit-transform: translate(57%, -65%);
+            transform: translate(57%, -65%);
+  }
+}
+
+body main section.descrition-1 .confix .main-top .main-image1 img {
+  width: 100%;
 }
 /*# sourceMappingURL=index.css.map */
