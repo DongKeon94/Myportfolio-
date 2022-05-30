@@ -12,18 +12,12 @@
 body {
     color: #f2f2f2;
     background-color: $main-backgroundcolor;
-
-    // header {
-    //     h1 {
-    //         text-align: center;
-    //         padding: 3%;
-    //     }
-    // }
     
     main {
 
         section.descrition-1 {
             overflow: hidden;
+
             .banner-img {
                 display: block;
                 width: 100%;
@@ -39,7 +33,6 @@ body {
             .confix {
                 .main-top {
                     padding-top: 2%;
-                    background-color: green; // 백그라운드
                     @include confix();
                     padding-left: 1.25em;
                     padding-right: 1.25em;
@@ -88,7 +81,7 @@ body {
                     // HELLO
                     .hello {
                         position: absolute;
-                        top: 20%; left: 50%; 
+                        top: 18%; left: 50%; 
                         transform: translateX(-50%);
                         
                         .hello-left {
@@ -96,7 +89,7 @@ body {
                             color: #b6c017;
                             transform: translateY(-1px);
                             @include responsive(tablet-size) {
-                                font-size: 2vmin;
+                                font-size: 2.5vmin;
                             }
                         }
 
@@ -113,7 +106,7 @@ body {
                             }
 
                             @include responsive(pc-size) {
-                                width: 27vmax; height: 11vmin;
+                                width: 35vmax; height: 11vmin;
                                 line-height: 11vmin;
                             }
 
@@ -146,7 +139,7 @@ body {
                                 border-top: solid 50px #fff;
                                 border-left: solid 25px transparent;
                                 border-right: solid 25px transparent;
-                                transform: translate(-50%,58%);
+                                transform: translate(-50%,47%);
 
                             }
 
@@ -154,7 +147,7 @@ body {
                                 border-top: solid 70px #fff;
                                 border-left: solid 35px transparent;
                                 border-right: solid 35px transparent;
-                                transform: translate(-50%,68%);
+                                transform: translate(-50%,57%);
                             }
                         }
 
@@ -165,7 +158,7 @@ body {
                             transform: translateY(1px);
                             
                             @include responsive(tablet-size) {
-                                font-size: 2vmin;
+                                font-size: 2.5vmin;
                             }
                         }
                     }
@@ -174,14 +167,17 @@ body {
                     .its-me {
                         position: absolute;
                         top: 42%; left: 50%;
-                        font-size: 0.9em;
                         transform: translateX(-50%);
                         
                         .its-left {
                             position: absolute;
                             top: 0; left: 0;
+                            font-size: 0.9em;
                             color: #d38e44;
                             transform: translateX(-90%);
+                            @include responsive(tablet-size) {
+                                font-size: 2.5vmin;
+                            }
                         }
 
                         .its-images {
@@ -189,20 +185,30 @@ body {
                             text-align: center;
                             border-radius: 50%;
                             background-color: #656565;
-
+                            @include responsive(tablet-size) {
+                                width: 13vmax; height: 13vmax; 
+                            }
+                            
                             .image {
                                 width: 90px; height: 90px;
                                 border-radius: 100%;
                                 background-color: #fff;
                                 transform: translateY(5%);
+                                @include responsive(tablet-size) {
+                                    width: 12vmax; height: 12vmax;
+                                }
                             }
                         }
 
                         .its-right {
                             position: absolute;
                             bottom: 0; right: 0;
+                            font-size: 0.9em;
                             color: #d38e44;
                             transform: translateX(90%);
+                            @include responsive(tablet-size) {
+                                font-size: 2.5vmin;
+                            }
                         }
                     }
 
@@ -213,25 +219,44 @@ body {
                         transform: translateX(-50%);
 
                         .title-left {
+                            font-size: 0.9em;
                             color: #ab47bc;
                             transform: translateX(-20%);
+                            @include responsive(tablet-size) {
+                                font-size: 2.5vmin;
+                            }
                         }
 
                         p {
                             font-size: 1em;
                             text-align: center;
+                            @include responsive(tablet-size) {
+                                font-size: 2.8vmin;
+                            }
 
                             .title-text {
                                 font-size: 1.3em;
                                 font-weight: bold;
+                                @include responsive(tablet-size) {
+                                    font-size: 3.6vmin;
+                                }
                             }
                         }
 
                         .title-right {
                             position: absolute;
                             bottom: 0; right: 0;
+                            font-size: 0.9em;
                             color: #ab47bc;
                             transform: translate(50%, 50%);
+                            @include responsive(tablet-size) {
+                                font-size: 2.5vmin;
+                                transform: translate(50%, 80%);
+                            }
+                            @include responsive(pc-size) {
+                                font-size: 2.5vmin;
+                                transform: translate(60%, 80%);
+                            }
                         }
                     }
 
@@ -246,6 +271,35 @@ body {
                         
                         img {
                             width: 100%;
+                        }
+                    }
+
+                    .main-image2 {
+                        position: absolute;
+                        bottom: 0; left: 0;
+                        display: none;
+                        padding-left: 1%;
+                        transform: translateY(-40%);
+                        @include responsive(tablet-size) {
+                            display: block;
+                        }
+
+                        img {
+                            width: 20vmax;
+                        }
+                    }
+
+                    .main-image3 {
+                        position: absolute;
+                        bottom: 0; right: 0;
+                        display: none;
+                        transform: translate(-90%, -50%);
+                        @include responsive(tablet-size) {
+                            display: block;
+                        }
+
+                        img {
+                            width: 6vmax;
                         }
                     }
                 }

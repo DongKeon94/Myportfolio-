@@ -69,7 +69,6 @@ body main section.descrition-1 .banner-img {
 
 body main section.descrition-1 .confix .main-top {
   padding-top: 2%;
-  background-color: green;
   position: relative;
   width: 100%;
   max-width: 1320px;
@@ -131,7 +130,7 @@ body main section.descrition-1 .confix .main-top .docty {
 
 body main section.descrition-1 .confix .main-top .hello {
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -146,7 +145,7 @@ body main section.descrition-1 .confix .main-top .hello .hello-left {
 
 @media screen and (min-width: 768px) {
   body main section.descrition-1 .confix .main-top .hello .hello-left {
-    font-size: 2vmin;
+    font-size: 2.5vmin;
   }
 }
 
@@ -169,7 +168,7 @@ body main section.descrition-1 .confix .main-top .hello .hello-text {
 
 @media screen and (min-width: 1320px) {
   body main section.descrition-1 .confix .main-top .hello .hello-text {
-    width: 27vmax;
+    width: 35vmax;
     height: 11vmin;
     line-height: 11vmin;
   }
@@ -212,8 +211,8 @@ body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
     border-top: solid 50px #fff;
     border-left: solid 25px transparent;
     border-right: solid 25px transparent;
-    -webkit-transform: translate(-50%, 58%);
-            transform: translate(-50%, 58%);
+    -webkit-transform: translate(-50%, 47%);
+            transform: translate(-50%, 47%);
   }
 }
 
@@ -222,8 +221,8 @@ body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
     border-top: solid 70px #fff;
     border-left: solid 35px transparent;
     border-right: solid 35px transparent;
-    -webkit-transform: translate(-50%, 68%);
-            transform: translate(-50%, 68%);
+    -webkit-transform: translate(-50%, 57%);
+            transform: translate(-50%, 57%);
   }
 }
 
@@ -237,7 +236,7 @@ body main section.descrition-1 .confix .main-top .hello .hello-right {
 
 @media screen and (min-width: 768px) {
   body main section.descrition-1 .confix .main-top .hello .hello-right {
-    font-size: 2vmin;
+    font-size: 2.5vmin;
   }
 }
 
@@ -245,7 +244,6 @@ body main section.descrition-1 .confix .main-top .its-me {
   position: absolute;
   top: 42%;
   left: 50%;
-  font-size: 0.9em;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -254,9 +252,16 @@ body main section.descrition-1 .confix .main-top .its-me .its-left {
   position: absolute;
   top: 0;
   left: 0;
+  font-size: 0.9em;
   color: #d38e44;
   -webkit-transform: translateX(-90%);
           transform: translateX(-90%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .its-me .its-left {
+    font-size: 2.5vmin;
+  }
 }
 
 body main section.descrition-1 .confix .main-top .its-me .its-images {
@@ -265,6 +270,13 @@ body main section.descrition-1 .confix .main-top .its-me .its-images {
   text-align: center;
   border-radius: 50%;
   background-color: #656565;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .its-me .its-images {
+    width: 13vmax;
+    height: 13vmax;
+  }
 }
 
 body main section.descrition-1 .confix .main-top .its-me .its-images .image {
@@ -276,13 +288,27 @@ body main section.descrition-1 .confix .main-top .its-me .its-images .image {
           transform: translateY(5%);
 }
 
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .its-me .its-images .image {
+    width: 12vmax;
+    height: 12vmax;
+  }
+}
+
 body main section.descrition-1 .confix .main-top .its-me .its-right {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-size: 0.9em;
   color: #d38e44;
   -webkit-transform: translateX(90%);
           transform: translateX(90%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .its-me .its-right {
+    font-size: 2.5vmin;
+  }
 }
 
 body main section.descrition-1 .confix .main-top .title {
@@ -294,9 +320,16 @@ body main section.descrition-1 .confix .main-top .title {
 }
 
 body main section.descrition-1 .confix .main-top .title .title-left {
+  font-size: 0.9em;
   color: #ab47bc;
   -webkit-transform: translateX(-20%);
           transform: translateX(-20%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .title .title-left {
+    font-size: 2.5vmin;
+  }
 }
 
 body main section.descrition-1 .confix .main-top .title p {
@@ -304,18 +337,47 @@ body main section.descrition-1 .confix .main-top .title p {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .title p {
+    font-size: 2.8vmin;
+  }
+}
+
 body main section.descrition-1 .confix .main-top .title p .title-text {
   font-size: 1.3em;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .title p .title-text {
+    font-size: 3.6vmin;
+  }
 }
 
 body main section.descrition-1 .confix .main-top .title .title-right {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-size: 0.9em;
   color: #ab47bc;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .title .title-right {
+    font-size: 2.5vmin;
+    -webkit-transform: translate(50%, 80%);
+            transform: translate(50%, 80%);
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .title .title-right {
+    font-size: 2.5vmin;
+    -webkit-transform: translate(60%, 80%);
+            transform: translate(60%, 80%);
+  }
 }
 
 body main section.descrition-1 .confix .main-top .main-image1 {
@@ -334,5 +396,44 @@ body main section.descrition-1 .confix .main-top .main-image1 {
 
 body main section.descrition-1 .confix .main-top .main-image1 img {
   width: 100%;
+}
+
+body main section.descrition-1 .confix .main-top .main-image2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  padding-left: 1%;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .main-image2 {
+    display: block;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .main-image2 img {
+  width: 20vmax;
+}
+
+body main section.descrition-1 .confix .main-top .main-image3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: none;
+  -webkit-transform: translate(-90%, -50%);
+          transform: translate(-90%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-1 .confix .main-top .main-image3 {
+    display: block;
+  }
+}
+
+body main section.descrition-1 .confix .main-top .main-image3 img {
+  width: 6vmax;
 }
 /*# sourceMappingURL=index.css.map */
