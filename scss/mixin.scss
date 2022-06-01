@@ -31,3 +31,9 @@
     -webkit-background-clip: text;
     background-clip: text;
 }
+
+@mixin padding-set {
+    padding-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+}

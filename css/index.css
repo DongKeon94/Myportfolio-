@@ -69,12 +69,12 @@ body main section.descrition-1 .banner-img {
 
 body main section.descrition-1 .confix .main-top {
   padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
   position: relative;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
-  padding-left: 1.25em;
-  padding-right: 1.25em;
   height: 580px;
 }
 
@@ -156,6 +156,8 @@ body main section.descrition-1 .confix .main-top .hello .hello-text {
   border-radius: 10px;
   background-color: white;
   cursor: pointer;
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.7));
+          filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.7));
 }
 
 @media screen and (min-width: 768px) {
@@ -202,6 +204,8 @@ body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
   border-top: solid 30px #fff;
   border-left: solid 15px transparent;
   border-right: solid 15px transparent;
+  -webkit-filter: drop-shadow(2px 4px 2px rgba(255, 255, 255, 0.7));
+          filter: drop-shadow(2px 4px 2px rgba(255, 255, 255, 0.7));
   -webkit-transform: translate(-50%, 42%);
           transform: translate(-50%, 42%);
 }
@@ -435,5 +439,48 @@ body main section.descrition-1 .confix .main-top .main-image3 {
 
 body main section.descrition-1 .confix .main-top .main-image3 img {
   width: 6vmax;
+}
+
+body main section.descrition-2 .confix {
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+body main section.descrition-2 .confix .introduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main section.descrition-2 .confix .introduce p {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+body main section.descrition-2 .confix .introduce img {
+  width: 5.5em;
+}
+
+body main section.descrition-2 .confix .vision {
+  margin-top: 5em;
+}
+
+body main section.descrition-2 .confix .vision h2 {
+  text-align: center;
+}
+
+body main section.descrition-2 .confix .vision p {
+  margin-top: 3em;
+  text-align: center;
+  font-weight: 500;
+}
+
+body main section.descrition-2 .confix .up-img2 {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

@@ -10,6 +10,7 @@
     <title>Myfortfolio 이동건</title>
     <link rel="stylesheet" href="./css/index.css"> <!-- css file -->
     <script src="./js/jquery.js"></script> <!-- js file -->
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <!-- <header>
@@ -35,20 +36,20 @@
                             <li>9</li>
                             <li>10</li>
                         </ul>
-                    </div>
+                    </div> <!-- num-motion -->
         
                     <div class="docty">
                         <ul>
                             <li>&lt;!DOCTYPE <span style="color: #5e92f3;">html</span>&gt;</li>
                             <li>&lt;html <span style="color: #5e92f3;">lang</span>="ko"&gt;</li>
                         </ul>
-                    </div>
+                    </div> <!-- docty -->
         
                     <div class="hello">
                         <div class="hello-left">&lt;HELLO&gt;</div>
                         <div class="hello-text">
-                            <p>"Hello, World!"</p>
-                            <p style="display: none;">"Hello, eveyone!"</p>
+                            <p id="text1">"Hello, World!"</p>
+                            <p id="text2">"Hello, eveyone!"</p>
                         </div>
                         <div class="balloon_triangle"></div>
                         <div class="hello-right">&lt;/HELLO&gt;</div>
@@ -60,94 +61,99 @@
                             <div style="display: inline-block;" class="image"></div>
                         </div>
                         <div class="its-right">&lt;/ITS_ME&gt;</div>
-                    </div> 
+                    </div> <!-- its-me -->
         
                     <div class="title">
                         <div class="title-left">&lt;TITLE&gt;</div>
                         <p>더 발전하기 위해 항상 노력하는<br>개발자 <span class="title-text">이동건</span>입니다.</p>
                         <div class="title-right">&lt;/TITLE&gt;</div>
-                    </div>
+                    </div> <!-- title -->
                     
-                    <div class="main-image1">
+                    <div class="main-image1"> <!-- 움직이는 풍선 이미지 -->
                         <img src="./images/space2.png" alt="space2">
                     </div>
-                    <div class="main-image2">
+
+                    <div class="main-image2"> <!-- 외계인손잡는 이미지 -->
                         <img src="./images/1.png" alt="img1">
                     </div>
-                    <div class="main-image3">
+
+                    <div class="main-image3"> <!-- 풍선 올라가는 이미지 -->
                         <img src="./images/2.png" alt="img2">
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </div> 
+                </div> <!-- main-top -->
+            </div> <!-- confix -->
+        </section> <!-- section1 종료 -->
 
         <section class="descrition-2">
-            <div>
-                <p>안녕하세요!<br>저를 소개하겠습니다.</p>
-                <img src="./images/3.png" alt="img3">
-            </div>
-
-            <div>
-                <h2>&lt;<span>VISION</span>&gt;</h2>
-                <p>
-                    어떤 업무를 맡더라도 책임감을 갖고 성실히 수행해 팀에 도움이 되는 사원이 되겠습니다!<br>
-                    변화와 다양성을 선호하고 겸손하며 기술에 자만하지 않고,<br>
-                    부족한 기량과 필요한 것들을 하나씩 채워 나가려 하는 사원이 되겠습니다!<br>
-                </p>
-            </div>
-
-            <div>
-                <img src="./images/4.png" alt="img4">
-            </div>
-            <div>
-                <h2>&lt;<span>INTRODUCTION</span>&gt;</h2>
-                <div>
-                    <ul>
-                        <li>
-                            &lt;PERSONAL&gt;
-                            <ol>
-                                <li><strong>Name</strong> : 이동건</li>
-                                <li><strong>Birthday</strong> : 1994.08.25</li>
-                            </ol>
-                        </li>
-                        <li>
-                            &lt;CONTACT&gt;
-                            <ol>
-                                <li><strong>Phone</strong> : 010 - 8958 - 9408</li>
-                                <li><strong>E-mail</strong> : compuer1@naver.com</li>
-                            </ol>
-                        </li>
-                        <li>
-                            &lt;EDUCATION&gt;
-                            <ol>
-                                <li><strong>High School</strong> : 성수공업고등학교</li>
-                                <li><strong>University</strong> : · 폴리텍 대학 정수 캠퍼스 그린에너지설비과 졸업</li>
-                                <li>· 한양사이버대학교 경제금융자산관리학과 재학</li>
-                            </ol>
-                        </li>
-                        <li>
-                            &lt;CAREER&gt;
-                            <ol>
-                                <li><strong>방송정보국제교육원</strong> : </li>
-                                <li>(스마트웹&콘텐츠개발)UI/UX기반웹퍼블리싱&프론트앤드 수료</li>
-                            </ol>
-                        </li>
-                    </ul>
-                </div>
+            <div class="confix">
+                <div class="introduce">
+                    <p>안녕하세요!<br>저를 소개하겠습니다.</p>
+                    <img src="./images/3.png" alt="img3">
+                </div> <!-- introduce -->
+    
+                <div class="vision">
+                    <h2>&lt;<span>VISION</span>&gt;</h2>
+                    <p>
+                        어떤 업무를 맡더라도 책임감을 갖고 성실히 수행해 팀에 도움이 되는 사원이 되겠습니다!<br>
+                        변화와 다양성을 선호하고 겸손하며 기술에 자만하지 않고,<br>
+                        부족한 기량과 필요한 것들을 하나씩 채워 나가려 하는 사원이 되겠습니다!<br>
+                    </p>
+                </div> <!-- vision -->
+    
+                <div> <!-- 풍선올라가는 이미지 -->
+                    <img src="./images/4.png" alt="img4" class="up-img2">
+                </div> 
 
                 <div>
-                    <div>&lt;PERSONAL&gt;</div>
+                    <h2>&lt;<span>INTRODUCTION</span>&gt;</h2>
                     <div>
-                        <img src="./images/ps.png" alt="포토샵">
-                        <img src="./images/HTML.png" alt="포토샵">
-                        <img src="./images/CSS.png" alt="포토샵">
-                        <img src="./images/JS.png" alt="포토샵">
-                        <img src="./images/SASS.png" alt="포토샵">
-                        <img src="./images/jQuery.png" alt="포토샵">
+                        <ul>
+                            <li>
+                                &lt;PERSONAL&gt;
+                                <ol>
+                                    <li><strong>Name</strong> : 이동건</li>
+                                    <li><strong>Birthday</strong> : 1994.08.25</li>
+                                </ol>
+                            </li>
+                            <li>
+                                &lt;CONTACT&gt;
+                                <ol>
+                                    <li><strong>Phone</strong> : 010 - 8958 - 9408</li>
+                                    <li><strong>E-mail</strong> : compuer1@naver.com</li>
+                                </ol>
+                            </li>
+                            <li>
+                                &lt;EDUCATION&gt;
+                                <ol>
+                                    <li><strong>High School</strong> : 성수공업고등학교</li>
+                                    <li><strong>University</strong> : · 폴리텍 대학 정수 캠퍼스 그린에너지설비과 졸업</li>
+                                    <li>· 한양사이버대학교 경제금융자산관리학과 재학</li>
+                                </ol>
+                            </li>
+                            <li>
+                                &lt;CAREER&gt;
+                                <ol>
+                                    <li><strong>방송정보국제교육원</strong> : </li>
+                                    <li>(스마트웹&콘텐츠개발)UI/UX기반웹퍼블리싱&프론트앤드 수료</li>
+                                </ol>
+                            </li>
+                        </ul>
                     </div>
+    
+                    <div>
+                        <div>&lt;PERSONAL&gt;</div>
+                        <div>
+                            <img src="./images/ps.png" alt="포토샵">
+                            <img src="./images/HTML.png" alt="포토샵">
+                            <img src="./images/CSS.png" alt="포토샵">
+                            <img src="./images/JS.png" alt="포토샵">
+                            <img src="./images/SASS.png" alt="포토샵">
+                            <img src="./images/jQuery.png" alt="포토샵">
+                        </div>
+                    </div>
+    
+                    <div>&lt;<span>/INTRODUCTION</span>&gt;</div>
                 </div>
-
-                <div>&lt;<span>/INTRODUCTION</span>&gt;</div>
             </div>
         </section>
         
