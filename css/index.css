@@ -156,8 +156,8 @@ body main section.descrition-1 .confix .main-top .hello .hello-text {
   border-radius: 10px;
   background-color: white;
   cursor: pointer;
-  -webkit-filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.7));
-          filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.7));
+  -webkit-filter: drop-shadow(3px 4px 1px rgba(255, 255, 255, 0.7));
+          filter: drop-shadow(3px 4px 1px rgba(255, 255, 255, 0.7));
 }
 
 @media screen and (min-width: 768px) {
@@ -204,8 +204,8 @@ body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
   border-top: solid 30px #fff;
   border-left: solid 15px transparent;
   border-right: solid 15px transparent;
-  -webkit-filter: drop-shadow(2px 4px 2px rgba(255, 255, 255, 0.7));
-          filter: drop-shadow(2px 4px 2px rgba(255, 255, 255, 0.7));
+  -webkit-filter: drop-shadow(1px 4px 1px rgba(255, 255, 255, 0.7));
+          filter: drop-shadow(1px 4px 1px rgba(255, 255, 255, 0.7));
   -webkit-transform: translate(-50%, 42%);
           transform: translate(-50%, 42%);
 }
@@ -283,6 +283,13 @@ body main section.descrition-1 .confix .main-top .its-me .its-images {
   }
 }
 
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .its-me .its-images {
+    width: 7vmax;
+    height: 7vmax;
+  }
+}
+
 body main section.descrition-1 .confix .main-top .its-me .its-images .image {
   width: 90px;
   height: 90px;
@@ -296,6 +303,13 @@ body main section.descrition-1 .confix .main-top .its-me .its-images .image {
   body main section.descrition-1 .confix .main-top .its-me .its-images .image {
     width: 12vmax;
     height: 12vmax;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .its-me .its-images .image {
+    width: 6.4vmax;
+    height: 6.4vmax;
   }
 }
 
@@ -416,10 +430,15 @@ body main section.descrition-1 .confix .main-top .main-image2 {
   body main section.descrition-1 .confix .main-top .main-image2 {
     display: block;
   }
+  body main section.descrition-1 .confix .main-top .main-image2 img {
+    width: 20vmax;
+  }
 }
 
-body main section.descrition-1 .confix .main-top .main-image2 img {
-  width: 20vmax;
+@media screen and (min-width: 1320px) {
+  body main section.descrition-1 .confix .main-top .main-image2 img {
+    width: 34vmin;
+  }
 }
 
 body main section.descrition-1 .confix .main-top .main-image3 {
@@ -438,7 +457,7 @@ body main section.descrition-1 .confix .main-top .main-image3 {
 }
 
 body main section.descrition-1 .confix .main-top .main-image3 img {
-  width: 6vmax;
+  width: 4vmax;
 }
 
 body main section.descrition-2 .confix {
@@ -467,11 +486,20 @@ body main section.descrition-2 .confix .introduce img {
 }
 
 body main section.descrition-2 .confix .vision {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 
 body main section.descrition-2 .confix .vision h2 {
   text-align: center;
+}
+
+body main section.descrition-2 .confix .vision h2 span {
+  font-size: 1.7em;
+  background: -webkit-gradient(linear, left top, right top, from(#55cc7c), to(#f5f97f));
+  background: linear-gradient(to right, #55cc7c, #f5f97f);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 body main section.descrition-2 .confix .vision p {
@@ -480,7 +508,42 @@ body main section.descrition-2 .confix .vision p {
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  body main section.descrition-2 .confix .vision p .br-none {
+    display: none;
+  }
+}
+
 body main section.descrition-2 .confix .up-img2 {
   display: none;
+}
+
+body main section.descrition-2 .confix .introduction {
+  margin-top: 4em;
+}
+
+body main section.descrition-2 .confix .introduction h2 {
+  text-align: left;
+}
+
+body main section.descrition-2 .confix .introduction h2 span {
+  font-size: 1.5em;
+  background: -webkit-gradient(linear, left top, right top, from(#19fff4), to(#aeffae));
+  background: linear-gradient(to right, #19fff4, #aeffae);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body main section.descrition-2 .confix .introduction .personal {
+  padding: 10px;
+  color: #000;
+  background-color: #e8f5e9;
+  -webkit-box-shadow: 2px 0 10px #fff;
+          box-shadow: 2px 0 10px #fff;
+}
+
+body main section.descrition-2 .confix .introduction .personal ul > li {
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */
