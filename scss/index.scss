@@ -289,16 +289,15 @@ body {
                         @include responsive(tablet-size) {
                             display: block;
                             img {
-                                width: 20vmax;
+                                width: 22vmax;
                             }
                         }
                         @include responsive(pc-size) {
                             img {
-                                width: 34vmin;
+                                width: 39vmin;
                             }
                         }
-
-                    }
+                    } // 외계인이랑 손잡는 이미지
 
                     .main-image3 {
                         position: absolute;
@@ -312,7 +311,7 @@ body {
                         img {
                             width: 4vmax;
                         }
-                    }
+                    } // 풍선 올라가는 이미지1
                 }
             }
         } //section.descrition-1 종료
@@ -357,6 +356,9 @@ body {
                                 display: none;
                             }
                         }
+                        @include responsive(pc-size) {
+                            font-size: 1.1em;
+                        }
                     }
                 }
 
@@ -371,24 +373,155 @@ body {
 
                     h2 {
                         text-align: left;
+                        margin-bottom: 0.5em;
+                        @include responsive(pc-size) {
+                            padding-left: 150px;
+                        }
                         span {
-                            font-size: 1.5em;
+                            font-size: 1.6em;
                             background: $int-text;
                             @include gradienttitle();
                         }
+                    } // introduction 상위 텍스트 종료
+
+                    .introduction-flex {
+                        
+                        width: 100%;
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            gap: 2em;
+                        }
+                        @include responsive(pc-size) {
+                            justify-content: center;
+                            gap: 4em;
+                        }
+
+                        // personal
+                        .personal {
+                            padding: 10px;
+                            border-radius: 5px;
+                            box-shadow: 0px 0px 7px #fff;
+                            color: #000;
+                            background-color: #e8f5e9;
+
+                            @include responsive(tablet-size) {
+                                width: 50%; height: 30em;
+                            }
+
+                            @include responsive(pc-size) {
+                                width: 35%;
+                            }
+                    
+                            ul {
+                                li {
+                                    .personal-text {
+                                        font-size: 1.4em;
+                                        margin-bottom: 5px;
+                                    }
+    
+                                    ol {
+                                        margin-bottom: 20px;
+    
+                                        li {
+                                            font-size: 1em;
+                                            text-align: justify;
+                                            line-height: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                        } // personal 종료
+                        
+                        // ability
+                        .ability {
+                            margin-top: 1.5em;
+                            padding: 10px;
+                            border-radius: 5px;
+                            box-shadow: 0px 0px 7px #fff;
+                            color: #000;
+                            background-color: #e8f5e9;
+                            @include responsive(tablet-size) {
+                                width: 50%;
+                                margin-top: 0;
+                            }
+                            @include responsive(pc-size) {
+                                width: 35%;
+                            }
+
+                            .ability-text {
+                                font-size: 1.4em;
+                                margin-bottom: 1em;
+                            }
+
+                            .skills-img {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-wrap: wrap;
+                                gap: 15px;
+
+                                @include responsive(tablet-size) {
+                                    img {
+                                        width: 19vmin;
+                                    }
+                                }
+                            }
+                        } // ability종료
+                    } // introduction-flex종료
+
+                    .introdoution-bottom {
+                        float: right;
+                        margin: 0.5em 0;
+                        @include responsive(pc-size) {
+                            padding-right: 149px;
+                        }
+                        span {
+                            font-size: 1.1em;
+                            background: $int-text;
+                            @include gradienttitle();
+                        }
+                    } // introdoution-bottom 종료
+                } // introduction 종료
+            } // confix
+        } // section.descrition-2 종료
+
+        section.descrition-3 {
+            margin: 5em 0;
+
+            .move-bg {
+                position: relative;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                .moving-ship {
+                    position: absolute;
+                    top: 0; left: 0;
+                    transform: translate(10%, 50%);
+                    @include responsive(tablet-size) {
+                        transform: translate(10%, 30%);
+                    }
+                    @include responsive(tablet-size) {
+                        transform: translate(10%, 40%);
                     }
 
-                    .personal {
-                        padding: 10px;
-                        color: #000;
-                        background-color: #e8f5e9;
-                        box-shadow: 2px 0 10px #fff;
-                        ul > li {
-                            padding-bottom: 20px;
+                    img {
+                        width: 9vw;
+
+                        @include responsive(tablet-size) {
+                            width: 13vw;
+                        }
+
+                        @include responsive(tablet-size) {
+                            width: 11vw;
                         }
                     }
                 }
             }
-        } // section.descrition-2 종료
+            
+        }
     } // main
 }

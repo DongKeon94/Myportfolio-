@@ -431,13 +431,13 @@ body main section.descrition-1 .confix .main-top .main-image2 {
     display: block;
   }
   body main section.descrition-1 .confix .main-top .main-image2 img {
-    width: 20vmax;
+    width: 22vmax;
   }
 }
 
 @media screen and (min-width: 1320px) {
   body main section.descrition-1 .confix .main-top .main-image2 img {
-    width: 34vmin;
+    width: 39vmin;
   }
 }
 
@@ -514,6 +514,12 @@ body main section.descrition-2 .confix .vision p {
   }
 }
 
+@media screen and (min-width: 1320px) {
+  body main section.descrition-2 .confix .vision p {
+    font-size: 1.1em;
+  }
+}
+
 body main section.descrition-2 .confix .up-img2 {
   display: none;
 }
@@ -524,10 +530,17 @@ body main section.descrition-2 .confix .introduction {
 
 body main section.descrition-2 .confix .introduction h2 {
   text-align: left;
+  margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-2 .confix .introduction h2 {
+    padding-left: 150px;
+  }
 }
 
 body main section.descrition-2 .confix .introduction h2 span {
-  font-size: 1.5em;
+  font-size: 1.6em;
   background: -webkit-gradient(linear, left top, right top, from(#19fff4), to(#aeffae));
   background: linear-gradient(to right, #19fff4, #aeffae);
   -webkit-text-fill-color: transparent;
@@ -535,15 +548,183 @@ body main section.descrition-2 .confix .introduction h2 span {
   background-clip: text;
 }
 
-body main section.descrition-2 .confix .introduction .personal {
-  padding: 10px;
-  color: #000;
-  background-color: #e8f5e9;
-  -webkit-box-shadow: 2px 0 10px #fff;
-          box-shadow: 2px 0 10px #fff;
+body main section.descrition-2 .confix .introduction .introduction-flex {
+  width: 100%;
 }
 
-body main section.descrition-2 .confix .introduction .personal ul > li {
-  padding-bottom: 20px;
+@media screen and (min-width: 768px) {
+  body main section.descrition-2 .confix .introduction .introduction-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-2 .confix .introduction .introduction-flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 4em;
+  }
+}
+
+body main section.descrition-2 .confix .introduction .introduction-flex .personal {
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 7px #fff;
+          box-shadow: 0px 0px 7px #fff;
+  color: #000;
+  background-color: #e8f5e9;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-2 .confix .introduction .introduction-flex .personal {
+    width: 50%;
+    height: 30em;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-2 .confix .introduction .introduction-flex .personal {
+    width: 35%;
+  }
+}
+
+body main section.descrition-2 .confix .introduction .introduction-flex .personal ul li .personal-text {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+
+body main section.descrition-2 .confix .introduction .introduction-flex .personal ul li ol {
+  margin-bottom: 20px;
+}
+
+body main section.descrition-2 .confix .introduction .introduction-flex .personal ul li ol li {
+  font-size: 1em;
+  text-align: justify;
+  line-height: 20px;
+}
+
+body main section.descrition-2 .confix .introduction .introduction-flex .ability {
+  margin-top: 1.5em;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 7px #fff;
+          box-shadow: 0px 0px 7px #fff;
+  color: #000;
+  background-color: #e8f5e9;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-2 .confix .introduction .introduction-flex .ability {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-2 .confix .introduction .introduction-flex .ability {
+    width: 35%;
+  }
+}
+
+body main section.descrition-2 .confix .introduction .introduction-flex .ability .ability-text {
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+body main section.descrition-2 .confix .introduction .introduction-flex .ability .skills-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-2 .confix .introduction .introduction-flex .ability .skills-img img {
+    width: 19vmin;
+  }
+}
+
+body main section.descrition-2 .confix .introduction .introdoution-bottom {
+  float: right;
+  margin: 0.5em 0;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.descrition-2 .confix .introduction .introdoution-bottom {
+    padding-right: 149px;
+  }
+}
+
+body main section.descrition-2 .confix .introduction .introdoution-bottom span {
+  font-size: 1.1em;
+  background: -webkit-gradient(linear, left top, right top, from(#19fff4), to(#aeffae));
+  background: linear-gradient(to right, #19fff4, #aeffae);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body main section.descrition-3 {
+  margin: 5em 0;
+}
+
+body main section.descrition-3 .move-bg {
+  position: relative;
+  width: 100%;
+}
+
+body main section.descrition-3 .move-bg img {
+  width: 100%;
+}
+
+body main section.descrition-3 .move-bg .moving-ship {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(10%, 50%);
+          transform: translate(10%, 50%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-3 .move-bg .moving-ship {
+    -webkit-transform: translate(10%, 30%);
+            transform: translate(10%, 30%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-3 .move-bg .moving-ship {
+    -webkit-transform: translate(10%, 40%);
+            transform: translate(10%, 40%);
+  }
+}
+
+body main section.descrition-3 .move-bg .moving-ship img {
+  width: 9vw;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-3 .move-bg .moving-ship img {
+    width: 13vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body main section.descrition-3 .move-bg .moving-ship img {
+    width: 11vw;
+  }
 }
 /*# sourceMappingURL=index.css.map */
