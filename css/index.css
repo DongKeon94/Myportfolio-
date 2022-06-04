@@ -437,7 +437,7 @@ body main section.description-1 .confix .main-top .main-image2 {
 
 @media screen and (min-width: 1320px) {
   body main section.description-1 .confix .main-top .main-image2 img {
-    width: 39vmin;
+    width: 38vmin;
   }
 }
 
@@ -728,6 +728,10 @@ body main section.description-3 .move-bg .moving-ship img {
   }
 }
 
+body main section.description-4 {
+  margin-bottom: 10em;
+}
+
 body main section.description-4 .confix {
   padding-top: 2%;
   padding-left: 4%;
@@ -759,10 +763,10 @@ body main section.description-4 .confix .direction-text h2 span {
 }
 
 body main section.description-4 .confix .direction-text img {
-  width: 3em;
-  padding-left: 10px;
-  -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  width: 2.5em;
+  margin-left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 body main section.description-4 .confix .direction-box .coding-box > img {
@@ -773,14 +777,105 @@ body main section.description-4 .confix .direction-box .coding-box .coding-box-t
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 1em;
 }
 
 body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox img {
-  width: 25px;
-  height: 25px;
+  width: 23px;
+  height: 23px;
+  margin-right: 0.6em;
+  -webkit-transform: translateY(22%);
+          transform: translateY(22%);
 }
 
 body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox .coding-box-text {
-  width: 90%;
+  margin-bottom: 3em;
+}
+
+body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox .coding-box-text h2 {
+  margin-bottom: 20px;
+}
+
+body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox .coding-box-text p {
+  font-size: 0.9em;
+}
+
+body main section.description-4 .confix .direction-bottom {
+  float: right;
+}
+
+body main section.description-4 .confix .direction-bottom span {
+  font-size: 1.1em;
+  background: -webkit-gradient(linear, left top, right top, from(#7530e3), to(#e1afcc));
+  background: linear-gradient(to right, #7530e3, #e1afcc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body main section.description-5 {
+  clear: both;
+  background-color: #656565;
+}
+
+body main section.description-5 .confix {
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+body main section.description-5 .confix .portfolio-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+body main section.description-5 .confix .portfolio-text h2 {
+  text-align: left;
+}
+
+body main section.description-5 .confix .portfolio-text h2 span {
+  font-size: 1.6em;
+  background: -webkit-gradient(linear, left top, right top, from(#f83600), to(#facc22));
+  background: linear-gradient(to right, #f83600, #facc22);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body main section.description-5 .confix .portfolio-text img {
+  width: 3.5em;
+  margin-left: 20px;
+  -webkit-transform: translateY(-40%);
+          transform: translateY(-40%);
+}
+
+body main section.description-5 .confix .portfolio-box {
+  width: 100%;
+}
+
+body main section.description-5 .confix .portfolio-box img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+body main section.description-5 .confix .portfolio-box .portfolio-text-box h3 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+}
+
+body main section.description-5 .confix .portfolio-box .portfolio-text-box p span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: red;
 }
 /*# sourceMappingURL=index.css.map */

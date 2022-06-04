@@ -263,7 +263,7 @@ body {
                                 transform: translate(60%, 80%);
                             }
                         }
-                    }
+                    }// TITLE 종료
 
                     // 회전하는 우주이미지
                     .main-image1 {
@@ -279,6 +279,7 @@ body {
                         }
                     }
 
+                    // 외계인이랑 손잡는 이미지
                     .main-image2 {
                         position: absolute;
                         bottom: 0; left: 0;
@@ -294,11 +295,12 @@ body {
                         }
                         @include responsive(pc-size) {
                             img {
-                                width: 39vmin;
+                                width: 38vmin;
                             }
                         }
-                    } // 외계인이랑 손잡는 이미지
+                    } 
 
+                    // 풍선 올라가는 이미지1
                     .main-image3 {
                         position: absolute;
                         bottom: 0; right: 0;
@@ -311,7 +313,7 @@ body {
                         img {
                             width: 4vmax;
                         }
-                    } // 풍선 올라가는 이미지1
+                    } 
                 }
             }
         } // section.description-1 종료
@@ -371,6 +373,7 @@ body {
                 .introduction {
                     margin-top: 4em;
 
+                    // <introduction> 상위 텍스트
                     h2 {
                         text-align: left;
                         margin-bottom: 0.5em;
@@ -382,7 +385,7 @@ body {
                             background: $int-text;
                             @include gradienttitle();
                         }
-                    } // introduction 상위 텍스트 종료
+                    } 
 
                     .introduction-flex {
                         
@@ -470,6 +473,7 @@ body {
                         } // ability종료
                     } // introduction-flex종료
 
+                    // </introdoution> 하위 텍스트
                     .introdoution-bottom {
                         float: right;
                         margin: 0.5em 0;
@@ -481,7 +485,8 @@ body {
                             background: $int-text;
                             @include gradienttitle();
                         }
-                    } // introdoution-bottom 종료
+                    } 
+
                 } // introduction 종료
             } // confix
         } // section.description-2 종료
@@ -524,6 +529,7 @@ body {
         } // section.description-3 종료
 
         section.description-4 {
+            margin-bottom: 10em;
             .confix {
                 @include padding-set();
                 @include confix();
@@ -532,6 +538,7 @@ body {
                     display: flex;
                     width: 100%;
 
+                    // <direction> 상위 텍스트
                     h2 {
                         text-align: left;
                         
@@ -540,15 +547,16 @@ body {
                             background: $dire-text;
                             @include gradienttitle();
                         }
-                    } // direction 상위 텍스트 종료
+                    } 
 
                     img {
-                        width: 3em;
-                        padding-left: 10px;
-                        transform: translateY(-45%);
+                        width: 2.5em;
+                        margin-left: 20px;
+                        transform: translateY(-50%);
                     }
                 } // direction-text 종료
 
+                // direction의 코딩 박스
                 .direction-box {
 
                     .coding-box {
@@ -558,18 +566,95 @@ body {
 
                         .coding-box-textbox {
                             display: flex;
+                            margin-top: 1em;
 
                             img {
-                                width: 25px;
-                                height: 25px;
+                                width: 23px; height: 23px;
+                                margin-right: 0.6em;
+                                transform: translateY(22%);
                             }
                             .coding-box-text{
-                                width: 90%;
+                                margin-bottom: 3em;
+                                h2 {
+                                    margin-bottom: 20px;
+                                }
+                                p { 
+                                    font-size: 0.9em;
+                                }
                             }
                         }
-                    } // coding-box종료
+                    } 
                 }// direction-box 종료
+
+                // </direction> 하위 텍스트
+                .direction-bottom {
+                    float: right;
+
+                    span {
+                        font-size: 1.1em;
+                        background: $dire-text;
+                        @include gradienttitle();
+                    }
+                } 
+
             } // confix 종료
         } // section.description-4 종료
+
+        section.description-5 {
+            clear: both;
+            background-color: #656565;
+            .confix {
+                @include padding-set();
+                @include confix();
+
+                .portfolio-text {
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 5em;
+                    // <portfolio> 상위 텍스트
+                    h2 {
+                        text-align: left;
+                        
+                        span {
+                            font-size: 1.6em;
+                            background: $port-text;
+                            @include gradienttitle();
+                        }
+                    } 
+
+                    img {
+                        width: 3.5em;
+                        margin-left: 20px;
+                        transform: translateY(-40%);
+                    }
+                } // direction-text 종료
+
+                .portfolio-box {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+
+                    .portfolio-text-box {
+                        h3 {
+                            font-size: 1.3em;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            span {
+                                display: inline-block;
+                                width: 10px; height: 10px;
+                                margin-left: 5px;
+                                border-radius: 50%;
+                                background-color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     } // main
 }
