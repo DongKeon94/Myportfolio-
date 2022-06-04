@@ -15,7 +15,7 @@ body {
     
     main {
 
-        section.descrition-1 {
+        section.description-1 {
             overflow: hidden;
 
             .banner-img {
@@ -314,9 +314,9 @@ body {
                     } // 풍선 올라가는 이미지1
                 }
             }
-        } //section.descrition-1 종료
+        } // section.description-1 종료
         
-        section.descrition-2 {
+        section.description-2 {
             .confix {
                 @include padding-set();
                 @include confix();
@@ -484,9 +484,9 @@ body {
                     } // introdoution-bottom 종료
                 } // introduction 종료
             } // confix
-        } // section.descrition-2 종료
+        } // section.description-2 종료
 
-        section.descrition-3 {
+        section.description-3 {
             margin: 5em 0;
 
             .move-bg {
@@ -519,9 +519,57 @@ body {
                             width: 11vw;
                         }
                     }
-                }
-            }
-            
-        }
+                } // moving-ship 종료
+            } // move-bg 종료
+        } // section.description-3 종료
+
+        section.description-4 {
+            .confix {
+                @include padding-set();
+                @include confix();
+
+                .direction-text {
+                    display: flex;
+                    width: 100%;
+
+                    h2 {
+                        text-align: left;
+                        
+                        span {
+                            font-size: 1.6em;
+                            background: $dire-text;
+                            @include gradienttitle();
+                        }
+                    } // direction 상위 텍스트 종료
+
+                    img {
+                        width: 3em;
+                        padding-left: 10px;
+                        transform: translateY(-45%);
+                    }
+                } // direction-text 종료
+
+                .direction-box {
+
+                    .coding-box {
+                        > img {
+                            width: 100%;
+                        }
+
+                        .coding-box-textbox {
+                            display: flex;
+
+                            img {
+                                width: 25px;
+                                height: 25px;
+                            }
+                            .coding-box-text{
+                                width: 90%;
+                            }
+                        }
+                    } // coding-box종료
+                }// direction-box 종료
+            } // confix 종료
+        } // section.description-4 종료
     } // main
 }

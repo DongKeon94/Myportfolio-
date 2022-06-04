@@ -49,11 +49,11 @@ body {
   background-color: #000;
 }
 
-body main section.descrition-1 {
+body main section.description-1 {
   overflow: hidden;
 }
 
-body main section.descrition-1 .banner-img {
+body main section.description-1 .banner-img {
   display: block;
   width: 100%;
   position: absolute;
@@ -62,12 +62,12 @@ body main section.descrition-1 .banner-img {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .banner-img {
+  body main section.description-1 .banner-img {
     padding-top: 0;
   }
 }
 
-body main section.descrition-1 .confix .main-top {
+body main section.description-1 .confix .main-top {
   padding-top: 2%;
   padding-left: 4%;
   padding-right: 4%;
@@ -79,56 +79,56 @@ body main section.descrition-1 .confix .main-top {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top {
+  body main section.description-1 .confix .main-top {
     height: 780px;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top {
+  body main section.description-1 .confix .main-top {
     height: 980px;
   }
 }
 
-body main section.descrition-1 .confix .main-top .num-motion {
+body main section.description-1 .confix .main-top .num-motion {
   position: absolute;
   left: 3%;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .num-motion {
+  body main section.description-1 .confix .main-top .num-motion {
     font-size: 3vmin;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .num-motion {
+  body main section.description-1 .confix .main-top .num-motion {
     height: 900px;
     line-height: 36px;
   }
 }
 
-body main section.descrition-1 .confix .main-top .docty {
+body main section.description-1 .confix .main-top .docty {
   position: absolute;
   left: 10%;
   color: #003c8f;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .docty {
+  body main section.description-1 .confix .main-top .docty {
     font-size: 3vmin;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .docty {
+  body main section.description-1 .confix .main-top .docty {
     height: 900px;
     line-height: 36px;
   }
 }
 
-body main section.descrition-1 .confix .main-top .hello {
+body main section.description-1 .confix .main-top .hello {
   position: absolute;
   top: 18%;
   left: 50%;
@@ -136,7 +136,7 @@ body main section.descrition-1 .confix .main-top .hello {
           transform: translateX(-50%);
 }
 
-body main section.descrition-1 .confix .main-top .hello .hello-left {
+body main section.description-1 .confix .main-top .hello .hello-left {
   font-size: 0.9em;
   color: #b6c017;
   -webkit-transform: translateY(-1px);
@@ -144,12 +144,12 @@ body main section.descrition-1 .confix .main-top .hello .hello-left {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .hello .hello-left {
+  body main section.description-1 .confix .main-top .hello .hello-left {
     font-size: 2.5vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .hello .hello-text {
+body main section.description-1 .confix .main-top .hello .hello-text {
   width: 250px;
   height: 60px;
   line-height: 60px;
@@ -161,7 +161,7 @@ body main section.descrition-1 .confix .main-top .hello .hello-text {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .hello .hello-text {
+  body main section.description-1 .confix .main-top .hello .hello-text {
     width: 40vmax;
     height: 10vmin;
     line-height: 10vmin;
@@ -169,32 +169,32 @@ body main section.descrition-1 .confix .main-top .hello .hello-text {
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .hello .hello-text {
+  body main section.description-1 .confix .main-top .hello .hello-text {
     width: 35vmax;
     height: 11vmin;
     line-height: 11vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .hello .hello-text p {
+body main section.description-1 .confix .main-top .hello .hello-text p {
   font-size: 1.4em;
   text-align: center;
   color: #333;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .hello .hello-text p {
+  body main section.description-1 .confix .main-top .hello .hello-text p {
     font-size: 3vw;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .hello .hello-text p {
+  body main section.description-1 .confix .main-top .hello .hello-text p {
     font-size: 2.5vw;
   }
 }
 
-body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
+body main section.description-1 .confix .main-top .hello .balloon_triangle {
   position: absolute;
   bottom: 0%;
   left: 50%;
@@ -211,7 +211,7 @@ body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
+  body main section.description-1 .confix .main-top .hello .balloon_triangle {
     border-top: solid 50px #fff;
     border-left: solid 25px transparent;
     border-right: solid 25px transparent;
@@ -221,7 +221,7 @@ body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
+  body main section.description-1 .confix .main-top .hello .balloon_triangle {
     border-top: solid 70px #fff;
     border-left: solid 35px transparent;
     border-right: solid 35px transparent;
@@ -230,7 +230,7 @@ body main section.descrition-1 .confix .main-top .hello .balloon_triangle {
   }
 }
 
-body main section.descrition-1 .confix .main-top .hello .hello-right {
+body main section.description-1 .confix .main-top .hello .hello-right {
   float: right;
   font-size: 0.9em;
   color: #b6c017;
@@ -239,12 +239,12 @@ body main section.descrition-1 .confix .main-top .hello .hello-right {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .hello .hello-right {
+  body main section.description-1 .confix .main-top .hello .hello-right {
     font-size: 2.5vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .its-me {
+body main section.description-1 .confix .main-top .its-me {
   position: absolute;
   top: 42%;
   left: 50%;
@@ -252,7 +252,7 @@ body main section.descrition-1 .confix .main-top .its-me {
           transform: translateX(-50%);
 }
 
-body main section.descrition-1 .confix .main-top .its-me .its-left {
+body main section.description-1 .confix .main-top .its-me .its-left {
   position: absolute;
   top: 0;
   left: 0;
@@ -263,12 +263,12 @@ body main section.descrition-1 .confix .main-top .its-me .its-left {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .its-me .its-left {
+  body main section.description-1 .confix .main-top .its-me .its-left {
     font-size: 2.5vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .its-me .its-images {
+body main section.description-1 .confix .main-top .its-me .its-images {
   width: 100px;
   height: 100px;
   text-align: center;
@@ -277,20 +277,20 @@ body main section.descrition-1 .confix .main-top .its-me .its-images {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .its-me .its-images {
+  body main section.description-1 .confix .main-top .its-me .its-images {
     width: 13vmax;
     height: 13vmax;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .its-me .its-images {
+  body main section.description-1 .confix .main-top .its-me .its-images {
     width: 7vmax;
     height: 7vmax;
   }
 }
 
-body main section.descrition-1 .confix .main-top .its-me .its-images .image {
+body main section.description-1 .confix .main-top .its-me .its-images .image {
   width: 90px;
   height: 90px;
   border-radius: 100%;
@@ -300,20 +300,20 @@ body main section.descrition-1 .confix .main-top .its-me .its-images .image {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .its-me .its-images .image {
+  body main section.description-1 .confix .main-top .its-me .its-images .image {
     width: 12vmax;
     height: 12vmax;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .its-me .its-images .image {
+  body main section.description-1 .confix .main-top .its-me .its-images .image {
     width: 6.4vmax;
     height: 6.4vmax;
   }
 }
 
-body main section.descrition-1 .confix .main-top .its-me .its-right {
+body main section.description-1 .confix .main-top .its-me .its-right {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -324,12 +324,12 @@ body main section.descrition-1 .confix .main-top .its-me .its-right {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .its-me .its-right {
+  body main section.description-1 .confix .main-top .its-me .its-right {
     font-size: 2.5vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .title {
+body main section.description-1 .confix .main-top .title {
   position: absolute;
   top: 70%;
   left: 50%;
@@ -337,7 +337,7 @@ body main section.descrition-1 .confix .main-top .title {
           transform: translateX(-50%);
 }
 
-body main section.descrition-1 .confix .main-top .title .title-left {
+body main section.description-1 .confix .main-top .title .title-left {
   font-size: 0.9em;
   color: #ab47bc;
   -webkit-transform: translateX(-20%);
@@ -345,34 +345,34 @@ body main section.descrition-1 .confix .main-top .title .title-left {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .title .title-left {
+  body main section.description-1 .confix .main-top .title .title-left {
     font-size: 2.5vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .title p {
+body main section.description-1 .confix .main-top .title p {
   font-size: 1em;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .title p {
+  body main section.description-1 .confix .main-top .title p {
     font-size: 2.8vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .title p .title-text {
+body main section.description-1 .confix .main-top .title p .title-text {
   font-size: 1.3em;
   font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .title p .title-text {
+  body main section.description-1 .confix .main-top .title p .title-text {
     font-size: 3.6vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .title .title-right {
+body main section.description-1 .confix .main-top .title .title-right {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -383,7 +383,7 @@ body main section.descrition-1 .confix .main-top .title .title-right {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .title .title-right {
+  body main section.description-1 .confix .main-top .title .title-right {
     font-size: 2.5vmin;
     -webkit-transform: translate(50%, 80%);
             transform: translate(50%, 80%);
@@ -391,14 +391,14 @@ body main section.descrition-1 .confix .main-top .title .title-right {
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .title .title-right {
+  body main section.description-1 .confix .main-top .title .title-right {
     font-size: 2.5vmin;
     -webkit-transform: translate(60%, 80%);
             transform: translate(60%, 80%);
   }
 }
 
-body main section.descrition-1 .confix .main-top .main-image1 {
+body main section.description-1 .confix .main-top .main-image1 {
   float: right;
   width: 35%;
   -webkit-transform: translate(67%, -60%);
@@ -406,17 +406,17 @@ body main section.descrition-1 .confix .main-top .main-image1 {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .main-image1 {
+  body main section.description-1 .confix .main-top .main-image1 {
     -webkit-transform: translate(57%, -65%);
             transform: translate(57%, -65%);
   }
 }
 
-body main section.descrition-1 .confix .main-top .main-image1 img {
+body main section.description-1 .confix .main-top .main-image1 img {
   width: 100%;
 }
 
-body main section.descrition-1 .confix .main-top .main-image2 {
+body main section.description-1 .confix .main-top .main-image2 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -427,21 +427,21 @@ body main section.descrition-1 .confix .main-top .main-image2 {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .main-image2 {
+  body main section.description-1 .confix .main-top .main-image2 {
     display: block;
   }
-  body main section.descrition-1 .confix .main-top .main-image2 img {
+  body main section.description-1 .confix .main-top .main-image2 img {
     width: 22vmax;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-1 .confix .main-top .main-image2 img {
+  body main section.description-1 .confix .main-top .main-image2 img {
     width: 39vmin;
   }
 }
 
-body main section.descrition-1 .confix .main-top .main-image3 {
+body main section.description-1 .confix .main-top .main-image3 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -451,16 +451,16 @@ body main section.descrition-1 .confix .main-top .main-image3 {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-1 .confix .main-top .main-image3 {
+  body main section.description-1 .confix .main-top .main-image3 {
     display: block;
   }
 }
 
-body main section.descrition-1 .confix .main-top .main-image3 img {
+body main section.description-1 .confix .main-top .main-image3 img {
   width: 4vmax;
 }
 
-body main section.descrition-2 .confix {
+body main section.description-2 .confix {
   padding-top: 2%;
   padding-left: 4%;
   padding-right: 4%;
@@ -470,30 +470,30 @@ body main section.descrition-2 .confix {
   margin: 0 auto;
 }
 
-body main section.descrition-2 .confix .introduce {
+body main section.description-2 .confix .introduce {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body main section.descrition-2 .confix .introduce p {
+body main section.description-2 .confix .introduce p {
   font-weight: bold;
   font-size: 1.1em;
 }
 
-body main section.descrition-2 .confix .introduce img {
+body main section.description-2 .confix .introduce img {
   width: 5.5em;
 }
 
-body main section.descrition-2 .confix .vision {
+body main section.description-2 .confix .vision {
   margin-top: 4em;
 }
 
-body main section.descrition-2 .confix .vision h2 {
+body main section.description-2 .confix .vision h2 {
   text-align: center;
 }
 
-body main section.descrition-2 .confix .vision h2 span {
+body main section.description-2 .confix .vision h2 span {
   font-size: 1.7em;
   background: -webkit-gradient(linear, left top, right top, from(#55cc7c), to(#f5f97f));
   background: linear-gradient(to right, #55cc7c, #f5f97f);
@@ -502,44 +502,44 @@ body main section.descrition-2 .confix .vision h2 span {
   background-clip: text;
 }
 
-body main section.descrition-2 .confix .vision p {
+body main section.description-2 .confix .vision p {
   margin-top: 3em;
   text-align: center;
   font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-2 .confix .vision p .br-none {
+  body main section.description-2 .confix .vision p .br-none {
     display: none;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-2 .confix .vision p {
+  body main section.description-2 .confix .vision p {
     font-size: 1.1em;
   }
 }
 
-body main section.descrition-2 .confix .up-img2 {
+body main section.description-2 .confix .up-img2 {
   display: none;
 }
 
-body main section.descrition-2 .confix .introduction {
+body main section.description-2 .confix .introduction {
   margin-top: 4em;
 }
 
-body main section.descrition-2 .confix .introduction h2 {
+body main section.description-2 .confix .introduction h2 {
   text-align: left;
   margin-bottom: 0.5em;
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-2 .confix .introduction h2 {
+  body main section.description-2 .confix .introduction h2 {
     padding-left: 150px;
   }
 }
 
-body main section.descrition-2 .confix .introduction h2 span {
+body main section.description-2 .confix .introduction h2 span {
   font-size: 1.6em;
   background: -webkit-gradient(linear, left top, right top, from(#19fff4), to(#aeffae));
   background: linear-gradient(to right, #19fff4, #aeffae);
@@ -548,12 +548,12 @@ body main section.descrition-2 .confix .introduction h2 span {
   background-clip: text;
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex {
+body main section.description-2 .confix .introduction .introduction-flex {
   width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-2 .confix .introduction .introduction-flex {
+  body main section.description-2 .confix .introduction .introduction-flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -562,7 +562,7 @@ body main section.descrition-2 .confix .introduction .introduction-flex {
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-2 .confix .introduction .introduction-flex {
+  body main section.description-2 .confix .introduction .introduction-flex {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -570,7 +570,7 @@ body main section.descrition-2 .confix .introduction .introduction-flex {
   }
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex .personal {
+body main section.description-2 .confix .introduction .introduction-flex .personal {
   padding: 10px;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 7px #fff;
@@ -580,34 +580,34 @@ body main section.descrition-2 .confix .introduction .introduction-flex .persona
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-2 .confix .introduction .introduction-flex .personal {
+  body main section.description-2 .confix .introduction .introduction-flex .personal {
     width: 50%;
     height: 30em;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-2 .confix .introduction .introduction-flex .personal {
+  body main section.description-2 .confix .introduction .introduction-flex .personal {
     width: 35%;
   }
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex .personal ul li .personal-text {
+body main section.description-2 .confix .introduction .introduction-flex .personal ul li .personal-text {
   font-size: 1.4em;
   margin-bottom: 5px;
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex .personal ul li ol {
+body main section.description-2 .confix .introduction .introduction-flex .personal ul li ol {
   margin-bottom: 20px;
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex .personal ul li ol li {
+body main section.description-2 .confix .introduction .introduction-flex .personal ul li ol li {
   font-size: 1em;
   text-align: justify;
   line-height: 20px;
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex .ability {
+body main section.description-2 .confix .introduction .introduction-flex .ability {
   margin-top: 1.5em;
   padding: 10px;
   border-radius: 5px;
@@ -618,24 +618,24 @@ body main section.descrition-2 .confix .introduction .introduction-flex .ability
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-2 .confix .introduction .introduction-flex .ability {
+  body main section.description-2 .confix .introduction .introduction-flex .ability {
     width: 50%;
     margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-2 .confix .introduction .introduction-flex .ability {
+  body main section.description-2 .confix .introduction .introduction-flex .ability {
     width: 35%;
   }
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex .ability .ability-text {
+body main section.description-2 .confix .introduction .introduction-flex .ability .ability-text {
   font-size: 1.4em;
   margin-bottom: 1em;
 }
 
-body main section.descrition-2 .confix .introduction .introduction-flex .ability .skills-img {
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills-img {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,23 +652,23 @@ body main section.descrition-2 .confix .introduction .introduction-flex .ability
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-2 .confix .introduction .introduction-flex .ability .skills-img img {
+  body main section.description-2 .confix .introduction .introduction-flex .ability .skills-img img {
     width: 19vmin;
   }
 }
 
-body main section.descrition-2 .confix .introduction .introdoution-bottom {
+body main section.description-2 .confix .introduction .introdoution-bottom {
   float: right;
   margin: 0.5em 0;
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.descrition-2 .confix .introduction .introdoution-bottom {
+  body main section.description-2 .confix .introduction .introdoution-bottom {
     padding-right: 149px;
   }
 }
 
-body main section.descrition-2 .confix .introduction .introdoution-bottom span {
+body main section.description-2 .confix .introduction .introdoution-bottom span {
   font-size: 1.1em;
   background: -webkit-gradient(linear, left top, right top, from(#19fff4), to(#aeffae));
   background: linear-gradient(to right, #19fff4, #aeffae);
@@ -677,20 +677,20 @@ body main section.descrition-2 .confix .introduction .introdoution-bottom span {
   background-clip: text;
 }
 
-body main section.descrition-3 {
+body main section.description-3 {
   margin: 5em 0;
 }
 
-body main section.descrition-3 .move-bg {
+body main section.description-3 .move-bg {
   position: relative;
   width: 100%;
 }
 
-body main section.descrition-3 .move-bg img {
+body main section.description-3 .move-bg img {
   width: 100%;
 }
 
-body main section.descrition-3 .move-bg .moving-ship {
+body main section.description-3 .move-bg .moving-ship {
   position: absolute;
   top: 0;
   left: 0;
@@ -699,32 +699,88 @@ body main section.descrition-3 .move-bg .moving-ship {
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-3 .move-bg .moving-ship {
+  body main section.description-3 .move-bg .moving-ship {
     -webkit-transform: translate(10%, 30%);
             transform: translate(10%, 30%);
   }
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-3 .move-bg .moving-ship {
+  body main section.description-3 .move-bg .moving-ship {
     -webkit-transform: translate(10%, 40%);
             transform: translate(10%, 40%);
   }
 }
 
-body main section.descrition-3 .move-bg .moving-ship img {
+body main section.description-3 .move-bg .moving-ship img {
   width: 9vw;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-3 .move-bg .moving-ship img {
+  body main section.description-3 .move-bg .moving-ship img {
     width: 13vw;
   }
 }
 
 @media screen and (min-width: 768px) {
-  body main section.descrition-3 .move-bg .moving-ship img {
+  body main section.description-3 .move-bg .moving-ship img {
     width: 11vw;
   }
+}
+
+body main section.description-4 .confix {
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+body main section.description-4 .confix .direction-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+body main section.description-4 .confix .direction-text h2 {
+  text-align: left;
+}
+
+body main section.description-4 .confix .direction-text h2 span {
+  font-size: 1.6em;
+  background: -webkit-gradient(linear, left top, right top, from(#7530e3), to(#e1afcc));
+  background: linear-gradient(to right, #7530e3, #e1afcc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body main section.description-4 .confix .direction-text img {
+  width: 3em;
+  padding-left: 10px;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+}
+
+body main section.description-4 .confix .direction-box .coding-box > img {
+  width: 100%;
+}
+
+body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox img {
+  width: 25px;
+  height: 25px;
+}
+
+body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox .coding-box-text {
+  width: 90%;
 }
 /*# sourceMappingURL=index.css.map */
