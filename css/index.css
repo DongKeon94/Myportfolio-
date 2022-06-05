@@ -431,7 +431,7 @@ body main section.description-1 .confix .main-top .main-image2 {
     display: block;
   }
   body main section.description-1 .confix .main-top .main-image2 img {
-    width: 22vmax;
+    width: 20vmax;
   }
 }
 
@@ -718,12 +718,6 @@ body main section.description-3 .move-bg .moving-ship img {
 
 @media screen and (min-width: 768px) {
   body main section.description-3 .move-bg .moving-ship img {
-    width: 13vw;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  body main section.description-3 .move-bg .moving-ship img {
     width: 11vw;
   }
 }
@@ -749,6 +743,12 @@ body main section.description-4 .confix .direction-text {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  body main section.description-4 .confix .direction-text {
+    margin-bottom: 5em;
+  }
+}
+
 body main section.description-4 .confix .direction-text h2 {
   text-align: left;
 }
@@ -769,8 +769,29 @@ body main section.description-4 .confix .direction-text img {
           transform: translateY(-50%);
 }
 
+@media screen and (min-width: 768px) {
+  body main section.description-4 .confix .direction-box .coding-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 6em;
+  }
+}
+
 body main section.description-4 .confix .direction-box .coding-box > img {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-4 .confix .direction-box .coding-box > img {
+    width: 41vmin;
+  }
 }
 
 body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox {
@@ -778,6 +799,13 @@ body main section.description-4 .confix .direction-box .coding-box .coding-box-t
   display: -ms-flexbox;
   display: flex;
   margin-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox {
+    width: 32%;
+    margin-left: 2em;
+  }
 }
 
 body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox img {
@@ -794,10 +822,12 @@ body main section.description-4 .confix .direction-box .coding-box .coding-box-t
 
 body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox .coding-box-text h2 {
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox .coding-box-text p {
   font-size: 0.9em;
+  text-align: justify;
 }
 
 body main section.description-4 .confix .direction-bottom {
@@ -815,7 +845,6 @@ body main section.description-4 .confix .direction-bottom span {
 
 body main section.description-5 {
   clear: both;
-  background-color: #656565;
 }
 
 body main section.description-5 .confix {
@@ -860,14 +889,70 @@ body main section.description-5 .confix .portfolio-box {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 6em;
+  }
+}
+
 body main section.description-5 .confix .portfolio-box img {
   width: 100%;
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-box img {
+    width: 50%;
+  }
+}
+
+body main section.description-5 .confix .portfolio-box .portfolio-text-box {
+  margin-bottom: 6em;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-box .portfolio-text-box {
+    width: 40%;
+    padding-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-box .portfolio-text-box {
+    width: 30%;
+    padding-left: 100px;
+  }
+}
+
 body main section.description-5 .confix .portfolio-box .portfolio-text-box h3 {
   font-size: 1.3em;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-box .portfolio-text-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-box .portfolio-text-box p {
+  line-height: 40px;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-box .portfolio-text-box p {
+    line-height: 50px;
+  }
 }
 
 body main section.description-5 .confix .portfolio-box .portfolio-text-box p span {
@@ -877,5 +962,162 @@ body main section.description-5 .confix .portfolio-box .portfolio-text-box p spa
   margin-left: 5px;
   border-radius: 50%;
   background-color: red;
+}
+
+body main section.description-5 .confix .portfolio-box .portfolio-text-box p strong {
+  font-size: 1.3em;
+}
+
+body main section.description-5 .confix .portfolio-box .portfolio-text-box button {
+  font-size: 0.8em;
+  border: 1px solid #000;
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body main section.description-5 .confix .portfolio-bottom {
+  float: right;
+}
+
+body main section.description-5 .confix .portfolio-bottom span {
+  font-size: 1.1em;
+  background: -webkit-gradient(linear, left top, right top, from(#f83600), to(#facc22));
+  background: linear-gradient(to right, #f83600, #facc22);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body main section.description-6 {
+  clear: both;
+  margin-top: 13em;
+}
+
+body main section.description-6 .confix {
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  position: relative;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+body main section.description-6 .confix h2 {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-6 .confix h2 {
+    margin-bottom: 100px;
+  }
+}
+
+body main section.description-6 .confix h2 span {
+  font-size: 1.6em;
+  background: -webkit-gradient(linear, left top, right top, from(#0dccff), to(#4760ff));
+  background: linear-gradient(to right, #0dccff, #4760ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body main section.description-6 .confix .moon-up-img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-6 .confix .moon-up-img {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(190%, -132%);
+            transform: translate(190%, -132%);
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-6 .confix .moon-up-img {
+    -webkit-transform: translate(190%, -122%);
+            transform: translate(190%, -122%);
+  }
+}
+
+body main section.description-6 .confix .contact-text {
+  font-size: 1.1em;
+  text-align: center;
+  line-height: 30px;
+}
+
+body main section.description-6 .confix .contact-text .contact-text-me {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-6 .confix .contact-text .contact-text-me .contact-br {
+    display: none;
+  }
+}
+
+body main section.description-6 .confix .contact-text .email-address {
+  font-size: 2em;
+}
+
+body main section.description-6 .confix .contact-text .email-address-smalltext {
+  font-size: 0.7em;
+  color: #666;
+}
+
+body main section.description-6 .confix .contact-text .email_greeting {
+  margin-top: 30px;
+}
+
+body main section.description-6 .confix .moon-star-img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-6 .confix .moon-star-img {
+    display: block;
+    position: absolute;
+    bottom: -27%;
+    left: 2%;
+  }
+  body main section.description-6 .confix .moon-star-img img {
+    width: 96px;
+    height: 117px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-6 .confix .moon-star-img {
+    left: 17%;
+  }
+}
+
+body main section.description-6 .confix .contact-bottom {
+  float: right;
+  margin-top: 60px;
+}
+
+body main section.description-6 .confix .contact-bottom span {
+  font-size: 1.1em;
+  background: -webkit-gradient(linear, left top, right top, from(#0dccff), to(#4760ff));
+  background: linear-gradient(to right, #0dccff, #4760ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body footer {
+  margin-top: 240px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: #333;
 }
 /*# sourceMappingURL=index.css.map */

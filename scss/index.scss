@@ -290,7 +290,7 @@ body {
                         @include responsive(tablet-size) {
                             display: block;
                             img {
-                                width: 22vmax;
+                                width: 20vmax;
                             }
                         }
                         @include responsive(pc-size) {
@@ -517,10 +517,6 @@ body {
                         width: 9vw;
 
                         @include responsive(tablet-size) {
-                            width: 13vw;
-                        }
-
-                        @include responsive(tablet-size) {
                             width: 11vw;
                         }
                     }
@@ -537,7 +533,10 @@ body {
                 .direction-text {
                     display: flex;
                     width: 100%;
-
+                    @include responsive(tablet-size) {
+                        margin-bottom: 5em;
+                    }
+                    
                     // <direction> 상위 텍스트
                     h2 {
                         text-align: left;
@@ -560,13 +559,28 @@ body {
                 .direction-box {
 
                     .coding-box {
+                        @include responsive(tablet-size) {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 6em;
+                        }
+
                         > img {
                             width: 100%;
+                            @include responsive(tablet-size) {
+                                width: 41vmin;
+                            }
+                           
                         }
 
                         .coding-box-textbox {
                             display: flex;
                             margin-top: 1em;
+                            @include responsive(tablet-size) {
+                                width: 32%;
+                                margin-left: 2em;
+                            }
 
                             img {
                                 width: 23px; height: 23px;
@@ -577,9 +591,11 @@ body {
                                 margin-bottom: 3em;
                                 h2 {
                                     margin-bottom: 20px;
+                                    text-align: justify;
                                 }
                                 p { 
                                     font-size: 0.9em;
+                                    text-align: justify;
                                 }
                             }
                         }
@@ -602,7 +618,6 @@ body {
 
         section.description-5 {
             clear: both;
-            background-color: #656565;
             .confix {
                 @include padding-set();
                 @include confix();
@@ -629,21 +644,53 @@ body {
                     }
                 } // direction-text 종료
 
+                // 포트폴리오 박스
                 .portfolio-box {
                     width: 100%;
+                    @include responsive(tablet-size) {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        margin-bottom: 6em;
+                    }
 
+                    // 포트폴리오 이미지
                     img {
                         width: 100%;
                         margin-bottom: 30px;
+                        @include responsive(tablet-size) {
+                            width: 50%;
+                        }
+                        
                     }
 
+                    // 포트폴리오 텍스트
                     .portfolio-text-box {
+                        margin-bottom: 6em;
+                        @include responsive(tablet-size) {
+                            width: 40%;
+                            padding-left: 80px;
+                        }
+
+                        @include responsive(pc-size) {
+                            width: 30%;
+                            padding-left: 100px;
+                        }
+
                         h3 {
                             font-size: 1.3em;
-                            margin-bottom: 20px;
+                            margin-bottom: 30px;
+                            @include responsive(pc-size) {
+                                font-size: 1.5em;
+                                margin-bottom: 60px;
+                            }
                         }
 
                         p {
+                            line-height: 40px;
+                            @include responsive(pc-size) {
+                                line-height: 50px;
+                            }
                             span {
                                 display: inline-block;
                                 width: 10px; height: 10px;
@@ -651,10 +698,135 @@ body {
                                 border-radius: 50%;
                                 background-color: red;
                             }
+                            strong {
+                                font-size: 1.3em;
+                            }
+                        }
+
+                        button {
+                            font-size: 0.8em;
+                            border: 1px solid #000;
+                            margin-top: 20px;
+                            padding: 5px 15px;
+                            background-color: transparent;
+                            cursor: pointer;
                         }
                     }
+
                 }
-            }
-        }
+
+                // </portfolio> 하위 텍스트
+                .portfolio-bottom {
+                    float: right;
+
+                    span {
+                        font-size: 1.1em;
+                        background: $port-text;
+                        @include gradienttitle();
+                    }
+                } 
+            } // confix
+        } // section.description-5 종료
+
+        section.description-6 {
+            clear: both;
+            margin-top: 13em;
+
+            .confix {
+                @include padding-set();
+                @include confix();
+
+                // <contact> 상위 텍스트
+                h2 {
+                    text-align: left;
+                    margin-bottom: 50px;
+                    @include responsive(tablet-size) {
+                        margin-bottom: 100px;
+                    }
+                    span {
+                        font-size: 1.6em;
+                        background: $cont-text;
+                        @include gradienttitle();
+                    }
+                }
+
+                // 달위에 깃발 들고있는 이미지
+                
+                .moon-up-img {
+                    display: none;
+                    @include responsive(tablet-size) {
+                        display: inline-block;
+                        position: absolute;
+                        left: 50%; top: 50%;
+                        transform: translate(190%,-132%);
+                    }
+                    @include responsive(pc-size) {
+                        
+                        transform: translate(190%,-122%);
+                    }
+                }
+
+                // contact 가운데 텍스트
+                .contact-text {
+                    font-size: 1.1em;
+                    text-align: center;
+                    line-height: 30px;
+                    .contact-text-me {
+                        margin-bottom: 30px;
+                        .contact-br {
+                            @include responsive(tablet-size) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .email-address{
+                        font-size: 2em;
+                    }
+                    .email-address-smalltext {
+                        font-size: 0.7em;
+                        color: #666;
+                    }
+                    .email_greeting {
+                        margin-top: 30px;
+                    }
+                }
+
+                // 달위에-낚시하는-이미지
+                .moon-star-img {
+                    display: none;
+                    @include responsive(tablet-size) {
+                        display: block;
+                        position: absolute;
+                        bottom: -27%; left: 2%; 
+                        img {
+                            width: 96px; height: 117px;
+                        }
+                    }
+                    @include responsive(pc-size) {
+                        left: 17%;
+                    }
+                }
+
+                // </contact> 하위 텍스트
+                .contact-bottom {
+                    float: right;
+                    margin-top: 60px;
+                    span {
+                        font-size: 1.1em;
+                        background: $cont-text;
+                        @include gradienttitle();
+                    }
+                } 
+            } // confix
+        } // section.description-6 종료
     } // main
+
+    footer {
+        margin-top: 240px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+        background-color: #333;
+    }
 }
