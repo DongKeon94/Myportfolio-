@@ -49,6 +49,24 @@ body {
   background-color: #000;
 }
 
+body header {
+  display: none;
+}
+
+@media screen and (min-width: 1920px) {
+  body header {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body header h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+}
+
 body main section.description-1 {
   overflow: hidden;
 }
@@ -679,15 +697,41 @@ body main section.description-2 .confix .introduction .introdoution-bottom span 
 
 body main section.description-3 {
   margin: 5em 0;
+  overflow: hidden;
+  width: 100%;
+  height: 18vmin;
+  background: url(../images/movebackground01.png) 0 center/100px repeat-x;
+  background-size: cover;
+  -webkit-animation: movebg 10s linear infinite;
+          animation: movebg 10s linear infinite;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-3 {
+    height: 18vmax;
+  }
+}
+
+@-webkit-keyframes movebg {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -500px center;
+  }
+}
+
+@keyframes movebg {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -500px center;
+  }
 }
 
 body main section.description-3 .move-bg {
   position: relative;
-  width: 100%;
-}
-
-body main section.description-3 .move-bg img {
-  width: 100%;
 }
 
 body main section.description-3 .move-bg .moving-ship {
@@ -696,6 +740,8 @@ body main section.description-3 .move-bg .moving-ship {
   left: 0;
   -webkit-transform: translate(10%, 50%);
           transform: translate(10%, 50%);
+  -webkit-animation: moveimg 7s ease-in-out infinite;
+          animation: moveimg 7s ease-in-out infinite;
 }
 
 @media screen and (min-width: 768px) {
@@ -705,10 +751,28 @@ body main section.description-3 .move-bg .moving-ship {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1320px) {
   body main section.description-3 .move-bg .moving-ship {
     -webkit-transform: translate(10%, 40%);
             transform: translate(10%, 40%);
+  }
+}
+
+@-webkit-keyframes moveimg {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes moveimg {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
   }
 }
 
