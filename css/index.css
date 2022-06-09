@@ -432,6 +432,30 @@ body main section.description-1 .confix .main-top .main-image1 {
 
 body main section.description-1 .confix .main-top .main-image1 img {
   width: 100%;
+  -webkit-animation: spin-space 15s linear infinite;
+          animation: spin-space 15s linear infinite;
+}
+
+@-webkit-keyframes spin-space {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin-space {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
 body main section.description-1 .confix .main-top .main-image2 {
@@ -1178,10 +1202,21 @@ body main section.description-6 .confix .contact-bottom span {
 }
 
 body footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 240px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
+  padding: 50px;
   background-color: #333;
+}
+
+body footer h2 {
+  margin-left: 30px;
 }
 /*# sourceMappingURL=index.css.map */

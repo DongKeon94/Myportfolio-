@@ -279,10 +279,16 @@ body {
                         @include responsive(tablet-size) {
                             transform: translate(57%, -65%);
                         }
-                        
                         img {
                             width: 100%;
+                            animation: spin-space 15s linear infinite;
+                
+                            @keyframes spin-space {
+                                0% {transform: rotateZ(0deg);}
+                                100% {transform: rotateZ(360deg);}
+                            }
                         }
+                        
                     }
 
                     // 외계인이랑 손잡는 이미지
@@ -850,10 +856,14 @@ body {
     } // main
 
     footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 240px;
-        height: 100px;
-        line-height: 100px;
-        text-align: center;
+        padding: 50px;
         background-color: #333;
+        h2 {
+            margin-left: 30px;
+        }
     }
 }
