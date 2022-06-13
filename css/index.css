@@ -112,6 +112,34 @@ body main section.description-1 .confix .main-top .num-motion {
   position: absolute;
   left: 3%;
   text-align: center;
+  cursor: pointer;
+}
+
+body main section.description-1 .confix .main-top .num-motion ul li:hover {
+  -webkit-animation: num-spin 0.5s ease;
+          animation: num-spin 0.5s ease;
+}
+
+@-webkit-keyframes num-spin {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes num-spin {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -176,6 +204,8 @@ body main section.description-1 .confix .main-top .hello .hello-text {
   cursor: pointer;
   -webkit-filter: drop-shadow(3px 4px 1px rgba(255, 255, 255, 0.7));
           filter: drop-shadow(3px 4px 1px rgba(255, 255, 255, 0.7));
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -226,6 +256,8 @@ body main section.description-1 .confix .main-top .hello .balloon_triangle {
           filter: drop-shadow(1px 4px 1px rgba(255, 255, 255, 0.7));
   -webkit-transform: translate(-50%, 42%);
           transform: translate(-50%, 42%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media screen and (min-width: 768px) {
@@ -252,8 +284,8 @@ body main section.description-1 .confix .main-top .hello .hello-right {
   float: right;
   font-size: 0.9em;
   color: #b6c017;
-  -webkit-transform: translateY(1px);
-          transform: translateY(1px);
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 @media screen and (min-width: 768px) {
@@ -432,8 +464,8 @@ body main section.description-1 .confix .main-top .main-image1 {
 
 body main section.description-1 .confix .main-top .main-image1 img {
   width: 100%;
-  -webkit-animation: spin-space 15s linear infinite;
-          animation: spin-space 15s linear infinite;
+  -webkit-animation: spin-space 10s linear infinite;
+          animation: spin-space 10s linear infinite;
 }
 
 @-webkit-keyframes spin-space {
@@ -916,6 +948,13 @@ body main section.description-4 .confix .direction-box .coding-box .coding-box-t
 body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox .coding-box-text p {
   font-size: 0.9em;
   text-align: justify;
+}
+
+body main section.description-4 .confix .direction-box .reverse-box {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 body main section.description-4 .confix .direction-bottom {

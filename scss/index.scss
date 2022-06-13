@@ -56,7 +56,20 @@ body {
                         position: absolute;
                         left: 3%;
                         text-align: center;
-
+                        cursor: pointer;
+                        // 넘버 호버시 돌아가는 모션
+                        ul {
+                            li {
+                                &:hover {
+                                    animation: num-spin 0.5s ease;
+            
+                                    @keyframes num-spin {
+                                        0% {transform: rotateZ(0deg);}
+                                        100% {transform: rotateZ(360deg);}
+                                    }
+                                }
+                            }
+                        }
                         @include responsive(tablet-size) {
                             font-size: 3vmin;
                         }
@@ -105,20 +118,23 @@ body {
                             background-color: white;
                             cursor: pointer;
                             filter: drop-shadow(3px 4px 1px rgba(255,255,255,0.7));
+                            transition: background 0.5s;
+
                             @include responsive(tablet-size) {
                                 width: 40vmax; height: 10vmin;
                                 line-height: 10vmin;
                             }
-
+                            
                             @include responsive(pc-size) {
                                 width: 35vmax; height: 11vmin;
                                 line-height: 11vmin;
                             }
-
+                            
                             p {
                                 font-size: 1.4em;
                                 text-align: center;
                                 color: #333;
+                                
                                 @include responsive(tablet-size) {
                                     font-size: 3vw;
                                 }
@@ -138,7 +154,7 @@ body {
                             border-right: solid 15px transparent;
                             filter: drop-shadow(1px 4px 1px rgba(255,255,255,0.7));
                             transform: translate(-50%,42%);
-                            // transition: all 0.6s;
+                            transition: all 0.5s;
 
                             @include responsive(tablet-size) {
                                 border-top: solid 50px #fff;
@@ -160,7 +176,7 @@ body {
                             float: right;
                             font-size: 0.9em;
                             color: #b6c017;
-                            transform: translateY(1px);
+                            transform: translateY(2px);
                             
                             @include responsive(tablet-size) {
                                 font-size: 2.5vmin;
@@ -281,7 +297,7 @@ body {
                         }
                         img {
                             width: 100%;
-                            animation: spin-space 15s linear infinite;
+                            animation: spin-space 10s linear infinite;
                 
                             @keyframes spin-space {
                                 0% {transform: rotateZ(0deg);}
@@ -633,6 +649,9 @@ body {
                             }
                         }
                     } 
+                    .reverse-box {
+                        flex-direction: row-reverse;
+                    }
                 }// direction-box 종료
 
                 // </direction> 하위 텍스트
