@@ -453,6 +453,7 @@ body main section.description-1 .confix .main-top .main-image1 {
   width: 35%;
   -webkit-transform: translate(67%, -60%);
           transform: translate(67%, -60%);
+  opacity: 0.9;
 }
 
 @media screen and (min-width: 768px) {
@@ -498,6 +499,7 @@ body main section.description-1 .confix .main-top .main-image2 {
   padding-left: 1%;
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
+  opacity: 0.9;
 }
 
 @media screen and (min-width: 768px) {
@@ -532,6 +534,7 @@ body main section.description-1 .confix .main-top .main-image3 {
 
 body main section.description-1 .confix .main-top .main-image3 img {
   width: 4vmax;
+  opacity: 0.9;
 }
 
 body main section.description-2 .confix {
@@ -550,13 +553,48 @@ body main section.description-2 .confix .introduce {
   display: flex;
 }
 
-body main section.description-2 .confix .introduce p {
-  font-weight: bold;
-  font-size: 1.1em;
-}
-
 body main section.description-2 .confix .introduce img {
   width: 5.5em;
+  margin-right: 10px;
+}
+
+body main section.description-2 .confix .introduce .type-text {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+body main section.description-2 .confix .introduce .type-text .typing-txt {
+  display: none;
+}
+
+body main section.description-2 .confix .introduce .type-text .typing ul li.on {
+  display: inline-block;
+  -webkit-animation: cursor 0.5s infinite;
+          animation: cursor 0.5s infinite;
+}
+
+@-webkit-keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    border-right: 1px solid #fff;
+  }
+  50% {
+    border-right: 1px solid #000;
+  }
+  100% {
+    border-right: 1px solid #fff;
+  }
 }
 
 body main section.description-2 .confix .vision {
@@ -955,6 +993,7 @@ body main section.description-4 .confix .direction-box .reverse-box {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  gap: 50px;
 }
 
 body main section.description-4 .confix .direction-bottom {
@@ -1097,9 +1136,10 @@ body main section.description-5 .confix .portfolio-box .portfolio-text-box p str
 
 body main section.description-5 .confix .portfolio-box .portfolio-text-box button {
   font-size: 0.8em;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   margin-top: 20px;
   padding: 5px 15px;
+  color: #fff;
   background-color: transparent;
   cursor: pointer;
 }

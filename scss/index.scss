@@ -292,6 +292,7 @@ body {
                         float: right;
                         width: 35%;
                         transform: translate(67%, -60%);
+                        opacity: 0.9;
                         @include responsive(tablet-size) {
                             transform: translate(57%, -65%);
                         }
@@ -314,6 +315,7 @@ body {
                         display: none;
                         padding-left: 1%;
                         transform: translateY(-40%);
+                        opacity: 0.9;
 
                         @include responsive(tablet-size) {
                             display: block;
@@ -340,6 +342,7 @@ body {
 
                         img {
                             width: 4vmax;
+                            opacity: 0.9;
                         }
                     } 
                 }
@@ -355,12 +358,25 @@ body {
                 .introduce {
                     display: flex;
 
-                    p {
-                        font-weight: bold;
-                        font-size: 1.1em;
-                    }
                     img {
                         width: 5.5em;
+                        margin-right: 10px;
+                    }
+                    .type-text {
+                        font-size: 1.1em;
+                        font-weight: bold;
+                        
+                        .typing-txt{display: none;}
+
+                        .typing ul li.on {  
+                            display: inline-block; 
+                            animation: cursor 0.5s infinite; 
+                        }
+                        @keyframes cursor{ 
+                            0%{border-right: 1px solid #fff} 
+                            50%{border-right: 1px solid #000} 
+                            100%{border-right: 1px solid #fff} 
+                        }
                     }
                 }
 
@@ -651,6 +667,7 @@ body {
                     } 
                     .reverse-box {
                         flex-direction: row-reverse;
+                        gap: 50px;
                     }
                 }// direction-box 종료
 
@@ -757,9 +774,10 @@ body {
 
                         button {
                             font-size: 0.8em;
-                            border: 1px solid #000;
+                            border: 1px solid #fff;
                             margin-top: 20px;
                             padding: 5px 15px;
+                            color: #fff;
                             background-color: transparent;
                             cursor: pointer;
                         }
