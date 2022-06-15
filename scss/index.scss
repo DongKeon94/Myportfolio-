@@ -335,7 +335,7 @@ body {
                         position: absolute;
                         bottom: 0; right: 0;
                         display: none;
-                        transform: translate(-90%, -50%);
+                        transform: translate(-90%, -70%);
                         @include responsive(tablet-size) {
                             display: block;
                         }
@@ -361,11 +361,16 @@ body {
                     img {
                         width: 5.5em;
                         margin-right: 10px;
+                        @include responsive(tablet-size) {
+                            width: 6em;
+                        }
                     }
                     .type-text {
                         font-size: 1.1em;
                         font-weight: bold;
-                        
+                        @include responsive(tablet-size) {
+                            font-size: 1.3em;
+                        }
                         .typing-txt{display: none;}
 
                         .typing ul li.on {  
@@ -410,7 +415,14 @@ body {
 
                 // 풍선올라가는 이미지2
                 .up-img2 {
+                    position: absolute;
+                    bottom: -10%; right: 5%;
+                    width: 4vmax;
+                    opacity: 0.9;
                     display: none;
+                    @include responsive(tablet-size) {
+                        display: block;
+                    }
                 }
 
                 // INTRODUCTION
@@ -490,9 +502,10 @@ body {
                             @include responsive(tablet-size) {
                                 width: 50%;
                                 margin-top: 0;
+                                transform: translateY(10%);
                             }
                             @include responsive(pc-size) {
-                                width: 35%;
+                                width: 39%;
                             }
 
                             .ability-text {
@@ -521,8 +534,11 @@ body {
                     .introdoution-bottom {
                         float: right;
                         margin: 0.5em 0;
+                        @include responsive(tablet-size) {
+                            margin: 5em 0;
+                        }
                         @include responsive(pc-size) {
-                            padding-right: 149px;
+                            padding-right: 120px;
                         }
                         span {
                             font-size: 1.1em;
@@ -543,15 +559,18 @@ body {
             height: 18vmin;
             background: url(../images/movebackground01.png) 0 center / 100px repeat-x;
             background-size: cover;
+            opacity: 0.9;
+
             @include responsive(tablet-size) {
                 height: 18vmax;
+                margin: 15em 0;
             }
 
-            animation: movebg 10s linear infinite;
+            animation: movebg 30s linear infinite;
             
             @keyframes movebg {
                 0% {background-position:0 center;}
-                100% {background-position:-500px center;}
+                100% {background-position:-1000px center;}
             }
 
 
@@ -561,25 +580,25 @@ body {
                 .moving-ship {
                     position: absolute;
                     top: 0; left: 0;
-                    transform: translate(10%, 50%);
+                    transform: translate(10%, 70%);
                     @include responsive(tablet-size) {
-                        transform: translate(10%, 30%);
+                        transform: translate(10%, 70%);
                     }
                     @include responsive(pc-size) {
-                        transform: translate(10%, 40%);
+                        transform: translate(10%, 60%);
                     }
                     animation: moveimg 7s ease-in-out infinite;
                     @keyframes moveimg {
                         0% {left : -150px;}
                         // 50% {transform: rotateZ(30deg);}
-                        // 60% {transform: rotateZ(360deg);}
+                        60% {transform: rotate(10deg);}
                         100% {left : 100%;}
                     }
                     
 
                     img {
                         width: 9vw;
-
+                        opacity: 0.9;
                         @include responsive(tablet-size) {
                             width: 11vw;
                         }

@@ -522,8 +522,8 @@ body main section.description-1 .confix .main-top .main-image3 {
   bottom: 0;
   right: 0;
   display: none;
-  -webkit-transform: translate(-90%, -50%);
-          transform: translate(-90%, -50%);
+  -webkit-transform: translate(-90%, -70%);
+          transform: translate(-90%, -70%);
 }
 
 @media screen and (min-width: 768px) {
@@ -558,9 +558,21 @@ body main section.description-2 .confix .introduce img {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  body main section.description-2 .confix .introduce img {
+    width: 6em;
+  }
+}
+
 body main section.description-2 .confix .introduce .type-text {
   font-size: 1.1em;
   font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-2 .confix .introduce .type-text {
+    font-size: 1.3em;
+  }
 }
 
 body main section.description-2 .confix .introduce .type-text .typing-txt {
@@ -633,7 +645,18 @@ body main section.description-2 .confix .vision p {
 }
 
 body main section.description-2 .confix .up-img2 {
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 4vmax;
+  opacity: 0.9;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-2 .confix .up-img2 {
+    display: block;
+  }
 }
 
 body main section.description-2 .confix .introduction {
@@ -733,12 +756,14 @@ body main section.description-2 .confix .introduction .introduction-flex .abilit
   body main section.description-2 .confix .introduction .introduction-flex .ability {
     width: 50%;
     margin-top: 0;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
 }
 
 @media screen and (min-width: 1320px) {
   body main section.description-2 .confix .introduction .introduction-flex .ability {
-    width: 35%;
+    width: 39%;
   }
 }
 
@@ -774,9 +799,15 @@ body main section.description-2 .confix .introduction .introdoution-bottom {
   margin: 0.5em 0;
 }
 
+@media screen and (min-width: 768px) {
+  body main section.description-2 .confix .introduction .introdoution-bottom {
+    margin: 5em 0;
+  }
+}
+
 @media screen and (min-width: 1320px) {
   body main section.description-2 .confix .introduction .introdoution-bottom {
-    padding-right: 149px;
+    padding-right: 120px;
   }
 }
 
@@ -796,13 +827,15 @@ body main section.description-3 {
   height: 18vmin;
   background: url(../images/movebackground01.png) 0 center/100px repeat-x;
   background-size: cover;
-  -webkit-animation: movebg 10s linear infinite;
-          animation: movebg 10s linear infinite;
+  opacity: 0.9;
+  -webkit-animation: movebg 30s linear infinite;
+          animation: movebg 30s linear infinite;
 }
 
 @media screen and (min-width: 768px) {
   body main section.description-3 {
     height: 18vmax;
+    margin: 15em 0;
   }
 }
 
@@ -811,7 +844,7 @@ body main section.description-3 {
     background-position: 0 center;
   }
   100% {
-    background-position: -500px center;
+    background-position: -1000px center;
   }
 }
 
@@ -820,7 +853,7 @@ body main section.description-3 {
     background-position: 0 center;
   }
   100% {
-    background-position: -500px center;
+    background-position: -1000px center;
   }
 }
 
@@ -832,29 +865,33 @@ body main section.description-3 .move-bg .moving-ship {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translate(10%, 50%);
-          transform: translate(10%, 50%);
+  -webkit-transform: translate(10%, 70%);
+          transform: translate(10%, 70%);
   -webkit-animation: moveimg 7s ease-in-out infinite;
           animation: moveimg 7s ease-in-out infinite;
 }
 
 @media screen and (min-width: 768px) {
   body main section.description-3 .move-bg .moving-ship {
-    -webkit-transform: translate(10%, 30%);
-            transform: translate(10%, 30%);
+    -webkit-transform: translate(10%, 70%);
+            transform: translate(10%, 70%);
   }
 }
 
 @media screen and (min-width: 1320px) {
   body main section.description-3 .move-bg .moving-ship {
-    -webkit-transform: translate(10%, 40%);
-            transform: translate(10%, 40%);
+    -webkit-transform: translate(10%, 60%);
+            transform: translate(10%, 60%);
   }
 }
 
 @-webkit-keyframes moveimg {
   0% {
     left: -150px;
+  }
+  60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
   100% {
     left: 100%;
@@ -865,6 +902,10 @@ body main section.description-3 .move-bg .moving-ship {
   0% {
     left: -150px;
   }
+  60% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
   100% {
     left: 100%;
   }
@@ -872,6 +913,7 @@ body main section.description-3 .move-bg .moving-ship {
 
 body main section.description-3 .move-bg .moving-ship img {
   width: 9vw;
+  opacity: 0.9;
 }
 
 @media screen and (min-width: 768px) {

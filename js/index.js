@@ -17,7 +17,7 @@ $(document).ready(function(){
         $('#text1').css('display','block');
         $('#text2').css('display','none');
         
-    });
+    });// Hello, World 텍스트 종료
     
     // 타이핑 텍스트
     let typingBool = false;
@@ -34,7 +34,7 @@ $(document).ready(function(){
     if (typingBool == false) {
         // 타이핑이 진행되지 않았다면
         typingBool = true;
-        var tyInt = setInterval(typing, 600); // 반복동작
+        var tyInt = setInterval(typing, 200); // 반복동작
     }
 
     function typing() {
@@ -62,8 +62,8 @@ $(document).ready(function(){
 
                 setTimeout(function () {
                     //1초후에 다시 타이핑 반복 시작
-                    tyInt = setInterval(typing, 100);
-                }, 1000);
+                    tyInt = setInterval(typing, 200);
+                }, 2000);
             } else if (liIndex == liLength - 1) {
                 //마지막 문장까지 써지면 반복종료
                 clearInterval(tyInt);
@@ -81,12 +81,30 @@ $(document).ready(function(){
                     $(".typing ul li").html("");
 
                     //반복시작
-                    tyInt = setInterval(typing, 100);
-                }, 1000);
+                    tyInt = setInterval(typing, 200);
+                }, 4000);
             }
         }
-    }
-});
+    }// 타이핑 텍스트 종료
+
+    // 여러 우주풍선이 올라가는 이미지
+    $(window).on("scroll", function(){
+        if($(this).scrollTop() > 1200) {
+            $(".up-img2")
+            .animate({
+                transform: "10%",
+                left : "-0%",
+                top :"-60%",
+            },10000)
+        }
+    });
+
+    $("#top_bt").click( function(){
+        $("html").animate({
+            scrollTop : "0"
+        }, 2000);
+    })
+}); 
 
 // 바닐라JS
 window.onload = function() {
@@ -100,6 +118,7 @@ window.addEventListener("load", function() {
     setInterval(() => {
         const upImag1 = document.querySelector(".main-image3 img");
         upImag1.animate({marginTop:"2000px"}, 30000);
-    }, 5000);
+    }, 5000);// 지구풍선이 올라가는 이미지 종료
+
 });
 
