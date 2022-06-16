@@ -46,7 +46,7 @@ footer {
 
 body {
   color: #f2f2f2;
-  background-color: #000;
+  background-color: black;
 }
 
 body header {
@@ -922,10 +922,6 @@ body main section.description-3 .move-bg .moving-ship img {
   }
 }
 
-body main section.description-4 {
-  margin-bottom: 10em;
-}
-
 body main section.description-4 .confix {
   padding-top: 2%;
   padding-left: 4%;
@@ -969,6 +965,10 @@ body main section.description-4 .confix .direction-text img {
           transform: translateY(-50%);
 }
 
+body main section.description-4 .confix .direction-box {
+  overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
   body main section.description-4 .confix .direction-box .coding-box {
     display: -webkit-box;
@@ -986,6 +986,9 @@ body main section.description-4 .confix .direction-text img {
 
 body main section.description-4 .confix .direction-box .coding-box > img {
   width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 3px white);
+          filter: drop-shadow(0px 0px 3px white);
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1004,7 +1007,7 @@ body main section.description-4 .confix .direction-box .coding-box .coding-box-t
 @media screen and (min-width: 768px) {
   body main section.description-4 .confix .direction-box .coding-box .coding-box-textbox {
     width: 32%;
-    margin-left: 2em;
+    padding-left: 2em;
   }
 }
 
@@ -1053,6 +1056,7 @@ body main section.description-4 .confix .direction-bottom span {
 
 body main section.description-5 {
   clear: both;
+  overflow: hidden;
 }
 
 body main section.description-5 .confix {
@@ -1065,19 +1069,28 @@ body main section.description-5 .confix {
   margin: 0 auto;
 }
 
-body main section.description-5 .confix .portfolio-text {
+body main section.description-5 .confix .portfolio-1 {
+  position: relative;
+  z-index: 5;
+  margin-top: 4em;
+}
+
+body main section.description-5 .confix .portfolio-1 .portfolio-header-text {
+  position: absolute;
+  left: 4%;
+  top: 20%;
+  z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 5em;
 }
 
-body main section.description-5 .confix .portfolio-text h2 {
+body main section.description-5 .confix .portfolio-1 .portfolio-header-text h2 {
   text-align: left;
 }
 
-body main section.description-5 .confix .portfolio-text h2 span {
+body main section.description-5 .confix .portfolio-1 .portfolio-header-text h2 span {
   font-size: 1.6em;
   background: -webkit-gradient(linear, left top, right top, from(#f83600), to(#facc22));
   background: linear-gradient(to right, #f83600, #facc22);
@@ -1086,19 +1099,40 @@ body main section.description-5 .confix .portfolio-text h2 span {
   background-clip: text;
 }
 
-body main section.description-5 .confix .portfolio-text img {
+body main section.description-5 .confix .portfolio-1 .portfolio-header-text img {
   width: 3.5em;
   margin-left: 20px;
   -webkit-transform: translateY(-40%);
           transform: translateY(-40%);
 }
 
-body main section.description-5 .confix .portfolio-box {
-  width: 100%;
+body main section.description-5 .confix .portfolio-1 .portfolio-1-parallelogra {
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#515259));
+  background: linear-gradient(90deg, #515259);
+  width: 350%;
+  height: 1100px;
+  -webkit-transform: translateX(-50%) skewY(10deg);
+          transform: translateX(-50%) skewY(10deg);
 }
 
 @media screen and (min-width: 768px) {
-  body main section.description-5 .confix .portfolio-box {
+  body main section.description-5 .confix .portfolio-1 .portfolio-1-parallelogra {
+    height: 825px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-1 .portfolio-box {
+  width: 100%;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-1 .portfolio-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1112,58 +1146,58 @@ body main section.description-5 .confix .portfolio-box {
   }
 }
 
-body main section.description-5 .confix .portfolio-box img {
+body main section.description-5 .confix .portfolio-1 .portfolio-box img {
   width: 100%;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.description-5 .confix .portfolio-box img {
+  body main section.description-5 .confix .portfolio-1 .portfolio-box img {
     width: 50%;
   }
 }
 
-body main section.description-5 .confix .portfolio-box .portfolio-text-box {
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box {
   margin-bottom: 6em;
 }
 
 @media screen and (min-width: 768px) {
-  body main section.description-5 .confix .portfolio-box .portfolio-text-box {
+  body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box {
     width: 40%;
     padding-left: 80px;
   }
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.description-5 .confix .portfolio-box .portfolio-text-box {
+  body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box {
     width: 30%;
     padding-left: 100px;
   }
 }
 
-body main section.description-5 .confix .portfolio-box .portfolio-text-box h3 {
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box h3 {
   font-size: 1.3em;
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.description-5 .confix .portfolio-box .portfolio-text-box h3 {
+  body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box h3 {
     font-size: 1.5em;
     margin-bottom: 60px;
   }
 }
 
-body main section.description-5 .confix .portfolio-box .portfolio-text-box p {
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box p {
   line-height: 40px;
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.description-5 .confix .portfolio-box .portfolio-text-box p {
+  body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box p {
     line-height: 50px;
   }
 }
 
-body main section.description-5 .confix .portfolio-box .portfolio-text-box p span {
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box p span {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -1172,11 +1206,251 @@ body main section.description-5 .confix .portfolio-box .portfolio-text-box p spa
   background-color: red;
 }
 
-body main section.description-5 .confix .portfolio-box .portfolio-text-box p strong {
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box p strong {
   font-size: 1.3em;
 }
 
-body main section.description-5 .confix .portfolio-box .portfolio-text-box button {
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box button {
+  font-size: 0.8em;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body main section.description-5 .confix .portfolio-2 {
+  position: relative;
+  z-index: 4;
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-2-parallelogra {
+  position: relative;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#58a56b));
+  background: linear-gradient(90deg, #58a56b);
+  width: 350%;
+  height: 1100px;
+  -webkit-transform: translateX(-30%) skewY(-10deg);
+          transform: translateX(-30%) skewY(-10deg);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-2-parallelogra {
+    height: 825px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box {
+  width: 100%;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 6em;
+  }
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-box img {
+    width: 50%;
+  }
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box {
+  margin-bottom: 6em;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box {
+    width: 40%;
+    padding-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box {
+    width: 30%;
+    padding-left: 100px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box h3 {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box p {
+  line-height: 40px;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box p {
+    line-height: 50px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box p span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box p strong {
+  font-size: 1.3em;
+}
+
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box button {
+  font-size: 0.8em;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body main section.description-5 .confix .portfolio-3 {
+  z-index: 2;
+  height: 1100px;
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-3-parallelogra {
+  position: relative;
+  display: block;
+  background: -webkit-gradient(linear, left top, right top, from(#f1b37e));
+  background: linear-gradient(90deg, #f1b37e);
+  width: 350%;
+  height: 1100px;
+  -webkit-transform: translateX(-40%) skewY(10deg);
+          transform: translateX(-40%) skewY(10deg);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-3-parallelogra {
+    height: 825px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box {
+  width: 100%;
+  position: absolute;
+  top: 220px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-bottom: 6em;
+  }
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-box img {
+    width: 50%;
+  }
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box {
+  margin-bottom: 6em;
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box {
+    width: 40%;
+    padding-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box {
+    width: 30%;
+    padding-left: 100px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box h3 {
+  font-size: 1.3em;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 60px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box p {
+  line-height: 40px;
+}
+
+@media screen and (min-width: 1320px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box p {
+    line-height: 50px;
+  }
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box p span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border-radius: 50%;
+  background-color: red;
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box p strong {
+  font-size: 1.3em;
+}
+
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box button {
   font-size: 0.8em;
   border: 1px solid #fff;
   margin-top: 20px;

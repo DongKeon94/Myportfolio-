@@ -92,18 +92,12 @@ $(document).ready(function(){
         if($(this).scrollTop() > 1200) {
             $(".up-img2")
             .animate({
-                transform: "10%",
-                left : "-0%",
-                top :"-60%",
+                left : "-80%",
+                top :"-10%",
             },10000)
         }
     });
 
-    $("#top_bt").click( function(){
-        $("html").animate({
-            scrollTop : "0"
-        }, 2000);
-    })
 }); 
 
 // 바닐라JS
@@ -115,10 +109,10 @@ window.onload = function() {
 window.addEventListener("load", function() {
 
     // 지구풍선이 올라가는 이미지
+
     setInterval(() => {
         const upImag1 = document.querySelector(".main-image3 img");
         upImag1.animate({marginTop:"2000px"}, 30000);
-    }, 5000);// 지구풍선이 올라가는 이미지 종료
-
+    }, 2000); // 지구풍선이 올라가는 이미지 종료
 });
 

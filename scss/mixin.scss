@@ -32,6 +32,7 @@
     }
 }
 
+// section title gradient
 @mixin gradienttitle() {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -42,4 +43,82 @@
     padding-top: 2%;
     padding-left: 4%;
     padding-right: 4%;
+}
+
+// 포트폴리오 박스
+@mixin port-text() {
+    .portfolio-box {
+        width: 100%;
+        position: absolute;
+        top: 220px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include responsive(tablet-size) {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 6em;
+        }
+
+        // 포트폴리오 이미지
+        img {
+            width: 100%;
+            margin-bottom: 30px;
+            @include responsive(tablet-size) {
+                width: 50%;
+            }
+            
+        }
+
+        // 포트폴리오 텍스트
+        .portfolio-text-box {
+            margin-bottom: 6em;
+            @include responsive(tablet-size) {
+                width: 40%;
+                padding-left: 80px;
+            }
+
+            @include responsive(pc-size) {
+                width: 30%;
+                padding-left: 100px;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                margin-bottom: 30px;
+                @include responsive(pc-size) {
+                    font-size: 1.5em;
+                    margin-bottom: 60px;
+                }
+            }
+
+            p {
+                line-height: 40px;
+                @include responsive(pc-size) {
+                    line-height: 50px;
+                }
+                span {
+                    display: inline-block;
+                    width: 10px; height: 10px;
+                    margin-left: 5px;
+                    border-radius: 50%;
+                    background-color: red;
+                }
+                strong {
+                    font-size: 1.3em;
+                }
+            }
+
+            button {
+                font-size: 0.8em;
+                border: 1px solid #fff;
+                margin-top: 20px;
+                padding: 5px 15px;
+                color: #fff;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+
+    }
 }

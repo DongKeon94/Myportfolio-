@@ -57,6 +57,7 @@ body {
                         left: 3%;
                         text-align: center;
                         cursor: pointer;
+
                         // 넘버 호버시 돌아가는 모션
                         ul {
                             li {
@@ -609,7 +610,6 @@ body {
         } // section.description-3 종료
 
         section.description-4 {
-            margin-bottom: 10em;
             .confix {
                 @include padding-set();
                 @include confix();
@@ -641,7 +641,7 @@ body {
 
                 // direction의 코딩 박스
                 .direction-box {
-
+                    overflow: hidden;
                     .coding-box {
                         @include responsive(tablet-size) {
                             display: flex;
@@ -652,6 +652,8 @@ body {
 
                         > img {
                             width: 100%;
+                            filter: drop-shadow(0px 0px 3px rgba(255,255,255,1));
+                            border-radius: 5px;
                             @include responsive(tablet-size) {
                                 width: 41vmin;
                             }
@@ -663,7 +665,7 @@ body {
                             margin-top: 1em;
                             @include responsive(tablet-size) {
                                 width: 32%;
-                                margin-left: 2em;
+                                padding-left: 2em;
                             }
 
                             img {
@@ -693,6 +695,7 @@ body {
                 // </direction> 하위 텍스트
                 .direction-bottom {
                     float: right;
+                    // padding-right: 170px;
 
                     span {
                         font-size: 1.1em;
@@ -706,103 +709,91 @@ body {
 
         section.description-5 {
             clear: both;
+            overflow: hidden;
             .confix {
                 @include padding-set();
                 @include confix();
 
-                .portfolio-text {
-                    display: flex;
-                    width: 100%;
-                    margin-bottom: 5em;
-                    // <portfolio> 상위 텍스트
-                    h2 {
-                        text-align: left;
-                        
-                        span {
-                            font-size: 1.6em;
-                            background: $port-text;
-                            @include gradienttitle();
-                        }
-                    } 
+                .portfolio-1 {
+                    position: relative;
+                    z-index: 5;
+                    margin-top: 4em;
 
-                    img {
-                        width: 3.5em;
-                        margin-left: 20px;
-                        transform: translateY(-40%);
-                    }
-                } // direction-text 종료
-
-                // 포트폴리오 박스
-                .portfolio-box {
-                    width: 100%;
-                    @include responsive(tablet-size) {
+                    .portfolio-header-text {
+                        position: absolute;
+                        left: 4%; top: 20%;
+                        z-index: 9;
                         display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-                        margin-bottom: 6em;
-                    }
-
-                    // 포트폴리오 이미지
-                    img {
                         width: 100%;
-                        margin-bottom: 30px;
-                        @include responsive(tablet-size) {
-                            width: 50%;
-                        }
-                        
-                    }
-
-                    // 포트폴리오 텍스트
-                    .portfolio-text-box {
-                        margin-bottom: 6em;
-                        @include responsive(tablet-size) {
-                            width: 40%;
-                            padding-left: 80px;
-                        }
-
-                        @include responsive(pc-size) {
-                            width: 30%;
-                            padding-left: 100px;
-                        }
-
-                        h3 {
-                            font-size: 1.3em;
-                            margin-bottom: 30px;
-                            @include responsive(pc-size) {
-                                font-size: 1.5em;
-                                margin-bottom: 60px;
-                            }
-                        }
-
-                        p {
-                            line-height: 40px;
-                            @include responsive(pc-size) {
-                                line-height: 50px;
-                            }
+                        // <portfolio> 상위 텍스트
+                        h2 {
+                            text-align: left;
+                            
                             span {
-                                display: inline-block;
-                                width: 10px; height: 10px;
-                                margin-left: 5px;
-                                border-radius: 50%;
-                                background-color: red;
+                                font-size: 1.6em;
+                                background: $port-text;
+                                @include gradienttitle();
                             }
-                            strong {
-                                font-size: 1.3em;
-                            }
+                        } 
+                        
+                        img {
+                            width: 3.5em;
+                            margin-left: 20px;
+                            transform: translateY(-40%);
                         }
-
-                        button {
-                            font-size: 0.8em;
-                            border: 1px solid #fff;
-                            margin-top: 20px;
-                            padding: 5px 15px;
-                            color: #fff;
-                            background-color: transparent;
-                            cursor: pointer;
+                    } // direction-text 종료
+                    
+                    .portfolio-1-parallelogra{
+                        display: block;
+                        background: linear-gradient(90deg, #515259);
+                        width: 350%;
+                        height: 1100px;
+                        @include responsive(tablet-size) {
+                            height: 825px;
                         }
+                        transform: translateX(-50%) skewY(10deg);
                     }
-
+                    @include port-text();
                 }
+
+                .portfolio-2 {
+                    position: relative;
+                    z-index: 4;
+                    .portfolio-2-parallelogra{
+
+                        position: relative;
+                        display: block;
+                        background: linear-gradient(90deg, #58a56b);
+                        width: 350%;
+                        height: 1100px;
+                        @include responsive(tablet-size) {
+                            height: 825px;
+                        }
+                        transform: translateX(-30%) skewY(-10deg);
+                    }
+                    @include port-text();
+                }
+
+                .portfolio-3 {
+                    z-index: 2;
+                    height: 1100px;
+                    
+                    .portfolio-3-parallelogra{
+
+                        position: relative;
+                        display: block;
+                        background: linear-gradient(90deg, #f1b37e);
+                        width: 350%;
+                        height: 1100px;
+                        @include responsive(tablet-size) {
+                            height: 825px;
+                        }
+                        transform: translateX(-40%) skewY(10deg);
+                    }
+                    @include port-text();
+                }
+               
+                
 
                 // </portfolio> 하위 텍스트
                 .portfolio-bottom {
