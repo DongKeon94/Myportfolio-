@@ -15,7 +15,7 @@
     <script src="./aos/aos.js"></script>
 </head>
 <body>
-    <script>AOS.init({duration: 1000, offset: 600, easing:'ease-in-sine'})</script>
+    <script>AOS.init({duration: 1000, offset: 200, easing:'ease-in-sine'})</script>
     <header>
         <h1>DongKeon Portfolio</h1>
     </header>
@@ -257,8 +257,8 @@
 
         <section class="description-5">
             <div class="confix">
-                <div class="portfolio-1" data-aos="fade-right" data-aos-offset="1200">
-                    <div class="portfolio-header-text">
+                <div class="portfolio-1" data-aos="zoom-out-right">
+                    <div class="portfolio-header-text" data-aos="zoom-out-right">
                         <h2>&lt;<span>PORTFOLIO</span>&gt;</h2>
                         <img src="./images/8.png" alt="달에 사람이 앉아있는 이미지" />
                     </div> <!-- portfolio-text -->
@@ -281,7 +281,7 @@
                     </div> <!-- portfolio-box -->
                 </div>
                 
-                <div class="portfolio-2" data-aos="fade-down-left" data-aos-offset="1000">
+                <div class="portfolio-2" data-aos="fade-up-right">
                     <div class="portfolio-2-parallelogra"></div>
                     <div class="portfolio-box">
                         <img src="./images/pc.png" alt="포트폴리오 이미지">
@@ -301,7 +301,7 @@
                     </div> <!-- portfolio-box -->
                 </div>
 
-                <div class="portfolio-3" data-aos="fade-down-right" data-aos-offset="900">
+                <div class="portfolio-3" data-aos="fade-up-left">
                     <div class="portfolio-3-parallelogra"></div>
                     <div class="portfolio-box">
                         <img src="./images/pc.png" alt="포트폴리오 이미지">
@@ -319,8 +319,8 @@
                             </form>
                         </div> <!-- portfolio-text-box -->
                     </div> <!-- portfolio-box -->
+                    <div class="portfolio-bottom">&lt;<span>/PORTFOLIO</span>&gt;</div>
                 </div>
-                <div class="portfolio-bottom">&lt;<span>/PORTFOLIO</span>&gt;</div>
             </div> <!-- confix -->
         </section> <!-- description-5 종료 -->
 
@@ -354,8 +354,13 @@
     </main>
 
     <footer>
-        <img src="./images/GitHub-Mark-Light-32px.png" alt="">
+        <img src="./images/GitHub-Mark-Light-32px.png" alt="git-hub" id="gitRink">
         <h2>2022.Lee DongKeon</h2>
     </footer>
+
+    <script>
+        const Rink = document.getElementById("gitRink");
+        Rink.setAttribute("url")
+    </script>
 </body>
 </html>
