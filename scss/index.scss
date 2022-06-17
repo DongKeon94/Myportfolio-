@@ -806,7 +806,7 @@ body {
 
         section.description-6 {
             clear: both;
-            
+            overflow: hidden;
             .confix {
                 @include padding-set();
                 @include confix();
@@ -835,17 +835,21 @@ body {
                         position: absolute;
                         left: 50%; top: 50%;
                         transform: translate(190%,-132%);
-                        &:hover {
-                            animation: moon-img-turn 1s linear infinite;
-                            @keyframes moon-img-turn {
-                                0% {transform: translate(190%,-132%) rotateZ(0);}
-                                100% {transform: translate(190%,-132%) rotateZ(360deg);}
-                            }
-                        } 
+                        animation: moon-img-turn 1s linear;
+                        @keyframes moon-img-turn {
+                            0% {transform: translate(750%,0%) rotateZ(0);}
+                            100% {transform: translate(190%,-132%) rotateZ(360deg);}
+                        }
                     }
                     @include responsive(pc-size) {
                         
                         transform: translate(190%,-122%);
+
+                        animation: moon-img-turns 1s linear;
+                        @keyframes moon-img-turns {
+                            0% {transform: translate(1600%,0%) rotateZ(0);}
+                            100% {transform: translate(190%,-122%) rotateZ(360deg);}
+                        }
                     }
                 }
 

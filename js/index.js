@@ -34,7 +34,7 @@ $(document).ready(function(){
     if (typingBool == false) {
         // 타이핑이 진행되지 않았다면
         typingBool = true;
-        var tyInt = setInterval(typing, 200); // 반복동작
+        var tyInt = setInterval(typing, 100); // 반복동작
     }
 
     function typing() {
@@ -62,8 +62,8 @@ $(document).ready(function(){
 
                 setTimeout(function () {
                     //1초후에 다시 타이핑 반복 시작
-                    tyInt = setInterval(typing, 200);
-                }, 2000);
+                    tyInt = setInterval(typing, 100);
+                }, 1500);
             } else if (liIndex == liLength - 1) {
                 //마지막 문장까지 써지면 반복종료
                 clearInterval(tyInt);
@@ -81,8 +81,8 @@ $(document).ready(function(){
                     $(".typing ul li").html("");
 
                     //반복시작
-                    tyInt = setInterval(typing, 200);
-                }, 4000);
+                    tyInt = setInterval(typing, 100);
+                }, 2000);
             }
         }
     }// 타이핑 텍스트 종료

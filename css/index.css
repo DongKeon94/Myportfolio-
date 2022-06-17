@@ -1476,6 +1476,7 @@ body main section.description-5 .confix .portfolio-3 .portfolio-bottom span {
 
 body main section.description-6 {
   clear: both;
+  overflow: hidden;
 }
 
 body main section.description-6 .confix {
@@ -1520,15 +1521,13 @@ body main section.description-6 .confix .moon-up-img {
     top: 50%;
     -webkit-transform: translate(190%, -132%);
             transform: translate(190%, -132%);
-  }
-  body main section.description-6 .confix .moon-up-img:hover {
-    -webkit-animation: moon-img-turn 1s linear infinite;
-            animation: moon-img-turn 1s linear infinite;
+    -webkit-animation: moon-img-turn 1s linear;
+            animation: moon-img-turn 1s linear;
   }
   @-webkit-keyframes moon-img-turn {
     0% {
-      -webkit-transform: translate(190%, -132%) rotateZ(0);
-              transform: translate(190%, -132%) rotateZ(0);
+      -webkit-transform: translate(750%, 0%) rotateZ(0);
+              transform: translate(750%, 0%) rotateZ(0);
     }
     100% {
       -webkit-transform: translate(190%, -132%) rotateZ(360deg);
@@ -1537,8 +1536,8 @@ body main section.description-6 .confix .moon-up-img {
   }
   @keyframes moon-img-turn {
     0% {
-      -webkit-transform: translate(190%, -132%) rotateZ(0);
-              transform: translate(190%, -132%) rotateZ(0);
+      -webkit-transform: translate(750%, 0%) rotateZ(0);
+              transform: translate(750%, 0%) rotateZ(0);
     }
     100% {
       -webkit-transform: translate(190%, -132%) rotateZ(360deg);
@@ -1551,6 +1550,28 @@ body main section.description-6 .confix .moon-up-img {
   body main section.description-6 .confix .moon-up-img {
     -webkit-transform: translate(190%, -122%);
             transform: translate(190%, -122%);
+    -webkit-animation: moon-img-turns 1s linear;
+            animation: moon-img-turns 1s linear;
+  }
+  @-webkit-keyframes moon-img-turns {
+    0% {
+      -webkit-transform: translate(1600%, 0%) rotateZ(0);
+              transform: translate(1600%, 0%) rotateZ(0);
+    }
+    100% {
+      -webkit-transform: translate(190%, -122%) rotateZ(360deg);
+              transform: translate(190%, -122%) rotateZ(360deg);
+    }
+  }
+  @keyframes moon-img-turns {
+    0% {
+      -webkit-transform: translate(1600%, 0%) rotateZ(0);
+              transform: translate(1600%, 0%) rotateZ(0);
+    }
+    100% {
+      -webkit-transform: translate(190%, -122%) rotateZ(360deg);
+              transform: translate(190%, -122%) rotateZ(360deg);
+    }
   }
 }
 
