@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
@@ -403,11 +404,35 @@ body main section.description-1 .confix .main-top .title .title-left {
 body main section.description-1 .confix .main-top .title p {
   font-size: 0.99em;
   text-align: center;
+  -webkit-animation: text-up 4s ease;
+          animation: text-up 4s ease;
 }
 
 @media screen and (min-width: 768px) {
   body main section.description-1 .confix .main-top .title p {
     font-size: 2.8vmin;
+  }
+}
+
+@-webkit-keyframes text-up {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes text-up {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -524,6 +549,10 @@ body main section.description-1 .confix .main-top .main-image3 {
   display: none;
   -webkit-transform: translate(-90%, -70%);
           transform: translate(-90%, -70%);
+  -webkit-animation: up-img1 30s ease;
+          animation: up-img1 30s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @media screen and (min-width: 768px) {
@@ -535,6 +564,24 @@ body main section.description-1 .confix .main-top .main-image3 {
 body main section.description-1 .confix .main-top .main-image3 img {
   width: 4vmax;
   opacity: 0.9;
+}
+
+@-webkit-keyframes up-img1 {
+  0% {
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-bottom: 80em;
+  }
+}
+
+@keyframes up-img1 {
+  0% {
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-bottom: 80em;
+  }
 }
 
 body main section.description-2 .confix {
@@ -656,6 +703,7 @@ body main section.description-2 .confix .up-img2 {
 @media screen and (min-width: 768px) {
   body main section.description-2 .confix .up-img2 {
     display: block;
+    z-index: 2;
   }
 }
 
@@ -772,7 +820,7 @@ body main section.description-2 .confix .introduction .introduction-flex .abilit
   margin-bottom: 1em;
 }
 
-body main section.description-2 .confix .introduction .introduction-flex .ability .skills-img {
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -785,13 +833,78 @@ body main section.description-2 .confix .introduction .introduction-flex .abilit
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 15px;
 }
 
-@media screen and (min-width: 768px) {
-  body main section.description-2 .confix .introduction .introduction-flex .ability .skills-img img {
-    width: 19vmin;
-  }
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart h2 {
+  display: none;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart:nth-child(1) circle {
+  stroke: #4e88e1;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart:nth-child(2) circle {
+  stroke: #b02629;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart:nth-child(3) circle {
+  stroke: #19cdca;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart:nth-child(4) circle {
+  stroke: #e4732a;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart:nth-child(5) circle {
+  stroke: #b24a9c;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart:nth-child(6) circle {
+  stroke: #4550a3;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart svg {
+  width: 200px;
+  height: 200px;
+}
+
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart svg circle {
+  fill: #e8f5e9;
+  stroke-width: 50;
+  /* 반지름의 두께 */
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 50.5% 50.5%;
+          transform-origin: 50.5% 50.5%;
 }
 
 body main section.description-2 .confix .introduction .introdoution-bottom {
@@ -971,6 +1084,7 @@ body main section.description-4 .confix .direction-box {
 
 @media screen and (min-width: 768px) {
   body main section.description-4 .confix .direction-box .coding-box {
+    margin-top: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -986,6 +1100,7 @@ body main section.description-4 .confix .direction-box {
 
 body main section.description-4 .confix .direction-box .coding-box > img {
   width: 100%;
+  padding: 5px;
   -webkit-filter: drop-shadow(0px 0px 3px white);
           filter: drop-shadow(0px 0px 3px white);
   border-radius: 5px;
@@ -994,6 +1109,7 @@ body main section.description-4 .confix .direction-box .coding-box > img {
 @media screen and (min-width: 768px) {
   body main section.description-4 .confix .direction-box .coding-box > img {
     width: 41vmin;
+    padding: 0px;
   }
 }
 
@@ -1123,7 +1239,7 @@ body main section.description-5 .confix .portfolio-1 .portfolio-1-parallelogra {
 }
 
 body main section.description-5 .confix .portfolio-1 .portfolio-box {
-  width: 100%;
+  width: 80%;
   position: absolute;
   top: 220px;
   left: 50%;
@@ -1143,6 +1259,12 @@ body main section.description-5 .confix .portfolio-1 .portfolio-box {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-bottom: 6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-1 .portfolio-box {
+    width: 100%;
   }
 }
 
@@ -1242,7 +1364,7 @@ body main section.description-5 .confix .portfolio-2 .portfolio-2-parallelogra {
 }
 
 body main section.description-5 .confix .portfolio-2 .portfolio-box {
-  width: 100%;
+  width: 80%;
   position: absolute;
   top: 220px;
   left: 50%;
@@ -1262,6 +1384,12 @@ body main section.description-5 .confix .portfolio-2 .portfolio-box {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-bottom: 6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-2 .portfolio-box {
+    width: 100%;
   }
 }
 
@@ -1362,7 +1490,7 @@ body main section.description-5 .confix .portfolio-3 .portfolio-3-parallelogra {
 }
 
 body main section.description-5 .confix .portfolio-3 .portfolio-box {
-  width: 100%;
+  width: 80%;
   position: absolute;
   top: 220px;
   left: 50%;
@@ -1382,6 +1510,12 @@ body main section.description-5 .confix .portfolio-3 .portfolio-box {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-bottom: 6em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body main section.description-5 .confix .portfolio-3 .portfolio-box {
+    width: 100%;
   }
 }
 
@@ -1477,6 +1611,7 @@ body main section.description-5 .confix .portfolio-3 .portfolio-bottom span {
 body main section.description-6 {
   clear: both;
   overflow: hidden;
+  height: 550px;
 }
 
 body main section.description-6 .confix {
@@ -1519,15 +1654,15 @@ body main section.description-6 .confix .moon-up-img {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate(190%, -132%);
-            transform: translate(190%, -132%);
-    -webkit-animation: moon-img-turn 1s linear;
-            animation: moon-img-turn 1s linear;
+  }
+  body main section.description-6 .confix .moon-up-img .on {
+    -webkit-animation: moon-img-turn 1.5s linear both;
+            animation: moon-img-turn 1.5s linear both;
   }
   @-webkit-keyframes moon-img-turn {
     0% {
-      -webkit-transform: translate(750%, 0%) rotateZ(0);
-              transform: translate(750%, 0%) rotateZ(0);
+      -webkit-transform: translate(750%, 0%) rotateZ(-360deg);
+              transform: translate(750%, 0%) rotateZ(-360deg);
     }
     100% {
       -webkit-transform: translate(190%, -132%) rotateZ(360deg);
@@ -1536,8 +1671,8 @@ body main section.description-6 .confix .moon-up-img {
   }
   @keyframes moon-img-turn {
     0% {
-      -webkit-transform: translate(750%, 0%) rotateZ(0);
-              transform: translate(750%, 0%) rotateZ(0);
+      -webkit-transform: translate(750%, 0%) rotateZ(-360deg);
+              transform: translate(750%, 0%) rotateZ(-360deg);
     }
     100% {
       -webkit-transform: translate(190%, -132%) rotateZ(360deg);
@@ -1547,30 +1682,28 @@ body main section.description-6 .confix .moon-up-img {
 }
 
 @media screen and (min-width: 1320px) {
-  body main section.description-6 .confix .moon-up-img {
-    -webkit-transform: translate(190%, -122%);
-            transform: translate(190%, -122%);
-    -webkit-animation: moon-img-turns 1s linear;
-            animation: moon-img-turns 1s linear;
+  body main section.description-6 .confix .moon-up-img .on1 {
+    -webkit-animation: moon-img-turns 2.3s linear both;
+            animation: moon-img-turns 2.3s linear both;
   }
   @-webkit-keyframes moon-img-turns {
     0% {
-      -webkit-transform: translate(1600%, 0%) rotateZ(0);
-              transform: translate(1600%, 0%) rotateZ(0);
+      -webkit-transform: translate(1600%, 0%) rotate(-720deg);
+              transform: translate(1600%, 0%) rotate(-720deg);
     }
     100% {
-      -webkit-transform: translate(190%, -122%) rotateZ(360deg);
-              transform: translate(190%, -122%) rotateZ(360deg);
+      -webkit-transform: translate(190%, -122%) rotate(360deg);
+              transform: translate(190%, -122%) rotate(360deg);
     }
   }
   @keyframes moon-img-turns {
     0% {
-      -webkit-transform: translate(1600%, 0%) rotateZ(0);
-              transform: translate(1600%, 0%) rotateZ(0);
+      -webkit-transform: translate(1600%, 0%) rotate(-720deg);
+              transform: translate(1600%, 0%) rotate(-720deg);
     }
     100% {
-      -webkit-transform: translate(190%, -122%) rotateZ(360deg);
-              transform: translate(190%, -122%) rotateZ(360deg);
+      -webkit-transform: translate(190%, -122%) rotate(360deg);
+              transform: translate(190%, -122%) rotate(360deg);
     }
   }
 }
@@ -1651,7 +1784,7 @@ body footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 240px;
+  margin-top: 100px;
   padding: 50px;
   background-color: #333;
 }

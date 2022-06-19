@@ -48,7 +48,7 @@
 // 포트폴리오 박스
 @mixin port-text() {
     .portfolio-box {
-        width: 100%;
+        width: 80%;
         position: absolute;
         top: 220px;
         left: 50%;
@@ -58,6 +58,9 @@
             justify-content: center;
             align-items: flex-start;
             margin-bottom: 6em;
+        }
+        @include responsive(tablet-size) {
+            width: 100%;
         }
 
         // 포트폴리오 이미지

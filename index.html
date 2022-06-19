@@ -15,7 +15,7 @@
     <script src="./aos/aos.js"></script>
 </head>
 <body>
-    <script>AOS.init({duration: 1000, offset: 400, easing:'linear', delay: 200})</script>
+    <script>AOS.init({duration: 1000, offset: 400, easing:'linear', delay: 150})</script>
     <header>
         <h1>DongKeon Portfolio</h1>
     </header>
@@ -163,13 +163,57 @@
                         <div class="ability">
                             <div class="ability-text">&lt;ABILITY&gt;</div>
     
-                            <div class="skills-img">
-                                <img src="./images/ps.png" alt="photoshop" />
-                                <img src="./images/HTML.png" alt="HTML" />
-                                <img src="./images/CSS.png" alt="CSS" />
-                                <img src="./images/JS.png" alt="Javascript" />
-                                <img src="./images/SASS.png" alt="Sass" />
-                                <img src="./images/jQuery.png" alt="jQuery" /> 
+                            <div class="skills">
+                                <div class="skills-charts">
+                                    <div class="skills-chart">
+                                        <h2 date-num="85"></h2>
+                                        <img src="./images/PS-logo.svg" alt="PS-logo">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="70"></circle>
+                                            <!-- cx:x값   cy:y값   r:반지름의 크기  -->
+                                        </svg>
+                                    </div>
+
+                                    <div class="skills-chart">
+                                        <h2 date-num="90"></h2>
+                                        <img src="./images/HTML-logo.svg" alt="HTML-logo">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="70"></circle>
+                                        </svg>
+                                    </div>  
+
+                                    <div class="skills-chart">
+                                        <h2 date-num="90"></h2>
+                                        <img src="./images/CSS-logo.svg" alt="CSS-logo">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="70"></circle>
+                                        </svg>
+                                    </div>
+
+                                    <div class="skills-chart">
+                                        <h2 date-num="70"></h2>
+                                        <img src="./images/JS-logo.svg" alt="JS-logo.svg">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="70"></circle>
+                                        </svg>
+                                    </div>
+
+                                    <div class="skills-chart">
+                                        <h2 date-num="90"></h2>
+                                        <img src="./images/SASS-logo.svg" alt="SASS-logo.svg">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="70"></circle>
+                                        </svg>
+                                    </div>
+
+                                    <div class="skills-chart">
+                                        <h2 date-num="70"></h2>
+                                        <img src="./images/jQuery-logo.svg" alt="jQuery-logo.svg">
+                                        <svg>
+                                            <circle cx="100" cy="100" r="70"></circle>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div> <!-- skills-img -->
                         </div> <!-- ability -->
                     </div> <!-- introduction-flex -->
@@ -329,7 +373,7 @@
 
                 <h2>&lt;<span>CONTACT</span>&gt;</h2>
                 
-                <div class="moon-up-img">
+                <div class="moon-up-img" onclick="scrollImg();">
                     <img src="./images/9.png" alt="달위에-깃발-들고있는-이미지" />
                 </div>
 
@@ -354,13 +398,12 @@
     </main>
 
     <footer>
-        <img src="./images/GitHub-Mark-Light-32px.png" alt="git-hub" id="gitRink">
+        <a href="https://github.com/DongKeon94/Myportfolio-" target="_blank">
+            <img src="./images/GitHub-Mark-Light-32px.png" alt="git-hub" id="gitRink">
+        </a>
         <h2>2022.Lee DongKeon</h2>
     </footer>
 
-    <script>
-        const Rink = document.getElementById("gitRink");
-        Rink.setAttribute("url")
-    </script>
+    
 </body>
 </html>

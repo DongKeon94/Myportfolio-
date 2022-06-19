@@ -85,9 +85,10 @@ $(document).ready(function(){
                 }, 2000);
             }
         }
-    }// 타이핑 텍스트 종료
+    } // 타이핑 텍스트 종료
 
-    // 여러 우주풍선이 올라가는 이미지
+
+    // 여러가지 우주풍선의 이미지가 올라가는 모션
     $(window).on("scroll", function(){
         if($(this).scrollTop() > 1200) {
             $(".up-img2")
@@ -96,23 +97,77 @@ $(document).ready(function(){
                 top :"-10%",
             },10000)
         }
-    });
+    }); // 여러가지 우주풍선의 이미지가 올라가는 모션
 
+
+    // skill 그래프 모션
+    $(function() {
+        var charts = $(".skills-charts");
+        var chart = $('.skills-chart');
+        var chartOST = chart.offset().top - 430; // chart의 화면에서 떨어진 높이가 1000
+
+
+        $(window).scroll(function() {
+            var currentSCT = $(this).scrollTop();
+            if(currentSCT >= chartOST) {
+                if(!charts.hasClass('active')) {
+                    // 한번charts.addClass('active')가 들어오면은 조건에 맞지 않기때문에 실행이 되지않는다.
+
+                    animateChart(); // 애니메이션이 실행하고나면 charts.addClass('active')가 생성이된다.
+                    charts.addClass('active');
+                }
+            }
+        });
+
+        function animateChart() {
+            chart.each(function(){
+                var item = $(this); // div class="chart"를 말한다.
+                var title = item.find("h2");
+                var targetNum = title.attr("date-num"); // <h2>.attr(속성)에서 data-num것을 가지고와라.
+                var circle = item.find('circle');
+
+                // 각각의 svg 서클의 값을 설정해주는 값
+                $({rate:0}).animate({rate:targetNum}, {
+                    duration: 1500,
+                    progress: function() { // 애니메이션이 변화할때마다 할일을 지정해준다.
+                        var now = this.rate; // this는 애니메이트 전체를 말한다.
+                        circle.css({strokeDashoffset: 440-(440*now/100)});
+                    }
+                })
+            });
+        }
+    }); // skill 그래프 모션 종료
+
+
+    // 달위에-깃발-들고있는-이미지 모션
+    var description6 = $(".description-6")
+    var secImgOST = description6.offset().top - 1500;
+
+    $(window).scroll(function () {
+        var curSCT = $(this).scrollTop();
+        var width = $(window).width();
+
+        if (curSCT > secImgOST) {
+            $(".moon-up-img img").addClass("on");
+
+            if (width>=1320) {
+                $(".moon-up-img img").addClass("on1");
+            }
+        } 
+    });
 }); 
 
 // 바닐라JS
 window.onload = function() {
 
-   
 }
+// function scrollImg() {
+//     var target = document.querySelector(".moon-up-img img")
+//     target.classList.add("on")
+// }
 
 window.addEventListener("load", function() {
 
-    // 지구풍선이 올라가는 이미지
-
-    setInterval(() => {
-        const upImag1 = document.querySelector(".main-image3 img");
-        upImag1.animate({marginTop:"2000px"}, 30000);
-    }, 2000); // 지구풍선이 올라가는 이미지 종료
+    
 });
 

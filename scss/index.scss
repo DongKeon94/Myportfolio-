@@ -261,7 +261,11 @@ body {
                             @include responsive(tablet-size) {
                                 font-size: 2.8vmin;
                             }
-
+                            animation: text-up 4s ease;
+                            @keyframes text-up {
+                                0% {transform: scale(0); }
+                                100% {transform: scale(1); }
+                            }
                             .title-text {
                                 font-size: 1.3em;
                                 font-weight: bold;
@@ -345,6 +349,13 @@ body {
                             width: 4vmax;
                             opacity: 0.9;
                         }
+                        animation: up-img1 30s ease;
+                        animation-fill-mode: both;
+
+                        @keyframes up-img1 {
+                            0% {margin-bottom: 0px}
+                            100% {margin-bottom: 80em}
+                        }
                     } 
                 }
             }
@@ -423,6 +434,7 @@ body {
                     display: none;
                     @include responsive(tablet-size) {
                         display: block;
+                        z-index: 2;
                     }
                 }
 
@@ -514,17 +526,68 @@ body {
                                 margin-bottom: 1em;
                             }
 
-                            .skills-img {
+                            .skills {
                                 width: 100%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 flex-wrap: wrap;
-                                gap: 15px;
 
-                                @include responsive(tablet-size) {
-                                    img {
-                                        width: 19vmin;
+
+                                .skills-charts {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-wrap: wrap;
+                                    gap:15px;
+                                    .skills-chart{
+                                        position: relative;
+                                        border: 1px solid black;
+                                        border-radius: 50%;
+                                        img {
+                                            position: absolute;
+                                            left: 50%;
+                                            top: 50%;
+                                            transform: translate(-50%,-50%);
+                                            width: 60%;
+                                        }
+                                        
+                                        h2 {
+                                            display: none;
+                                        }
+                                        
+                                        &:nth-child(1) circle {
+                                            stroke: #4e88e1;
+                                        }
+                                        &:nth-child(2) circle {
+                                            stroke: #b02629;
+                                        }
+                                        &:nth-child(3) circle {
+                                            stroke: #19cdca;
+                                        }
+                                        &:nth-child(4) circle {
+                                            stroke: #e4732a;
+                                        }
+                                        &:nth-child(5) circle {
+                                            stroke: #b24a9c;
+                                        }
+                                        &:nth-child(6) circle {
+                                            stroke: #4550a3;
+                                        }
+                                        
+                                        svg {
+                                            width: 200px;
+                                            height: 200px;
+                                            
+                                            circle {
+                                                fill : #e8f5e9;
+                                                stroke-width: 50; /* 반지름의 두께 */
+                                                stroke-dasharray: 440;
+                                                stroke-dashoffset: 440;
+                                                // animation: line 2s forwards;  
+                                                transform: rotate(-90deg);
+                                                transform-origin: 50.5% 50.5%;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -641,9 +704,12 @@ body {
 
                 // direction의 코딩 박스
                 .direction-box {
+                    
                     overflow: hidden;
+                    
                     .coding-box {
                         @include responsive(tablet-size) {
+                            margin-top: 5px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -652,10 +718,12 @@ body {
 
                         > img {
                             width: 100%;
+                            padding: 5px;
                             filter: drop-shadow(0px 0px 3px rgba(255,255,255,1));
                             border-radius: 5px;
                             @include responsive(tablet-size) {
                                 width: 41vmin;
+                                padding: 0px;
                             }
                            
                         }
@@ -807,6 +875,7 @@ body {
         section.description-6 {
             clear: both;
             overflow: hidden;
+            height: 550px;
             .confix {
                 @include padding-set();
                 @include confix();
@@ -834,21 +903,25 @@ body {
                         display: inline-block;
                         position: absolute;
                         left: 50%; top: 50%;
-                        transform: translate(190%,-132%);
-                        animation: moon-img-turn 1s linear;
-                        @keyframes moon-img-turn {
-                            0% {transform: translate(750%,0%) rotateZ(0);}
-                            100% {transform: translate(190%,-132%) rotateZ(360deg);}
+                        
+                        .on {
+                            animation: moon-img-turn 1.5s linear both;
+                            @keyframes moon-img-turn {
+                                0% {transform: translate(750%,0%) rotateZ(-360deg);}
+                                100% {transform: translate(190%,-132%) rotateZ(360deg);}
+                            }
                         }
                     }
                     @include responsive(pc-size) {
                         
-                        transform: translate(190%,-122%);
+                        // transform: translate(190%,-122%);
+                        .on1 {
 
-                        animation: moon-img-turns 1s linear;
-                        @keyframes moon-img-turns {
-                            0% {transform: translate(1600%,0%) rotateZ(0);}
-                            100% {transform: translate(190%,-122%) rotateZ(360deg);}
+                            animation: moon-img-turns 2.3s linear both;
+                            @keyframes moon-img-turns {
+                                0% {transform: translate(1600%,0%) rotate(-720deg);}
+                                100% {transform: translate(190%,-122%) rotate(360deg);}
+                            }
                         }
                     }
                 }
@@ -913,7 +986,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 240px;
+        margin-top: 100px;
         padding: 50px;
         background-color: #333;
         h2 {
