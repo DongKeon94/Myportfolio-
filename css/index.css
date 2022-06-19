@@ -863,7 +863,7 @@ body main section.description-2 .confix .introduction .introduction-flex .abilit
 }
 
 body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart h2 {
-  display: none;
+  font-size: 0;
 }
 
 body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart:nth-child(1) circle {

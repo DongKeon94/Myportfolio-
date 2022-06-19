@@ -123,7 +123,7 @@ $(document).ready(function(){
             chart.each(function(){
                 var item = $(this); // div class="chart"를 말한다.
                 var title = item.find("h2");
-                var targetNum = title.attr("date-num"); // <h2>.attr(속성)에서 data-num것을 가지고와라.
+                var targetNum = title.attr("data-num"); // <h2>.attr(속성)에서 data-num것을 가지고와라.
                 var circle = item.find('circle');
 
                 // 각각의 svg 서클의 값을 설정해주는 값
