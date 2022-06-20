@@ -181,6 +181,34 @@ body main section.description-1 .confix .main-top .hello {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-animation: side-right-text 1.2s both;
+          animation: side-right-text 1.2s both;
+}
+
+@-webkit-keyframes side-right-text {
+  0% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes side-right-text {
+  0% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
+  }
 }
 
 body main section.description-1 .confix .main-top .hello .hello-left {
@@ -301,6 +329,34 @@ body main section.description-1 .confix .main-top .its-me {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-animation: side-left-text 1.2s both;
+          animation: side-left-text 1.2s both;
+}
+
+@-webkit-keyframes side-left-text {
+  0% {
+    -webkit-transform: translateX(-600%);
+            transform: translateX(-600%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes side-left-text {
+  0% {
+    -webkit-transform: translateX(-600%);
+            transform: translateX(-600%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 1;
+  }
 }
 
 body main section.description-1 .confix .main-top .its-me .its-left {
@@ -386,6 +442,26 @@ body main section.description-1 .confix .main-top .title {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-animation: text-up 2.5s ease;
+          animation: text-up 2.5s ease;
+}
+
+@-webkit-keyframes text-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-up {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 body main section.description-1 .confix .main-top .title .title-left {
@@ -404,35 +480,11 @@ body main section.description-1 .confix .main-top .title .title-left {
 body main section.description-1 .confix .main-top .title p {
   font-size: 0.99em;
   text-align: center;
-  -webkit-animation: text-up 4s ease;
-          animation: text-up 4s ease;
 }
 
 @media screen and (min-width: 768px) {
   body main section.description-1 .confix .main-top .title p {
     font-size: 2.8vmin;
-  }
-}
-
-@-webkit-keyframes text-up {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes text-up {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
 }
 
@@ -490,8 +542,8 @@ body main section.description-1 .confix .main-top .main-image1 {
 
 body main section.description-1 .confix .main-top .main-image1 img {
   width: 100%;
-  -webkit-animation: spin-space 10s linear infinite;
-          animation: spin-space 10s linear infinite;
+  -webkit-animation: spin-space 3s linear infinite;
+          animation: spin-space 3s linear infinite;
 }
 
 @-webkit-keyframes spin-space {
@@ -547,12 +599,6 @@ body main section.description-1 .confix .main-top .main-image3 {
   bottom: 0;
   right: 0;
   display: none;
-  -webkit-transform: translate(-90%, -70%);
-          transform: translate(-90%, -70%);
-  -webkit-animation: up-img1 30s ease;
-          animation: up-img1 30s ease;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
 }
 
 @media screen and (min-width: 768px) {
@@ -562,25 +608,37 @@ body main section.description-1 .confix .main-top .main-image3 {
 }
 
 body main section.description-1 .confix .main-top .main-image3 img {
-  width: 4vmax;
-  opacity: 0.9;
+  -webkit-transform: translate(-90%, -70%);
+          transform: translate(-90%, -70%);
+  -webkit-animation: up-img1 15s ease;
+          animation: up-img1 15s ease;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 @-webkit-keyframes up-img1 {
   0% {
     margin-bottom: 0px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
     margin-bottom: 80em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes up-img1 {
   0% {
     margin-bottom: 0px;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
     margin-bottom: 80em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -696,7 +754,6 @@ body main section.description-2 .confix .up-img2 {
   bottom: -10%;
   right: 5%;
   width: 4vmax;
-  opacity: 0.9;
   display: none;
 }
 
@@ -941,32 +998,50 @@ body main section.description-3 {
   background: url(../images/movebackground01.png) 0 center/100px repeat-x;
   background-size: cover;
   opacity: 0.9;
-  -webkit-animation: movebg 30s linear infinite;
-          animation: movebg 30s linear infinite;
+  -webkit-animation: movebg1 20s linear infinite;
+          animation: movebg1 20s linear infinite;
+}
+
+@-webkit-keyframes movebg1 {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -5000px center;
+  }
+}
+
+@keyframes movebg1 {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -5000px center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   body main section.description-3 {
     height: 18vmax;
     margin: 15em 0;
+    -webkit-animation: movebg2 10s linear infinite;
+            animation: movebg2 10s linear infinite;
   }
-}
-
-@-webkit-keyframes movebg {
-  0% {
-    background-position: 0 center;
+  @-webkit-keyframes movebg2 {
+    0% {
+      background-position: 0 center;
+    }
+    100% {
+      background-position: -5000px center;
+    }
   }
-  100% {
-    background-position: -1000px center;
-  }
-}
-
-@keyframes movebg {
-  0% {
-    background-position: 0 center;
-  }
-  100% {
-    background-position: -1000px center;
+  @keyframes movebg2 {
+    0% {
+      background-position: 0 center;
+    }
+    100% {
+      background-position: -5000px center;
+    }
   }
 }
 
@@ -978,33 +1053,29 @@ body main section.description-3 .move-bg .moving-ship {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transform: translate(10%, 70%);
-          transform: translate(10%, 70%);
-  -webkit-animation: moveimg 7s ease-in-out infinite;
-          animation: moveimg 7s ease-in-out infinite;
+  -webkit-transform: translate(10%, 50%);
+          transform: translate(10%, 50%);
+  -webkit-animation: moveimg 8s linear infinite;
+          animation: moveimg 8s linear infinite;
 }
 
 @media screen and (min-width: 768px) {
   body main section.description-3 .move-bg .moving-ship {
-    -webkit-transform: translate(10%, 70%);
-            transform: translate(10%, 70%);
+    -webkit-transform: translate(10%, 40%);
+            transform: translate(10%, 40%);
   }
 }
 
 @media screen and (min-width: 1320px) {
   body main section.description-3 .move-bg .moving-ship {
-    -webkit-transform: translate(10%, 60%);
-            transform: translate(10%, 60%);
+    -webkit-transform: translate(10%, 35%);
+            transform: translate(10%, 35%);
   }
 }
 
 @-webkit-keyframes moveimg {
   0% {
-    left: -150px;
-  }
-  60% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    left: -10%;
   }
   100% {
     left: 100%;
@@ -1013,11 +1084,7 @@ body main section.description-3 .move-bg .moving-ship {
 
 @keyframes moveimg {
   0% {
-    left: -150px;
-  }
-  60% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
+    left: -10%;
   }
   100% {
     left: 100%;
@@ -1332,7 +1399,7 @@ body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-t
   font-size: 1.3em;
 }
 
-body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box button {
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box a {
   font-size: 0.8em;
   border: 1px solid #fff;
   margin-top: 20px;
@@ -1457,7 +1524,7 @@ body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-t
   font-size: 1.3em;
 }
 
-body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box button {
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box a {
   font-size: 0.8em;
   border: 1px solid #fff;
   margin-top: 20px;
@@ -1583,7 +1650,7 @@ body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-t
   font-size: 1.3em;
 }
 
-body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box button {
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box a {
   font-size: 0.8em;
   border: 1px solid #fff;
   margin-top: 20px;
@@ -1656,8 +1723,8 @@ body main section.description-6 .confix .moon-up-img {
     top: 50%;
   }
   body main section.description-6 .confix .moon-up-img .on {
-    -webkit-animation: moon-img-turn 1.5s linear both;
-            animation: moon-img-turn 1.5s linear both;
+    -webkit-animation: moon-img-turn 0.7s linear both;
+            animation: moon-img-turn 0.7s linear both;
   }
   @-webkit-keyframes moon-img-turn {
     0% {
@@ -1683,8 +1750,8 @@ body main section.description-6 .confix .moon-up-img {
 
 @media screen and (min-width: 1320px) {
   body main section.description-6 .confix .moon-up-img .on1 {
-    -webkit-animation: moon-img-turns 2.3s linear both;
-            animation: moon-img-turns 2.3s linear both;
+    -webkit-animation: moon-img-turns 1s linear both;
+            animation: moon-img-turns 1s linear both;
   }
   @-webkit-keyframes moon-img-turns {
     0% {
@@ -1751,6 +1818,25 @@ body main section.description-6 .confix .moon-star-img {
   body main section.description-6 .confix .moon-star-img img {
     width: 96px;
     height: 117px;
+    position: absolute;
+    -webkit-animation: jump-img 0.8s infinite alternate;
+            animation: jump-img 0.8s infinite alternate;
+  }
+  @-webkit-keyframes jump-img {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: -200px;
+    }
+  }
+  @keyframes jump-img {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: -200px;
+    }
   }
 }
 
@@ -1772,6 +1858,20 @@ body main section.description-6 .confix .contact-bottom span {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+
+body main #up-arrow {
+  display: none;
+  position: fixed;
+  right: 4%;
+  bottom: 4.5%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+body main #up-arrow img {
+  width: 40px;
+  height: 40px;
 }
 
 body footer {

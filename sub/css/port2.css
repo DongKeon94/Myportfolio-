@@ -1,0 +1,46 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Inconsolata;
+}
+
+p {
+  font: 16px;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+a:hover {
+  color: #777;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header,
+section,
+nav,
+article,
+aside,
+footer {
+  display: block;
+}
+/*# sourceMappingURL=port2.css.map */

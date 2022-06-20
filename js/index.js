@@ -141,7 +141,7 @@ $(document).ready(function(){
 
     // 달위에-깃발-들고있는-이미지 모션
     var description6 = $(".description-6")
-    var secImgOST = description6.offset().top - 1500;
+    var secImgOST = description6.offset().top - 500;
 
     $(window).scroll(function () {
         var curSCT = $(this).scrollTop();
@@ -154,7 +154,26 @@ $(document).ready(function(){
                 $(".moon-up-img img").addClass("on1");
             }
         } 
+    }); // 달위에-깃발-들고있는-이미지 모션 종료
+
+
+    // 스크롤 화살표
+    $(window).on("scroll", function(){
+        if($(this).scrollTop() > 400) {
+            $("#up-arrow")
+            .fadeIn(500);
+        } else {
+            $("#up-arrow")
+            .fadeOut(500)
+        }
     });
+
+    $("#up-arrow").click( function(){
+        $("html").animate({
+            scrollTop : "0"
+        }, 2000);
+    }) // 스크롤 화살표 종료
+
 }); 
 
 // 바닐라JS

@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" property="og:title" content="이동건 포트폴리오">
+    <meta name="images" property="og:image" content="./images/meta-images.jpg">
+    <meta name="description" property="og:description" content="이동건 포트폴리오">
+    <meta name="type" property="og:type" content="article">
     <meta name="Description" content="이동건, 포트폴리오, 자기소개">
     <meta name="Author" content="Dong">
-    <link rel="stylecut icon" href="./images/DK.ico"> <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon"> <!-- favicon -->
     <title>Myfortfolio 이동건</title>
     <link rel="stylesheet" href="./css/index.css"> <!-- css file -->
-    <link rel="stylesheet" href="./aos/aos.css">
+    <link rel="stylesheet" href="./aos/aos.css"> <!-- aos file -->
     <script src="./js/jquery.js"></script> <!-- js file -->
     <script src="./js/index.js"></script>
     <script src="./aos/aos.js"></script>
 </head>
 <body>
-    <script>AOS.init({duration: 1000, offset: 400, easing:'linear', delay: 150})</script>
+    <script>AOS.init({duration: 650, offset: 500})</script>
     <header>
         <h1>DongKeon Portfolio</h1>
     </header>
@@ -301,8 +305,8 @@
 
         <section class="description-5">
             <div class="confix">
-                <div class="portfolio-1" data-aos="zoom-out-right">
-                    <div class="portfolio-header-text" data-aos="zoom-out-right">
+                <div class="portfolio-1" data-aos="zoom-out-right" data-aos-delay="250">
+                    <div class="portfolio-header-text" data-aos="zoom-out-right" >
                         <h2>&lt;<span>PORTFOLIO</span>&gt;</h2>
                         <img src="./images/8.png" alt="달에 사람이 앉아있는 이미지" />
                     </div> <!-- portfolio-text -->
@@ -317,15 +321,13 @@
                             <p><strong>TOOLS</strong> : HTML · CSS · jQuery</p>
                             <p><strong>기여도</strong> : 개인작업 100%</p>
                             
-                            <form action="#">
-                                <button>WEB</button>
-                                <button>DESIGN GUIDE</button>
-                            </form>
+                            <a href="">WEB</a>
+                            <a href="">DESIGN GUIDE</a>
                         </div> <!-- portfolio-text-box -->
                     </div> <!-- portfolio-box -->
                 </div>
                 
-                <div class="portfolio-2" data-aos="fade-up-right">
+                <div class="portfolio-2" data-aos="fade-up-right" data-aos-delay="250">
                     <div class="portfolio-2-parallelogra"></div>
                     <div class="portfolio-box">
                         <img src="./images/pc.png" alt="포트폴리오 이미지">
@@ -337,15 +339,13 @@
                             <p><strong>TOOLS</strong> : HTML · CSS · jQuery</p>
                             <p><strong>기여도</strong> : 개인작업 100%</p>
                             
-                            <form action="#">
-                                <button>WEB</button>
-                                <button>DESIGN GUIDE</button>
-                            </form>
+                            <a href="">WEB</a>
+                            <a href="">DESIGN GUIDE</a>
                         </div> <!-- portfolio-text-box -->
                     </div> <!-- portfolio-box -->
                 </div>
 
-                <div class="portfolio-3" data-aos="fade-up-left">
+                <div class="portfolio-3" data-aos="fade-up-left" data-aos-delay="250">
                     <div class="portfolio-3-parallelogra"></div>
                     <div class="portfolio-box">
                         <img src="./images/pc.png" alt="포트폴리오 이미지">
@@ -357,10 +357,8 @@
                             <p><strong>TOOLS</strong> : HTML · CSS · jQuery</p>
                             <p><strong>기여도</strong> : 개인작업 100%</p>
                             
-                            <form action="#">
-                                <button>WEB</button>
-                                <button>DESIGN GUIDE</button>
-                            </form>
+                            <a href="">WEB</a>
+                            <a href="">DESIGN GUIDE</a>
                         </div> <!-- portfolio-text-box -->
                     </div> <!-- portfolio-box -->
                     <div class="portfolio-bottom">&lt;<span>/PORTFOLIO</span>&gt;</div>
@@ -395,6 +393,10 @@
                 <div class="contact-bottom">&lt;<span>/CONTACT</span>&gt;</div>
             </div> <!-- confix -->
         </section> <!-- description-5 종료 -->
+
+        <div id="up-arrow">
+            <img src="./images/up-arrow.png" alt="up-arrow">
+        </div>
     </main>
 
     <footer>

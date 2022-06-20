@@ -103,10 +103,24 @@ body {
                         top: 18%; left: 50%; 
                         transform: translateX(-50%);
                         
+                        //Hello 텍스트 나타나는 애니메이션
+                        animation: side-right-text 1.2s both;
+                        @keyframes side-right-text  {
+                            0% {
+                                transform: translateX(150%);
+                                opacity: 0;
+                            }
+                            100% {
+                                transform: translateX(-50%);
+                                opacity: 1;
+                            }
+                        }
+
                         .hello-left {
                             font-size: 0.9em;
                             color: #b6c017;
                             transform: translateY(-1px);
+
                             @include responsive(tablet-size) {
                                 font-size: 2.5vmin;
                             }
@@ -191,12 +205,26 @@ body {
                         top: 42%; left: 50%;
                         transform: translateX(-50%);
                         
+                        // ITS_ME 텍스트 나타나는 애니메이션
+                        animation: side-left-text 1.2s both;
+                        @keyframes side-left-text  {
+                            0% {
+                                transform: translateX(-600%);
+                                opacity: 0;
+                            }
+                            100% {
+                                transform: translateX(-50%);
+                                opacity: 1;
+                            }
+                        }
+
                         .its-left {
                             position: absolute;
                             top: 0; left: 0;
                             font-size: 0.9em;
                             color: #d38e44;
                             transform: translateX(-90%);
+
                             @include responsive(tablet-size) {
                                 font-size: 2.5vmin;
                             }
@@ -207,6 +235,7 @@ body {
                             text-align: center;
                             border-radius: 50%;
                             background-color: #656565;
+
                             @include responsive(tablet-size) {
                                 width: 13vmax; height: 13vmax; 
                             }
@@ -219,6 +248,7 @@ body {
                                 border-radius: 100%;
                                 background-color: #fff;
                                 transform: translateY(5%);
+
                                 @include responsive(tablet-size) {
                                     width: 12vmax; height: 12vmax;
                                 }
@@ -246,6 +276,11 @@ body {
                         top: 70%; left: 50%;
                         transform: translateX(-50%);
 
+                        animation: text-up 2.5s ease;
+                        @keyframes text-up {
+                            0% { opacity: 0; }
+                            100% { opacity: 1; }
+                        }
                         .title-left {
                             font-size: 0.9em;
                             color: #ab47bc;
@@ -260,11 +295,6 @@ body {
                             text-align: center;
                             @include responsive(tablet-size) {
                                 font-size: 2.8vmin;
-                            }
-                            animation: text-up 4s ease;
-                            @keyframes text-up {
-                                0% {transform: scale(0); }
-                                100% {transform: scale(1); }
                             }
                             .title-text {
                                 font-size: 1.3em;
@@ -301,13 +331,19 @@ body {
                         @include responsive(tablet-size) {
                             transform: translate(57%, -65%);
                         }
+
+                        // 회전하는 우주이미지 애니메이션
                         img {
                             width: 100%;
-                            animation: spin-space 10s linear infinite;
+                            animation: spin-space 3s linear infinite;
                 
                             @keyframes spin-space {
-                                0% {transform: rotateZ(0deg);}
-                                100% {transform: rotateZ(360deg);}
+                                0% {
+                                    transform: rotateZ(0deg);
+                                }
+                                100% {
+                                    transform: rotateZ(360deg);
+                                }
                             }
                         }
                         
@@ -340,22 +376,27 @@ body {
                         position: absolute;
                         bottom: 0; right: 0;
                         display: none;
-                        transform: translate(-90%, -70%);
                         @include responsive(tablet-size) {
                             display: block;
                         }
-
+                        
                         img {
-                            width: 4vmax;
-                            opacity: 0.9;
+                            transform: translate(-90%, -70%);
+                            animation: up-img1 15s ease;
+                            animation-fill-mode: both;
+    
+                            @keyframes up-img1 {
+                                0% {
+                                    margin-bottom: 0px;
+                                    transform: scale(0);
+                                }
+                                100% {
+                                    margin-bottom: 80em;
+                                    transform: scale(1);
+                                }
+                            }
                         }
-                        animation: up-img1 30s ease;
-                        animation-fill-mode: both;
 
-                        @keyframes up-img1 {
-                            0% {margin-bottom: 0px}
-                            100% {margin-bottom: 80em}
-                        }
                     } 
                 }
             }
@@ -430,7 +471,6 @@ body {
                     position: absolute;
                     bottom: -10%; right: 5%;
                     width: 4vmax;
-                    opacity: 0.9;
                     display: none;
                     @include responsive(tablet-size) {
                         display: block;
@@ -624,19 +664,33 @@ body {
             background: url(../images/movebackground01.png) 0 center / 100px repeat-x;
             background-size: cover;
             opacity: 0.9;
+            
+            // 움직이는 배경과 애니메이션
+            animation: movebg1 20s linear infinite ;
+            @keyframes movebg1 {
+                0% {
+                    background-position:0 center;
+                }
+                100% {
+                    background-position: -5000px center;
+                }
+            }
 
             @include responsive(tablet-size) {
                 height: 18vmax;
                 margin: 15em 0;
-            }
 
-            animation: movebg 30s linear infinite;
+                animation: movebg2 10s linear infinite ;
+                @keyframes movebg2 {
+                    0% {
+                        background-position:0 center;
+                    }
+                    100% {
+                        background-position: -5000px center;
+                    }
+                }   
+            }
             
-            @keyframes movebg {
-                0% {background-position:0 center;}
-                100% {background-position:-1000px center;}
-            }
-
 
             .move-bg {
                 position: relative;
@@ -644,19 +698,23 @@ body {
                 .moving-ship {
                     position: absolute;
                     top: 0; left: 0;
-                    transform: translate(10%, 70%);
+                    transform: translate(10%, 50%);
                     @include responsive(tablet-size) {
-                        transform: translate(10%, 70%);
+                        transform: translate(10%, 40%);
                     }
                     @include responsive(pc-size) {
-                        transform: translate(10%, 60%);
+                        transform: translate(10%, 35%);
                     }
-                    animation: moveimg 7s ease-in-out infinite;
+
+                    // 움직이는 비행선 애니메이션
+                    animation: moveimg 8s linear infinite;
                     @keyframes moveimg {
-                        0% {left : -150px;}
-                        // 50% {transform: rotateZ(30deg);}
-                        60% {transform: rotate(10deg);}
-                        100% {left : 100%;}
+                        0% {
+                            left : -10%;
+                        }
+                        100% {
+                            left : 100%;
+                        }
                     }
                     
 
@@ -905,7 +963,7 @@ body {
                         left: 50%; top: 50%;
                         
                         .on {
-                            animation: moon-img-turn 1.5s linear both;
+                            animation: moon-img-turn 0.7s linear both;
                             @keyframes moon-img-turn {
                                 0% {transform: translate(750%,0%) rotateZ(-360deg);}
                                 100% {transform: translate(190%,-132%) rotateZ(360deg);}
@@ -917,7 +975,7 @@ body {
                         // transform: translate(190%,-122%);
                         .on1 {
 
-                            animation: moon-img-turns 2.3s linear both;
+                            animation: moon-img-turns 1s linear both;
                             @keyframes moon-img-turns {
                                 0% {transform: translate(1600%,0%) rotate(-720deg);}
                                 100% {transform: translate(190%,-122%) rotate(360deg);}
@@ -961,6 +1019,12 @@ body {
                         bottom: -27%; left: 2%; 
                         img {
                             width: 96px; height: 117px;
+                            position: absolute;
+                            animation: jump-img 0.8s infinite alternate;
+                            @keyframes jump-img {
+                                0% {top: -100px;}
+                                100% {top: -200px;}
+                            }
                         }
                     }
                     @include responsive(pc-size) {
@@ -980,6 +1044,17 @@ body {
                 } 
             } // confix
         } // section.description-6 종료
+
+        #up-arrow {
+			display: none;
+			position: fixed;
+			right: 4%; bottom: 4.5%;
+			cursor: pointer;
+			z-index: 100; 
+            img {
+                width: 40px; height: 40px;
+            }
+        }
     } // main
 
     footer {
