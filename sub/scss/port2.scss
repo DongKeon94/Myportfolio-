@@ -1,2 +1,18 @@
-@import "./../scss/style.scss";
+@import "../../scss/style.scss";
+@import "../../scss/common.scss";
+@import "../../scss/mixin.scss"; 
 
+* {
+    margin: 0 auto;
+    
+}
+div{
+    width: 100%;
+    max-width: 1320px;
+    img {
+        width: 100%;
+    }
+}
+
+
+    
