@@ -629,7 +629,7 @@ body {
                                             
                                             circle {
                                                 fill : #e8f5e9;
-                                                stroke-width: 50; /* 반지름의 두께 */
+                                                stroke-width: 50;
                                                 stroke-dasharray: 440;
                                                 stroke-dashoffset: 440;
                                                 // animation: line 2s forwards;  
@@ -640,42 +640,62 @@ body {
                                     }
                                 }
                             }
-                            
-                            .skills-modal-box {
+
+                            .modal-on {
                                 position: fixed;
-                                top: 73%; left: 50%;
-                                transform: translate(-50%,-50%);
-                                width: 15rem;
-                                height: 30rem;
-                                border-radius: 10px;
-                                background-color: #656565;
-                                display: none;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
                                 z-index: 3;
 
-                                .closeBtn {
-                                    position: absolute;
-                                    top: 1%; right: 7%;
-                                    font-size: 3.5em;
-                                    transform: translate(-1%, -7%);
-                                    cursor: pointer;
-                                }
-
-                                .skills-text {
-                                    padding: 1em;
-                                    width: 100%;
-                                    height: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: center;
-                                    align-items: center;
-                                    gap: 3em;
-
-                                    img {
-                                        width: 10em;
+                            }
+                            .skills-modal {
+                                
+                                .skills-modal-box {
+                                    position: fixed;
+                                    top: 73%; left: 50%;
+                                    transform: translate(-50%,-50%);
+                                    width: 15rem;
+                                    height: 30rem;
+                                    border-radius: 10px;
+                                    background-color: #bdbdbd;
+                                    display: none;
+                                    z-index: 4;
+    
+                                    @include responsive(tablet-size) {
+                                        top: 52%; left: 50%;
                                     }
-                                    p {
-                                        font-size: 0.9em;
-                                        text-align: justify;
+    
+                                    .closeBtn {
+                                        position: absolute;
+                                        top: 1%; right: 7%;
+                                        font-size: 3.5em;
+                                        transform: translate(-1%, -7%);
+                                        cursor: pointer;
+                                    }
+    
+                                    .skills-text {
+                                        padding: 1em;
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 3em;
+    
+                                        img {
+                                            width: 10em;
+                                        }
+                                        p {
+                                            font-size: 0.9em;
+                                            text-align: justify;
+                                            @include responsive(tablet-size) {
+                                                font-size: 1em;
+                                            }
+                                        }
                                     }
                                 }
                             }

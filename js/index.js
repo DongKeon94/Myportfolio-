@@ -1,3 +1,92 @@
+window.onload = function() {
+
+    // skill 모달창
+    const ovModal = document.querySelector(".skills-modal")
+    const closeModal = document.querySelectorAll(".skills-modal-box")
+    const closeModalBt0 = closeModal[0].children[0];
+    const closeModalBt1 = closeModal[1].children[0];
+    const closeModalBt2 = closeModal[2].children[0];
+    const closeModalBt3 = closeModal[3].children[0];
+    const closeModalBt4 = closeModal[4].children[0];
+    const closeModalBt5 = closeModal[5].children[0];
+
+    closeModalBt0.addEventListener("click", function() {
+        closeModal[0].style.display = "none"
+        ovModal.classList.remove("modal-on");
+    });
+
+    closeModalBt1.addEventListener("click", ()=> {
+        closeModal[1].style.display = "none"
+        ovModal.classList.remove("modal-on");
+    });
+
+    closeModalBt2.addEventListener("click", ()=> {
+        closeModal[2].style.display = "none"
+        ovModal.classList.remove("modal-on");
+    });
+
+    closeModalBt3.addEventListener("click", ()=> {
+        closeModal[3].style.display = "none"
+        ovModal.classList.remove("modal-on");
+    });
+
+    closeModalBt4.addEventListener("click", ()=> {
+        closeModal[4].style.display = "none"
+        ovModal.classList.remove("modal-on");
+    });
+
+    closeModalBt5.addEventListener("click", ()=> {
+        closeModal[5].style.display = "none"
+        ovModal.classList.remove("modal-on");
+    });
+    
+}
+
+// skill 모달창
+function openPsModal() {
+    const psModal = document.querySelector(".psBox");
+    const ovModal = document.querySelector(".skills-modal");
+    psModal.style.display = "block";
+    ovModal.classList.add("modal-on");
+};
+
+function openHtmlModals() {
+    const htmlModal = document.querySelector(".htmlBox");
+    const ovModal = document.querySelector(".skills-modal");
+    htmlModal.style.display = "block";
+    ovModal.classList.add("modal-on");
+};
+
+function openCssModals() {
+    const cssModal = document.querySelector(".cssBox");
+    const ovModal = document.querySelector(".skills-modal");
+    cssModal.style.display = "block";
+    ovModal.classList.add("modal-on");
+};
+
+function openJsModals() {
+    const jsModal = document.querySelector(".jsBox");
+    const ovModal = document.querySelector(".skills-modal");
+    jsModal.style.display = "block";
+    ovModal.classList.add("modal-on");
+};
+
+function openSassModals() {
+    const sassModal = document.querySelector(".sassBox");
+    const ovModal = document.querySelector(".skills-modal")
+    sassModal.style.display = "block";
+    ovModal.classList.add("modal-on");
+};
+
+function openJQueryModals() {
+    const jQueryModal = document.querySelector(".jQueryBox");
+    const ovModal = document.querySelector(".skills-modal");
+    jQueryModal.style.display = "block";
+    ovModal.classList.add("modal-on");
+};
+
+
+
 // 제이쿼리
 $(document).ready(function(){
 
@@ -143,7 +232,7 @@ $(document).ready(function(){
 
     // 달위에-깃발-들고있는-이미지 모션
     var description6 = $(".description-6")
-    var secImgOST = description6.offset().top - 500;
+    var secImgOST = description6.offset().top - 800;
 
     $(window).scroll(function () {
         var curSCT = $(this).scrollTop();
@@ -180,68 +269,3 @@ $(document).ready(function(){
 }); 
 
 
-
-// 바닐라JS
-window.onload = function() {
-    const closeModal = document.querySelectorAll(".skills-modal-box")
-    const closeModalBt0 = closeModal[0].children[0];
-    const closeModalBt1 = closeModal[1].children[0];
-    const closeModalBt2 = closeModal[2].children[0];
-    const closeModalBt3 = closeModal[3].children[0];
-    const closeModalBt4 = closeModal[4].children[0];
-    const closeModalBt5 = closeModal[5].children[0];
-
-    closeModalBt0.addEventListener("click", function() {
-        closeModal[0].style.display = "none"
-    });
-
-    closeModalBt1.addEventListener("click", ()=> {
-        closeModal[1].style.display = "none"
-    });
-
-    closeModalBt2.addEventListener("click", ()=> {
-        closeModal[2].style.display = "none"
-    });
-
-    closeModalBt3.addEventListener("click", ()=> {
-        closeModal[3].style.display = "none"
-    });
-
-    closeModalBt4.addEventListener("click", ()=> {
-        closeModal[4].style.display = "none"
-    });
-
-    closeModalBt5.addEventListener("click", ()=> {
-        closeModal[5].style.display = "none"
-    });
-}
-
-function openPsModal() {
-    const psModal = document.querySelector(".psBox")
-    psModal.style.display = "block"
-};
-
-function openHtmlModals() {
-    const htmlModal = document.querySelector(".htmlBox")
-    htmlModal.style.display = "block"
-};
-
-function openCssModals() {
-    const cssModal = document.querySelector(".cssBox")
-    cssModal.style.display = "block"
-};
-
-function openJsModals() {
-    const jsModal = document.querySelector(".jsBox")
-    jsModal.style.display = "block"
-};
-
-function openSassModals() {
-    const sassModal = document.querySelector(".sassBox")
-    sassModal.style.display = "block"
-};
-
-function openJQueryModals() {
-    const jQueryModal = document.querySelector(".jQueryBox")
-    jQueryModal.style.display = "block"
-};
