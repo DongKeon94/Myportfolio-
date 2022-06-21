@@ -1,20 +1,20 @@
-@import "style.scss";
-@import "common.scss";
-@import "mixin.scss"; 
+@import "_style.scss";
+@import "_common.scss";
+@import "_mixin.scss"; 
 
 
 body {
     color: #f2f2f2;
     background-color: $main-backgroundcolor;
     header {
-        display: none;
-        @include responsive(pc2-size) {
-            display: inline;
-        }
+        position: absolute;
+        top: 1.4%; left: 50%;
+        transform: translateX(-50%);
+
         h1 {
-            @include responsive(pc2-size) {
-                position: absolute;
-                top: 20px; left: 20px;
+            font-size: 0.7em;
+            @include responsive(tablet-size) {
+                font-size: 1em;
             }
         }
     }
@@ -276,7 +276,8 @@ body {
                         top: 70%; left: 50%;
                         transform: translateX(-50%);
 
-                        animation: text-up 2.5s ease;
+                        // TITLE 텍스트 애니메이션
+                        animation: text-up 3s ease;
                         @keyframes text-up {
                             0% { opacity: 0; }
                             100% { opacity: 1; }
@@ -871,8 +872,8 @@ body {
                     
                     .portfolio-1-parallelogra{
                         display: block;
-                        background: linear-gradient(90deg, #515259);
                         width: 350%;
+                        background: linear-gradient(90deg, #515259, #515259);
                         height: 1100px;
                         @include responsive(tablet-size) {
                             height: 825px;
@@ -888,7 +889,7 @@ body {
                     .portfolio-2-parallelogra{
 
                         display: block;
-                        background: linear-gradient(90deg, #58a56b);
+                        background: linear-gradient(90deg, #58a56b, #58a56b);
                         width: 350%;
                         height: 1100px;
                         @include responsive(tablet-size) {
@@ -905,7 +906,7 @@ body {
                     height: 1180px;
                     .portfolio-3-parallelogra{
                         display: block;
-                        background: linear-gradient(90deg, #f1b37e);
+                        background: linear-gradient(90deg, #f1b37e, #f1b37e);
                         width: 350%;
                         height: 1100px;
                         @include responsive(tablet-size) {
@@ -972,7 +973,6 @@ body {
                     }
                     @include responsive(pc-size) {
                         
-                        // transform: translate(190%,-122%);
                         .on1 {
 
                             animation: moon-img-turns 1s linear both;
