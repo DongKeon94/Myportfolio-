@@ -728,6 +728,8 @@ body main section.description-2 .confix .introduction .introduction-flex .abilit
   position: relative;
   border: 1px solid black;
   border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
 }
 body main section.description-2 .confix .introduction .introduction-flex .ability .skills .skills-charts .skills-chart img {
   position: absolute;
@@ -769,6 +771,43 @@ body main section.description-2 .confix .introduction .introduction-flex .abilit
   stroke-dashoffset: 440;
   transform: rotate(-90deg);
   transform-origin: 50.5% 50.5%;
+}
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills-modal-box {
+  position: fixed;
+  top: 73%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+  height: 30rem;
+  border-radius: 10px;
+  background-color: #656565;
+  display: none;
+  z-index: 3;
+}
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills-modal-box .closeBtn {
+  position: absolute;
+  top: 1%;
+  right: 7%;
+  font-size: 3.5em;
+  transform: translate(-1%, -7%);
+  cursor: pointer;
+}
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills-modal-box .skills-text {
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills-modal-box .skills-text img {
+  width: 10em;
+}
+body main section.description-2 .confix .introduction .introduction-flex .ability .skills-modal-box .skills-text p {
+  font-size: 0.9em;
+  text-align: justify;
 }
 body main section.description-2 .confix .introduction .introdoution-bottom {
   float: right;
@@ -1113,13 +1152,17 @@ body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-t
   font-size: 1.3em;
 }
 body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box a {
-  font-size: 0.8em;
-  border: 1px solid #fff;
+  font-size: 1em;
   margin-top: 20px;
   padding: 5px 15px;
+  border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
-  cursor: pointer;
+}
+body main section.description-5 .confix .portfolio-1 .portfolio-box .portfolio-text-box a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all 0.7s;
 }
 body main section.description-5 .confix .portfolio-2 {
   position: relative;
@@ -1211,13 +1254,17 @@ body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-t
   font-size: 1.3em;
 }
 body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box a {
-  font-size: 0.8em;
-  border: 1px solid #fff;
+  font-size: 1em;
   margin-top: 20px;
   padding: 5px 15px;
+  border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
-  cursor: pointer;
+}
+body main section.description-5 .confix .portfolio-2 .portfolio-box .portfolio-text-box a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all 0.7s;
 }
 body main section.description-5 .confix .portfolio-3 {
   position: relative;
@@ -1310,13 +1357,17 @@ body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-t
   font-size: 1.3em;
 }
 body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box a {
-  font-size: 0.8em;
-  border: 1px solid #fff;
+  font-size: 1em;
   margin-top: 20px;
   padding: 5px 15px;
+  border: 1px solid #fff;
   color: #fff;
   background-color: transparent;
-  cursor: pointer;
+}
+body main section.description-5 .confix .portfolio-3 .portfolio-box .portfolio-text-box a:hover {
+  color: #000;
+  background-color: #fff;
+  transition: all 0.7s;
 }
 body main section.description-5 .confix .portfolio-3 .portfolio-bottom {
   position: relative;

@@ -125,10 +125,10 @@
                     <img src="./images/4.png" alt="풍선 올라가는 이미지" class="up-img2" />
                 </div> 
 
-                <div class="introduction">
+                <div class="introduction" data-aos="fade-down-right">
                     <h2>&lt;<span>INTRODUCTION</span>&gt;</h2>
 
-                    <div class="introduction-flex"  data-aos="fade-down-right">
+                    <div class="introduction-flex">
                         <div class="personal">
                             <ul>
                                 <li>
@@ -163,13 +163,14 @@
                                 </li>
                             </ul>
                         </div> <!-- personal -->
-        
+                        
                         <div class="ability">
                             <div class="ability-text">&lt;ABILITY&gt;</div>
     
                             <div class="skills">
                                 <div class="skills-charts">
-                                    <div class="skills-chart">
+                                    
+                                    <div class="skills-chart" onclick="openPsModal();">
                                         <h2 data-num="85">0</h2>
                                         <img src="./images/PS-logo.svg" alt="PS-logo">
                                         <svg>
@@ -178,7 +179,7 @@
                                         </svg>
                                     </div>
 
-                                    <div class="skills-chart">
+                                    <div class="skills-chart" onclick="openHtmlModals();">
                                         <h2 data-num="90">0</h2>
                                         <img src="./images/HTML-logo.svg" alt="HTML-logo">
                                         <svg>
@@ -186,7 +187,7 @@
                                         </svg>
                                     </div>  
 
-                                    <div class="skills-chart">
+                                    <div class="skills-chart" onclick="openCssModals();">
                                         <h2 data-num="90">0</h2>
                                         <img src="./images/CSS-logo.svg" alt="CSS-logo">
                                         <svg>
@@ -194,7 +195,7 @@
                                         </svg>
                                     </div>
 
-                                    <div class="skills-chart">
+                                    <div class="skills-chart" onclick="openJsModals();">
                                         <h2 data-num="70">0</h2>
                                         <img src="./images/JS-logo.svg" alt="JS-logo.svg">
                                         <svg>
@@ -202,7 +203,7 @@
                                         </svg>
                                     </div>
 
-                                    <div class="skills-chart">
+                                    <div class="skills-chart" onclick="openSassModals();">
                                         <h2 data-num="90">0</h2>
                                         <img src="./images/SASS-logo.svg" alt="SASS-logo.svg">
                                         <svg>
@@ -210,16 +211,82 @@
                                         </svg>
                                     </div>
 
-                                    <div class="skills-chart">
+                                    <div class="skills-chart" onclick="openJQueryModals();">
                                         <h2 data-num="70">0</h2>
                                         <img src="./images/jQuery-logo.svg" alt="jQuery-logo.svg">
                                         <svg>
                                             <circle cx="100" cy="100" r="70"></circle>
                                         </svg>
+
                                     </div>
                                 </div>
                             </div> <!-- skills-img -->
+
+                            <div class="skills-modal">
+
+                                <div class="skills-modal-box psBox">
+                                    <span class="closeBtn">&times;</span>
+                                    <div class="skills-text">
+                                        <img src="./images/PS-logo.svg" alt="PS-logo">
+                                        <p>
+                                           &nbsp;웹 표준과 웹 접근성을 준수하는 HTML 구조설계로 시멘틱 태그를 사용하여 마크업을 작성합니다.<br>&nbsp;기획서와 가이드라인을 만들고 체계적인 퍼블리싱 작업을 수행합니다.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="skills-modal-box htmlBox">
+                                    <span class="closeBtn">&times;</span>
+                                    <div class="skills-text">
+                                        <img src="./images/HTML-logo.svg" alt="HTML-logo">
+                                        <p>
+                                           &nbsp;웹 표준과 웹 접근성을 준수하는 HTML 구조설계로 시멘틱 태그를 사용하여 마크업을 작성합니다.<br>&nbsp;기획서와 가이드라인을 만들고 체계적인 퍼블리싱 작업을 수행합니다.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="skills-modal-box cssBox">
+                                    <span class="closeBtn">&times;</span>
+                                    <div class="skills-text">
+                                        <img src="./images/CSS-logo.svg" alt="CSS-logo">
+                                        <p>
+                                           &nbsp;웹 표준과 웹 접근성을 준수하는 HTML 구조설계로 시멘틱 태그를 사용하여 마크업을 작성합니다.<br>&nbsp;기획서와 가이드라인을 만들고 체계적인 퍼블리싱 작업을 수행합니다.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="skills-modal-box jsBox">
+                                    <span class="closeBtn">&times;</span>
+                                    <div class="skills-text">
+                                        <img src="./images/JS-logo.svg" alt="JS-logo.svg">
+                                        <p>
+                                           &nbsp;웹 표준과 웹 접근성을 준수하는 HTML 구조설계로 시멘틱 태그를 사용하여 마크업을 작성합니다.<br>&nbsp;기획서와 가이드라인을 만들고 체계적인 퍼블리싱 작업을 수행합니다.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="skills-modal-box sassBox">
+                                    <span class="closeBtn">&times;</span>
+                                    <div class="skills-text">
+                                        <img src="./images/SASS-logo.svg" alt="SASS-logo.svg">
+                                        <p>
+                                           &nbsp;웹 표준과 웹 접근성을 준수하는 HTML 구조설계로 시멘틱 태그를 사용하여 마크업을 작성합니다.<br>&nbsp;기획서와 가이드라인을 만들고 체계적인 퍼블리싱 작업을 수행합니다.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="skills-modal-box jQueryBox">
+                                    <span class="closeBtn">&times;</span>
+                                    <div class="skills-text">
+                                        <img src="./images/jQuery-logo.svg" alt="jQuery-logo.svg">
+                                        <p>
+                                           &nbsp;웹 표준과 웹 접근성을 준수하는 HTML 구조설계로 시멘틱 태그를 사용하여 마크업을 작성합니다.<br>&nbsp;기획서와 가이드라인을 만들고 체계적인 퍼블리싱 작업을 수행합니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div> <!-- ability -->
+
+                        
                     </div> <!-- introduction-flex -->
     
                     <div class="introdoution-bottom">&lt;<span>/INTRODUCTION</span>&gt;</div>
@@ -339,8 +406,8 @@
                             <p><strong>TOOLS</strong> : HTML · CSS · jQuery</p>
                             <p><strong>기여도</strong> : 개인작업 100%</p>
                             
-                            <a href="">WEB</a>
-                            <a href="">DESIGN GUIDE</a>
+                            <a href="#">WEB</a>
+                            <a href="#">DESIGN GUIDE</a>
                         </div> <!-- portfolio-text-box -->
                     </div> <!-- portfolio-box -->
                 </div>
@@ -357,8 +424,8 @@
                             <p><strong>TOOLS</strong> : HTML · CSS · jQuery</p>
                             <p><strong>기여도</strong> : 개인작업 100%</p>
                             
-                            <a href="">WEB</a>
-                            <a href="">DESIGN GUIDE</a>
+                            <a href="#">WEB</a>
+                            <a href="#">DESIGN GUIDE</a>
                         </div> <!-- portfolio-text-box -->
                     </div> <!-- portfolio-box -->
                     <div class="portfolio-bottom">&lt;<span>/PORTFOLIO</span>&gt;</div>
@@ -375,13 +442,13 @@
                     <img src="./images/9.png" alt="달위에-깃발-들고있는-이미지" />
                 </div>
 
-                <div class="contact-text"> 
+                <div class="contact-text" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1000"> 
                     <p class="contact-text-me">저를 소개하는 이곳, 조금은 재미있으셨나요? <br>저에 대해 궁금한 점이 있으시다면,<br class="contact-br"> 아래의 EMAIL로 보내주세요.<br>최대한 빠르게 답변드리겠습니다.</p>
                     
-                    <p class="email-address">
+                    <p class="email-address" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="300">
                         <span style="color: #1ad51e">NAVER</span> : <a href="mailto:compuer1@naver.com">compuer1@naver.com</a>
                     </p>
-                    <p class="email-address-smalltext">(메일 주소를 클릭하면 즉시 메일을 보낼 수 있는 Outlook이 활성화됩니다.)</p>
+                    <p class="email-address-smalltext" data-aos="flip-up" data-aos-delay="1000" data-aos-duration="300">(메일 주소를 클릭하면 즉시 메일을 보낼 수 있는 Outlook이 활성화됩니다.)</p>
                     
                     <p class="email_greeting">충고, 비판, 토의, 응원의 메시지, 일상적인 대화까지. 모두 환영합니다!</p>
                 </div> <!-- contact-text -->

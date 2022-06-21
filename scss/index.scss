@@ -21,6 +21,7 @@ body {
     
     main {
 
+        // TITLE 섹션
         section.description-1 {
             overflow: hidden;
 
@@ -403,6 +404,8 @@ body {
             }
         } // section.description-1 종료
         
+
+        // INTRODUCE 섹션
         section.description-2 {
             .confix {
                 @include padding-set();
@@ -456,6 +459,7 @@ body {
                         margin-top: 3em;
                         text-align: center;
                         font-weight: 500;
+                        
                         @include responsive(tablet-size) {
                             .br-none {
                                 display: none;
@@ -574,22 +578,26 @@ body {
                                 align-items: center;
                                 flex-wrap: wrap;
 
-
                                 .skills-charts {
                                     display: flex;
                                     justify-content: center;
                                     flex-wrap: wrap;
                                     gap:15px;
+
                                     .skills-chart{
                                         position: relative;
                                         border: 1px solid black;
                                         border-radius: 50%;
+                                        cursor: pointer;
+                                        z-index: 2;
+
                                         img {
                                             position: absolute;
                                             left: 50%;
                                             top: 50%;
                                             transform: translate(-50%,-50%);
                                             width: 60%;
+                                            
                                         }
                                         
                                         h2 {
@@ -632,8 +640,49 @@ body {
                                     }
                                 }
                             }
+                            
+                            .skills-modal-box {
+                                position: fixed;
+                                top: 73%; left: 50%;
+                                transform: translate(-50%,-50%);
+                                width: 15rem;
+                                height: 30rem;
+                                border-radius: 10px;
+                                background-color: #656565;
+                                display: none;
+                                z-index: 3;
+
+                                .closeBtn {
+                                    position: absolute;
+                                    top: 1%; right: 7%;
+                                    font-size: 3.5em;
+                                    transform: translate(-1%, -7%);
+                                    cursor: pointer;
+                                }
+
+                                .skills-text {
+                                    padding: 1em;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 3em;
+
+                                    img {
+                                        width: 10em;
+                                    }
+                                    p {
+                                        font-size: 0.9em;
+                                        text-align: justify;
+                                    }
+                                }
+                            }
                         } // ability종료
                     } // introduction-flex종료
+
+                    
 
                     // </introdoution> 하위 텍스트
                     .introdoution-bottom {
@@ -655,6 +704,7 @@ body {
                 } // introduction 종료
             } // confix
         } // section.description-2 종료
+
 
         // 움직이는 배경과 우주선
         section.description-3 {
@@ -731,6 +781,8 @@ body {
             } // move-bg 종료
         } // section.description-3 종료
 
+
+        // DIRECTION 섹션
         section.description-4 {
             .confix {
                 @include padding-set();
@@ -834,6 +886,8 @@ body {
             } // confix 종료
         } // section.description-4 종료
 
+
+        // PORTFOLIO 섹션
         section.description-5 {
             clear: both;
             overflow: hidden;
@@ -931,6 +985,8 @@ body {
             } // confix
         } // section.description-5 종료
 
+
+        // CONTACT 섹션
         section.description-6 {
             clear: both;
             overflow: hidden;
@@ -1055,8 +1111,8 @@ body {
                 width: 40px; height: 40px;
             }
         }
-    } // main
 
+    } // main
     footer {
         display: flex;
         justify-content: center;

@@ -113,13 +113,17 @@
             }
 
             a {
-                font-size: 0.8em;
-                border: 1px solid #fff;
+                font-size: 1em;
                 margin-top: 20px;
                 padding: 5px 15px;
+                border: 1px solid #fff;
                 color: #fff;
                 background-color: transparent;
-                cursor: pointer;
+                &:hover {
+                    color: #000;
+                    background-color: #fff;
+                    transition: all 0.7s;
+                }                
             }
         }
 

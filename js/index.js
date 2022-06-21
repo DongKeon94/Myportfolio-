@@ -17,7 +17,9 @@ $(document).ready(function(){
         $('#text1').css('display','block');
         $('#text2').css('display','none');
         
-    });// Hello, World 텍스트 종료
+    });
+
+
     
     // 타이핑 텍스트
     let typingBool = false;
@@ -85,7 +87,7 @@ $(document).ready(function(){
                 }, 2000);
             }
         }
-    } // 타이핑 텍스트 종료
+    } 
 
 
     // 여러가지 우주풍선의 이미지가 올라가는 모션
@@ -97,7 +99,7 @@ $(document).ready(function(){
                 top :"-10%",
             },10000)
         }
-    }); // 여러가지 우주풍선의 이미지가 올라가는 모션
+    });
 
 
     // skill 그래프 모션
@@ -136,7 +138,7 @@ $(document).ready(function(){
                 })
             });
         }
-    }); // skill 그래프 모션 종료
+    });
 
 
     // 달위에-깃발-들고있는-이미지 모션
@@ -154,7 +156,7 @@ $(document).ready(function(){
                 $(".moon-up-img img").addClass("on1");
             }
         } 
-    }); // 달위에-깃발-들고있는-이미지 모션 종료
+    });
 
 
     // 스크롤 화살표
@@ -168,25 +170,78 @@ $(document).ready(function(){
         }
     });
 
-    $("#up-arrow").click( function(){
+    $("#up-arrow").click(function(){
         $("html").animate({
             scrollTop : "0"
         }, 2000);
-    }) // 스크롤 화살표 종료
+    })
+
 
 }); 
 
+
+
 // 바닐라JS
 window.onload = function() {
+    const closeModal = document.querySelectorAll(".skills-modal-box")
+    const closeModalBt0 = closeModal[0].children[0];
+    const closeModalBt1 = closeModal[1].children[0];
+    const closeModalBt2 = closeModal[2].children[0];
+    const closeModalBt3 = closeModal[3].children[0];
+    const closeModalBt4 = closeModal[4].children[0];
+    const closeModalBt5 = closeModal[5].children[0];
 
+    closeModalBt0.addEventListener("click", function() {
+        closeModal[0].style.display = "none"
+    });
+
+    closeModalBt1.addEventListener("click", ()=> {
+        closeModal[1].style.display = "none"
+    });
+
+    closeModalBt2.addEventListener("click", ()=> {
+        closeModal[2].style.display = "none"
+    });
+
+    closeModalBt3.addEventListener("click", ()=> {
+        closeModal[3].style.display = "none"
+    });
+
+    closeModalBt4.addEventListener("click", ()=> {
+        closeModal[4].style.display = "none"
+    });
+
+    closeModalBt5.addEventListener("click", ()=> {
+        closeModal[5].style.display = "none"
+    });
 }
-// function scrollImg() {
-//     var target = document.querySelector(".moon-up-img img")
-//     target.classList.add("on")
-// }
 
-window.addEventListener("load", function() {
+function openPsModal() {
+    const psModal = document.querySelector(".psBox")
+    psModal.style.display = "block"
+};
 
-    
-});
+function openHtmlModals() {
+    const htmlModal = document.querySelector(".htmlBox")
+    htmlModal.style.display = "block"
+};
 
+function openCssModals() {
+    const cssModal = document.querySelector(".cssBox")
+    cssModal.style.display = "block"
+};
+
+function openJsModals() {
+    const jsModal = document.querySelector(".jsBox")
+    jsModal.style.display = "block"
+};
+
+function openSassModals() {
+    const sassModal = document.querySelector(".sassBox")
+    sassModal.style.display = "block"
+};
+
+function openJQueryModals() {
+    const jQueryModal = document.querySelector(".jQueryBox")
+    jQueryModal.style.display = "block"
+};
