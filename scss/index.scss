@@ -57,7 +57,7 @@ body {
                         position: absolute;
                         left: 3%;
                         text-align: center;
-                        cursor: pointer;
+                        cursor: default;
 
                         // 넘버 호버시 돌아가는 모션
                         ul {
@@ -649,7 +649,7 @@ body {
                                 height: 100%;
                                 overflow: hidden;
                                 z-index: 3;
-
+                                backdrop-filter: blur(2px);
                             }
                             .skills-modal {
                                 
@@ -835,12 +835,11 @@ body {
 
                 // direction의 코딩 박스
                 .direction-box {
-                    
                     overflow: hidden;
                     
                     .coding-box {
                         @include responsive(tablet-size) {
-                            margin-top: 5px;
+                            margin-top: 22px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
@@ -855,6 +854,10 @@ body {
                             @include responsive(tablet-size) {
                                 width: 41vmin;
                                 padding: 0px;
+                                &:hover {
+                                    transform: scale(1.1);
+                                    transition: all 0.5s ;
+                                }
                             }
                            
                         }
@@ -960,8 +963,8 @@ body {
                 .portfolio-2 {
                     position: relative;
                     z-index: 4;
-                    .portfolio-2-parallelogra{
 
+                    .portfolio-2-parallelogra{
                         display: block;
                         background: linear-gradient(90deg, #58a56b, #58a56b);
                         width: 350%;
@@ -972,6 +975,32 @@ body {
                         transform: translateX(-30%) skewY(-10deg);
                     }
                     @include port-text();
+
+                    .portfolio2-index-image{
+                        position: absolute;
+                        top:1.9%; left: 4%;
+                        width: 92.2%;
+                        height: 37.7vmin;
+                        overflow: hidden;
+                        @include responsive(tablet-size) {
+                            top:2.8%; left: 6.9%;
+                            width: 46.4%;
+                            height: 24.2vw;
+                        }
+                        @include responsive(pc-size) {
+                            top:3.6%; left: 11.8%;
+                            width: 46.4%;
+                            height: 315px;
+                        }
+                        @include responsive(pc2-size) {
+                            height: 310px;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                        
+                    }
                 }
 
                 .portfolio-3 {

@@ -3,42 +3,54 @@ window.onload = function() {
     // skill 모달창
     const ovModal = document.querySelector(".skills-modal")
     const closeModal = document.querySelectorAll(".skills-modal-box")
-    const closeModalBt0 = closeModal[0].children[0];
-    const closeModalBt1 = closeModal[1].children[0];
-    const closeModalBt2 = closeModal[2].children[0];
-    const closeModalBt3 = closeModal[3].children[0];
-    const closeModalBt4 = closeModal[4].children[0];
-    const closeModalBt5 = closeModal[5].children[0];
 
-    closeModalBt0.addEventListener("click", function() {
-        closeModal[0].style.display = "none"
-        ovModal.classList.remove("modal-on");
-    });
+    for(let i = 0; i <= 5; i++) {
+        closeModal[i].children[0].addEventListener("click", function() {
+            
+            for(let j = 0; j <= 5; j++) {
+                closeModal[j].style.display = "none";
+                ovModal.classList.remove("modal-on");
+            }
+        });
+    }
 
-    closeModalBt1.addEventListener("click", ()=> {
-        closeModal[1].style.display = "none"
-        ovModal.classList.remove("modal-on");
-    });
-
-    closeModalBt2.addEventListener("click", ()=> {
-        closeModal[2].style.display = "none"
-        ovModal.classList.remove("modal-on");
-    });
-
-    closeModalBt3.addEventListener("click", ()=> {
-        closeModal[3].style.display = "none"
-        ovModal.classList.remove("modal-on");
-    });
-
-    closeModalBt4.addEventListener("click", ()=> {
-        closeModal[4].style.display = "none"
-        ovModal.classList.remove("modal-on");
-    });
-
-    closeModalBt5.addEventListener("click", ()=> {
-        closeModal[5].style.display = "none"
-        ovModal.classList.remove("modal-on");
-    });
+    // const closeModalBt0 = closeModal[0].children[0];
+    // const closeModalBt1 = closeModal[1].children[0];
+    // const closeModalBt2 = closeModal[2].children[0];
+    // const closeModalBt3 = closeModal[3].children[0];
+    // const closeModalBt4 = closeModal[4].children[0];
+    // const closeModalBt5 = closeModal[5].children[0];
+    
+    // closeModalBt0.addEventListener("click", function() {
+    //     closeModal[0].style.display = "none"
+    //     ovModal.classList.remove("modal-on");
+    // });
+    
+    // closeModalBt1.addEventListener("click", ()=> {
+    //     closeModal[1].style.display = "none"
+    //     ovModal.classList.remove("modal-on");
+    // });
+    
+    // closeModalBt2.addEventListener("click", ()=> {
+    //     closeModal[2].style.display = "none"
+    //     ovModal.classList.remove("modal-on");
+    // });
+    
+    // closeModalBt3.addEventListener("click", ()=> {
+    //     closeModal[3].style.display = "none"
+    //     ovModal.classList.remove("modal-on");
+    // });
+    
+    // closeModalBt4.addEventListener("click", ()=> {
+    //     closeModal[4].style.display = "none"
+    //     ovModal.classList.remove("modal-on");
+    // });
+    
+    // closeModalBt5.addEventListener("click", ()=> {
+    //     closeModal[5].style.display = "none"
+    //     ovModal.classList.remove("modal-on");
+    // });
+    
     
 }
 

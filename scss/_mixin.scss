@@ -76,6 +76,7 @@
         // 포트폴리오 텍스트
         .portfolio-text-box {
             margin-bottom: 6em;
+            font-family: Pretendard;
             @include responsive(tablet-size) {
                 width: 40%;
                 padding-left: 80px;
@@ -87,10 +88,11 @@
             }
 
             h3 {
-                font-size: 1.3em;
+                width: 12em;
+                font-size: 1.5em;
                 margin-bottom: 30px;
                 @include responsive(pc-size) {
-                    font-size: 1.5em;
+                    font-size: 2em;
                     margin-bottom: 60px;
                 }
             }
@@ -115,9 +117,10 @@
             a {
                 font-size: 1em;
                 margin-top: 20px;
+                margin-right: 10px;
                 padding: 5px 15px;
                 border: 1px solid #fff;
-                color: #fff;
+                color: #f2f2f2;
                 background-color: transparent;
                 &:hover {
                     color: #000;
