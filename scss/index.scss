@@ -458,7 +458,7 @@ body {
                     p {
                         margin-top: 3em;
                         text-align: center;
-                        font-weight: 500;
+                        line-height: 30px;
                         
                         @include responsive(tablet-size) {
                             .br-none {
@@ -515,6 +515,9 @@ body {
 
                         // personal
                         .personal {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
                             padding: 10px;
                             border-radius: 5px;
                             box-shadow: 0px 0px 7px #fff;
@@ -884,6 +887,7 @@ body {
                                 p { 
                                     font-size: 0.9em;
                                     text-align: justify;
+                                    line-height: 24px;
                                 }
                             }
                         }
@@ -1093,7 +1097,7 @@ body {
                 .contact-text {
                     font-size: 1.1em;
                     text-align: center;
-                    line-height: 30px;
+                    line-height: 24px;
                     .contact-text-me {
                         margin-bottom: 30px;
                         .contact-br {
