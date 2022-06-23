@@ -1,18 +1,18 @@
 window.onload = function() {
 
     // skill 모달창
-    const ovModal = document.querySelector(".skills-modal")
-    const closeModal = document.querySelectorAll(".skills-modal-box")
+    const ovModal = document.querySelector(".skills-modal");
+    const closeModal = document.querySelectorAll(".skills-modal-box");
 
     for(let i = 0; i <= 5; i++) {
         closeModal[i].children[0].addEventListener("click", function() {
-            
+
             for(let j = 0; j <= 5; j++) {
                 closeModal[j].style.display = "none";
                 ovModal.classList.remove("modal-on");
-            }
+            };
         });
-    }
+    };
 
     // const closeModalBt0 = closeModal[0].children[0];
     // const closeModalBt1 = closeModal[1].children[0];
@@ -117,7 +117,6 @@ $(document).ready(function(){
         $('.balloon_triangle').css({'border-top-color':'#fff', 'filter':'drop-shadow(0px 4px 0px rgba(255,255,255,0.7))'});
         $('#text1').css('display','block');
         $('#text2').css('display','none');
-        
     });
 
 

@@ -274,7 +274,7 @@ body {
                     // TITLE
                     .title {
                         position: absolute;
-                        top: 70%; left: 50%;
+                        top: 70%; left: 51%;
                         transform: translateX(-50%);
 
                         // TITLE 텍스트 애니메이션
@@ -296,13 +296,15 @@ body {
                             font-size: 0.99em;
                             text-align: center;
                             @include responsive(tablet-size) {
-                                font-size: 2.8vmin;
+                                font-size: 3.3vmin;
+                                line-height: 50px;
+                                letter-spacing: 1px;
                             }
                             .title-text {
                                 font-size: 1.3em;
                                 font-weight: bold;
                                 @include responsive(tablet-size) {
-                                    font-size: 3.6vmin;
+                                    font-size: 4.5vmin;
                                 }
                             }
                         }
@@ -807,10 +809,11 @@ body {
 
         // DIRECTION 섹션
         section.description-4 {
+
             .confix {
                 @include padding-set();
                 @include confix();
-
+                overflow: hidden;
                 .direction-text {
                     display: flex;
                     width: 100%;
@@ -857,6 +860,8 @@ body {
                             @include responsive(tablet-size) {
                                 width: 41vmin;
                                 padding: 0px;
+                                transition: all 0.5s ;
+
                                 &:hover {
                                     transform: scale(1.1);
                                     transition: all 0.5s ;
@@ -885,7 +890,6 @@ body {
                                     text-align: justify;
                                 }
                                 p { 
-                                    font-size: 0.9em;
                                     text-align: justify;
                                     line-height: 24px;
                                 }
@@ -895,6 +899,25 @@ body {
                     .reverse-box {
                         flex-direction: row-reverse;
                         gap: 50px;
+                    }
+
+                    .coding-port {
+                        display: none;
+                        @include responsive(tablet-size) {
+                            display: block;
+                            position: absolute;
+                            top: 50%; right: 0%;
+                            transform: translate(45%) rotate(90deg);
+                            z-index: -1;
+                            p {
+                                font-size: 130px;
+                                opacity: 0.2;
+                            }
+                        }
+                        @include responsive(pc-size) {
+                            transform: translate(20%) rotate(90deg);
+                            
+                        }
                     }
                 }// direction-box 종료
 
@@ -979,32 +1002,6 @@ body {
                         transform: translateX(-30%) skewY(-10deg);
                     }
                     @include port-text();
-
-                    .portfolio2-index-image{
-                        position: absolute;
-                        top:1.9%; left: 4%;
-                        width: 92.2%;
-                        height: 37.7vmin;
-                        overflow: hidden;
-                        @include responsive(tablet-size) {
-                            top:2.8%; left: 6.9%;
-                            width: 46.4%;
-                            height: 24.2vw;
-                        }
-                        @include responsive(pc-size) {
-                            top:3.6%; left: 11.8%;
-                            width: 46.4%;
-                            height: 315px;
-                        }
-                        @include responsive(pc2-size) {
-                            height: 310px;
-                        }
-
-                        img {
-                            width: 100%;
-                        }
-                        
-                    }
                 }
 
                 .portfolio-3 {
@@ -1014,6 +1011,7 @@ body {
                     .portfolio-3-parallelogra{
                         display: block;
                         background: linear-gradient(90deg, #f1b37e, #f1b37e);
+                        opacity: 0.9;
                         width: 350%;
                         height: 1100px;
                         @include responsive(tablet-size) {
@@ -1095,9 +1093,9 @@ body {
 
                 // contact 가운데 텍스트
                 .contact-text {
-                    font-size: 1.1em;
+                    font-size: 1.3em;
                     text-align: center;
-                    line-height: 24px;
+                    line-height: 30px;
                     .contact-text-me {
                         margin-bottom: 30px;
                         .contact-br {
@@ -1112,6 +1110,7 @@ body {
                     }
                     .email-address-smalltext {
                         font-size: 0.7em;
+                        margin-top: 10px;
                         color: #666;
                     }
                     .email_greeting {
@@ -1125,7 +1124,7 @@ body {
                     @include responsive(tablet-size) {
                         display: block;
                         position: absolute;
-                        bottom: -27%; left: 2%; 
+                        bottom: -17%; left: 2%; 
                         img {
                             width: 96px; height: 117px;
                             position: absolute;
@@ -1155,13 +1154,18 @@ body {
         } // section.description-6 종료
 
         #up-arrow {
-			display: none;
 			position: fixed;
-			right: 4%; bottom: 4.5%;
+			right: 4%; bottom: 15%;
 			cursor: pointer;
 			z-index: 100; 
             img {
-                width: 40px; height: 40px;
+                width: 40px; height: 80px;
+                animation: up-arrow 2s linear infinite alternate;
+
+                @keyframes up-arrow  {
+                    0% {transform: translateY(0%);}
+                    100% {transform: translateY(-15%);}
+                }
             }
         }
 
