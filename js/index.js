@@ -1,6 +1,6 @@
 window.onload = function() {
 
-    // skill 모달창
+    // skill_Close 모달창
     const ovModal = document.querySelector(".skills-modal");
     const closeModal = document.querySelectorAll(".skills-modal-box");
 
@@ -50,11 +50,9 @@ window.onload = function() {
     //     closeModal[5].style.display = "none"
     //     ovModal.classList.remove("modal-on");
     // });
-    
-    
 }
 
-// skill 모달창
+// skill_Open 모달창
 function openPsModal() {
     const psModal = document.querySelector(".psBox");
     const ovModal = document.querySelector(".skills-modal");
@@ -99,10 +97,10 @@ function openJQueryModals() {
 
 
 
-// 제이쿼리
+// jQuery Start
 $(document).ready(function(){
 
-    // Hello, World 텍스트
+    // Hello, World_Text
     $("#text2").hide();
     
     $('.hello').on('mouseenter', function(){
@@ -121,7 +119,7 @@ $(document).ready(function(){
 
 
     
-    // 타이핑 텍스트
+    // typing_Text
     let typingBool = false;
     let typingIdx = 0;
     let liIndex = 0;
@@ -276,7 +274,14 @@ $(document).ready(function(){
         }, 2000);
     })
 
-
+    $("#up-arrow").click(function(){
+        $("#up-arrow  img").animate({
+            marginBottom : "550px"
+        }, 2500)
+        $("#up-arrow  img").animate({
+            marginBottom : "0px"
+        }, 500)
+    })
 }); 
 
 
