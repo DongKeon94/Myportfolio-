@@ -243,7 +243,7 @@ body main section.description-1 .confix .main-top .hello .balloon_triangle {
     border-top: solid 50px #fff;
     border-left: solid 25px transparent;
     border-right: solid 25px transparent;
-    transform: translate(-50%, 47%);
+    transform: translate(-50%, 35%);
   }
 }
 @media screen and (min-width: 1320px) {
@@ -251,7 +251,7 @@ body main section.description-1 .confix .main-top .hello .balloon_triangle {
     border-top: solid 70px #fff;
     border-left: solid 35px transparent;
     border-right: solid 35px transparent;
-    transform: translate(-50%, 57%);
+    transform: translate(-50%, 50%);
   }
 }
 body main section.description-1 .confix .main-top .hello .hello-right {
@@ -360,7 +360,7 @@ body main section.description-1 .confix .main-top .its-me .its-right {
 body main section.description-1 .confix .main-top .title {
   position: absolute;
   top: 70%;
-  left: 51%;
+  left: 50%;
   transform: translateX(-50%);
   -webkit-animation: text-up 3s ease;
           animation: text-up 3s ease;
@@ -477,12 +477,13 @@ body main section.description-1 .confix .main-top .main-image2 {
     display: block;
   }
   body main section.description-1 .confix .main-top .main-image2 img {
-    width: 20vmax;
+    width: 18vmax;
   }
 }
 @media screen and (min-width: 1320px) {
   body main section.description-1 .confix .main-top .main-image2 img {
     width: 38vmin;
+    transform: translate(-10%);
   }
 }
 body main section.description-1 .confix .main-top .main-image3 {
@@ -1123,7 +1124,7 @@ body main section.description-5 .confix .portfolio-1 .portfolio-header-text img 
 }
 body main section.description-5 .confix .portfolio-1 .portfolio-1-parallelogra {
   display: block;
-  width: 350%;
+  width: 370%;
   background: linear-gradient(90deg, #515259, #515259);
   height: 1100px;
   transform: translateX(-50%) skewY(10deg);

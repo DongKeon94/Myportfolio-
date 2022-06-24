@@ -176,7 +176,7 @@ body {
                                 border-top: solid 50px #fff;
                                 border-left: solid 25px transparent;
                                 border-right: solid 25px transparent;
-                                transform: translate(-50%,47%);
+                                transform: translate(-50%,35%);
 
                             }
 
@@ -184,7 +184,7 @@ body {
                                 border-top: solid 70px #fff;
                                 border-left: solid 35px transparent;
                                 border-right: solid 35px transparent;
-                                transform: translate(-50%,57%);
+                                transform: translate(-50%,50%);
                             }
                         }
 
@@ -274,7 +274,7 @@ body {
                     // TITLE
                     .title {
                         position: absolute;
-                        top: 70%; left: 51%;
+                        top: 70%; left: 50%;
                         transform: translateX(-50%);
 
                         // TITLE 텍스트 애니메이션
@@ -365,12 +365,13 @@ body {
                         @include responsive(tablet-size) {
                             display: block;
                             img {
-                                width: 20vmax;
+                                width: 18vmax;
                             }
                         }
                         @include responsive(pc-size) {
                             img {
                                 width: 38vmin;
+                                transform: translate(-10%);
                             }
                         }
                     } 
@@ -978,7 +979,7 @@ body {
                     
                     .portfolio-1-parallelogra{
                         display: block;
-                        width: 350%;
+                        width: 370%;
                         background: linear-gradient(90deg, #515259, #515259);
                         height: 1100px;
                         @include responsive(tablet-size) {
